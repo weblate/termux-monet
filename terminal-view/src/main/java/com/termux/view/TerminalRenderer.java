@@ -281,4 +281,8 @@ public final class TerminalRenderer {
     public int getFontLineSpacing() {
         return mFontLineSpacing;
     }
+
+    public int getFontLineSpacingAndAscent() {
+        return mFontLineSpacingAndAscent;
+    }
 }
