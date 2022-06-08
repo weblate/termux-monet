@@ -498,6 +498,7 @@ public class TermuxTerminalSessionActivityClient extends TermuxTerminalSessionCl
         try {
             File colorsFile = TermuxConstants.TERMUX_COLOR_PROPERTIES_FILE;
             File fontFile = TermuxConstants.TERMUX_FONT_FILE;
+            File italicFontFile = TermuxConstants.TERMUX_ITALIC_FONT_FILE;
 
             final Properties props = new Properties();
             if (colorsFile.isFile()) {
@@ -514,7 +515,9 @@ public class TermuxTerminalSessionActivityClient extends TermuxTerminalSessionCl
             updateBackgroundColor();
 
             final Typeface newTypeface = (fontFile.exists() && fontFile.length() > 0) ? Typeface.createFromFile(fontFile) : Typeface.MONOSPACE;
-            mActivity.getTerminalView().setTypeface(newTypeface);
+            final Typeface newItalicTypeface = (italicFontFile.exists() && italicFontFile.length() > 0) ? Typeface.createFromFile(italicFontFile) : newTypeface;
+
+            mActivity.getTerminalView().setTypeface(newTypeface, newItalicTypeface);
         } catch (Exception e) {
             Logger.logStackTraceWithMessage(LOG_TAG, "Error in checkForFontAndColors()", e);
         }
