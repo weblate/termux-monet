@@ -40,10 +40,10 @@
         <item name="termuxActivityDrawerImageTint">@color/black</item>
 
         <!-- Extra keys colors. -->
-        <item name="extraKeysButtonTextColor">@android:color/system_accent1_400</item>
-        <item name="extraKeysButtonActiveTextColor">@android:color/system_accent3_400</item>
-        <item name="extraKeysButtonBackgroundColor">@android:color/system_neutral2_900</item>
-        <item name="extraKeysButtonActiveBackgroundColor">@android:color/system_neutral2_700</item>
+        <item name="extraKeysButtonTextColor">@android:color/system_accent1_10</item>
+        <item name="extraKeysButtonActiveTextColor">@android:color/system_accent3_10</item>
+        <item name="extraKeysButtonBackgroundColor">@android:color/system_neutral1_900</item>
+        <item name="extraKeysButtonActiveBackgroundColor">@android:color/system_accent2_200</item>
     </style>
 
 </resources>
