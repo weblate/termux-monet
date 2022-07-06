@@ -1,7 +1,4 @@
-# Termux monet
-![Picsart_22-07-06_04-09-29-938](https://user-images.githubusercontent.com/103902727/177491288-019d0ea4-69b6-4eac-8040-80227623e2d7.png)
-
-<img src="https://user-images.githubusercontent.com/103902727/177439838-40eceea5-90d7-4854-b1e4-8ce891326b0c.png" width=50% height=50%>
+![Termux Monet Logo](https://user-images.githubusercontent.com/103902727/177491288-019d0ea4-69b6-4eac-8040-80227623e2d7.png)
 
 [![Build status](https://github.com/DevMoxxie/termux-monet/workflows/Build/badge.svg)](https://github.com/DevMoxxie/termux-monet/actions)
 [![Testing status](https://github.com/DevMoxxie/termux-monet/workflows/Unit%20tests/badge.svg)](https://github.com/DevMoxxie/termux-monet/actions)
@@ -9,9 +6,11 @@
 [![Join the Termux discord server](https://img.shields.io/discord/641256914684084234.svg?label=&logo=discord&logoColor=ffffff&color=5865F2)](https://discord.gg/HXpF69X)
 [![Termux library releases at Jitpack](https://jitpack.io/v/termux/termux-app.svg)](https://jitpack.io/#termux/termux-app)
 
-# ONLY `ANDROID 12+` IS SUPPORTED!
-### Monet doesn't exist on previous Android versions xD
+<img src="https://user-images.githubusercontent.com/103902727/177439838-40eceea5-90d7-4854-b1e4-8ce891326b0c.png" width=50% height=50%>
 
+# ONLY `ANDROID 12+` IS SUPPORTED!
+
+### Termux environment
 
 [Termux](https://termux.com) is an Android terminal application and Linux environment.
 
@@ -263,9 +262,12 @@ The `versionName` in `build.gradle` files of Termux and its plugin apps must fol
 
 
 
-## Forking
+# Forking Instructions
 
 - Check [`TermuxConstants`](https://github.com/DevMoxxie/termux-monet/blob/master/termux-shared/src/main/java/com/termux/shared/termux/TermuxConstants.java) javadocs for instructions on what changes to make in the app to change package name.
+- Keep targetSdk 28 to avoid login errors.
 - You also need to recompile bootstrap zip for the new package name. Check [building bootstrap](https://github.com/termux/termux-packages/wiki/For-maintainers#build-bootstrap-archives), [here](https://github.com/termux/termux-app/issues/1983) and [here](https://github.com/termux/termux-app/issues/2081#issuecomment-865280111).
 - Currently, not all plugins use `TermuxConstants` from `termux-shared` library and have hardcoded `com.termux` values and will need to be manually patched.
 - If forking termux plugins, check [Forking and Local Development](https://github.com/DevMoxxie/termux-monet/wiki/Termux-Libraries#forking-and-local-development) for info on how to use termux libraries for plugins.
+- Enable github actions and do any commit to build termux. e.g. upload a placeholder file.
+- Create empty releases. You don't need to manually upload termux apks, Github Actions will do all the job for you.
