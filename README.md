@@ -8,6 +8,9 @@
 [![Join the Termux discord server](https://img.shields.io/discord/641256914684084234.svg?label=&logo=discord&logoColor=ffffff&color=5865F2)](https://discord.gg/HXpF69X)
 [![Termux library releases at Jitpack](https://jitpack.io/v/termux/termux-app.svg)](https://jitpack.io/#termux/termux-app)
 
+# ONLY `ANDROID 12+` IS SUPPORTED!
+### Monet doesn't exist on previous Android versions xD
+
 
 [Termux](https://termux.com) is an Android terminal application and Linux environment.
 
