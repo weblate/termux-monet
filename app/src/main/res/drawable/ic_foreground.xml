@@ -7,7 +7,22 @@
     <!-- Keep in sync with non-adaptive ic_launcher.xml -->
     <path
         android:fillColor="@android:color/system_accent1_100"
-        android:fillType="evenOdd"
-        android:strokeWidth="1"
-        android:pathData="M126.042 152.083 L 173.924 200.000 126.042 247.917 L 78.159 295.833 96.909 295.833 L 115.659 295.833 163.542 247.917 L 211.424 200.000 163.542 152.083 L 115.659 104.167 96.909 104.167 L 78.159 104.167 126.042 152.083 M212.500 282.292 L 212.500 295.833 266.667 295.833 L 320.833 295.833 320.833 282.292 L 320.833 268.750 266.667 268.750 L 212.500 268.750 212.500 282.292" />
+        android:pathData="M34,38
+                          h6
+                          l12,16
+                          l-12,16
+                          h-6
+                          l12,-16
+                          "
+        />
+
+    <path
+        android:fillColor="@android:color/system_accent1_100"
+        android:pathData="M56,66
+                          h18
+                          v4
+                          h-18
+                          "
+        />
+
 </vector>
