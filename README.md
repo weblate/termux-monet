@@ -1,10 +1,9 @@
 # Termux monet
 
-![Screenshot_20220705-210144_Termux](https://user-images.githubusercontent.com/103902727/177439838-40eceea5-90d7-4854-b1e4-8ce891326b0c.png)
+<img src="https://user-images.githubusercontent.com/103902727/177439838-40eceea5-90d7-4854-b1e4-8ce891326b0c.png" width=50% height=50%>
 
-
-[![Build status](https://github.com/termux/termux-app/workflows/Build/badge.svg)](https://github.com/termux/termux-app/actions)
-[![Testing status](https://github.com/termux/termux-app/workflows/Unit%20tests/badge.svg)](https://github.com/termux/termux-app/actions)
+[![Build status](https://github.com/DevMoxxie/termux-monet/workflows/Build/badge.svg)](https://github.com/DevMoxxie/termux-monet/actions)
+[![Testing status](https://github.com/DevMoxxie/termux-monet/workflows/Unit%20tests/badge.svg)](https://github.com/DevMoxxie/termux-monet/actions)
 [![Join the chat at https://gitter.im/termux/termux](https://badges.gitter.im/termux/termux.svg)](https://gitter.im/termux/termux)
 [![Join the Termux discord server](https://img.shields.io/discord/641256914684084234.svg?label=&logo=discord&logoColor=ffffff&color=5865F2)](https://discord.gg/HXpF69X)
 [![Termux library releases at Jitpack](https://jitpack.io/v/termux/termux-app.svg)](https://jitpack.io/#termux/termux-app)
@@ -57,6 +56,7 @@ The core [Termux](https://github.com/termux/termux-app) app comes with the follo
 ## Installation
 
 Latest version is `v0.118.0`.
+Only `Android 12+` is Supported.
 
 **NOTICE: It is highly recommended that you update to `v0.118.0` or higher ASAP for various bug fixes, including a critical world-readable vulnerability reported at https://termux.github.io/general/2022/02/15/termux-apps-vulnerability-disclosures.html. Also reminding [again](https://www.reddit.com/r/termux/comments/pkujfa/important_deprecation_notice_for_google_play) to users who have installed termux apps from google playstore that playstore builds are [deprecated](#google-play-store-deprecated) and no longer supported. It is recommended that you shift to F-Droid or Github releases.**
 
@@ -161,7 +161,7 @@ The main ones are the following.
 ### Wikis
 
 - [Termux Wiki](https://wiki.termux.com/wiki/)
-- [Termux App Wiki](https://github.com/termux/termux-app/wiki)
+- [Termux App Wiki](https://github.com/DevMoxxir/termux-monet/wiki)
 - [Termux Packages Wiki](https://github.com/termux/termux-packages/wiki)
 
 ### Miscellaneous
@@ -238,9 +238,9 @@ Users must post complete report (optionally without sensitive info) when reporti
 
 The [termux-shared](termux-shared) library was added in [`v0.109`](https://github.com/termux/termux-app/releases/tag/v0.109). It defines shared constants and utils of the Termux app and its plugins. It was created to allow for the removal of all hardcoded paths in the Termux app. Some of the termux plugins are using this as well and rest will in future. If you are contributing code that is using a constant or a util that may be shared, then define it in `termux-shared` library if it currently doesn't exist and reference it from there. Update the relevant changelogs as well. Pull requests using hardcoded values **will/should not** be accepted. Termux app and plugin specific classes must be added under `com.termux.shared.termux` package and general classes outside it. The [`termux-shared` `LICENSE`](termux-shared/LICENSE.md) must also be checked and updated if necessary when contributing code. The licenses of any external library or code must be honoured.
 
-The main Termux constants are defined by [`TermuxConstants`](https://github.com/termux/termux-app/blob/master/termux-shared/src/main/java/com/termux/shared/termux/TermuxConstants.java) class. It also contains information on how to fork Termux or build it with your own package name. Changing the package name will require building the bootstrap zip packages and other packages with the new `$PREFIX`, check [Building Packages](https://github.com/termux/termux-packages/wiki/Building-packages) for more info.
+The main Termux constants are defined by [`TermuxConstants`](https://github.com/DevMoxxie/termux-monet/blob/master/termux-shared/src/main/java/com/termux/shared/termux/TermuxConstants.java) class. It also contains information on how to fork Termux or build it with your own package name. Changing the package name will require building the bootstrap zip packages and other packages with the new `$PREFIX`, check [Building Packages](https://github.com/termux/termux-packages/wiki/Building-packages) for more info.
 
-Check [Termux Libraries](https://github.com/termux/termux-app/wiki/Termux-Libraries) for how to import termux libraries in plugin apps and [Forking and Local Development](https://github.com/termux/termux-app/wiki/Termux-Libraries#forking-and-local-development) for how to update termux libraries for plugins.
+Check [Termux Libraries](https://github.com/DevMoxxie/termux-monet/wiki/Termux-Libraries) for how to import termux libraries in plugin apps and [Forking and Local Development](https://github.com/termux/termux-app/wiki/Termux-Libraries#forking-and-local-development) for how to update termux libraries for plugins.
 
 Commit messages **must** use [Conventional Commits](https://www.conventionalcommits.org) specs so that chagelogs can automatically be generated by the [`create-conventional-changelog`](https://github.com/termux/create-conventional-changelog) script, check its repo for further details on the spec. Use the following `types` as `Added: Add foo`, `Added|Fixed: Add foo and fix bar`, `Changed!: Change baz as a breaking change`, etc. You can optionally add a scope as well, like `Fixed(terminal): Some bug`. The space after `:` is necessary.
 
@@ -261,7 +261,7 @@ The `versionName` in `build.gradle` files of Termux and its plugin apps must fol
 
 ## Forking
 
-- Check [`TermuxConstants`](https://github.com/termux/termux-app/blob/master/termux-shared/src/main/java/com/termux/shared/termux/TermuxConstants.java) javadocs for instructions on what changes to make in the app to change package name.
+- Check [`TermuxConstants`](https://github.com/DevMoxxie/termux-monet/blob/master/termux-shared/src/main/java/com/termux/shared/termux/TermuxConstants.java) javadocs for instructions on what changes to make in the app to change package name.
 - You also need to recompile bootstrap zip for the new package name. Check [building bootstrap](https://github.com/termux/termux-packages/wiki/For-maintainers#build-bootstrap-archives), [here](https://github.com/termux/termux-app/issues/1983) and [here](https://github.com/termux/termux-app/issues/2081#issuecomment-865280111).
 - Currently, not all plugins use `TermuxConstants` from `termux-shared` library and have hardcoded `com.termux` values and will need to be manually patched.
-- If forking termux plugins, check [Forking and Local Development](https://github.com/termux/termux-app/wiki/Termux-Libraries#forking-and-local-development) for info on how to use termux libraries for plugins.
+- If forking termux plugins, check [Forking and Local Development](https://github.com/DevMoxxie/termux-monet/wiki/Termux-Libraries#forking-and-local-development) for info on how to use termux libraries for plugins.
