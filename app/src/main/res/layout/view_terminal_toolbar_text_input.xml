@@ -9,7 +9,7 @@
     android:inputType="text"
     android:importantForAutofill="no"
     android:backgroundTint="@android:color/system_accent1_10"
-    android:background="@android:color/system_neutral1_900"
+    android:backgroundColor="@android:color/system_neutral1_900"
     android:textColor="@android:color/white"
     android:textColorHighlight="@android:color/system_accent3_10"
     android:paddingTop="0dp"
