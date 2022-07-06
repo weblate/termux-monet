@@ -1,5 +1,6 @@
 # Termux monet
 
+![Screenshot_20220705-210144_Termux](https://user-images.githubusercontent.com/103902727/177439838-40eceea5-90d7-4854-b1e4-8ce891326b0c.png)
 
 
 [![Build status](https://github.com/termux/termux-app/workflows/Build/badge.svg)](https://github.com/termux/termux-app/actions)
