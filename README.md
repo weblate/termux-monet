@@ -1,4 +1,5 @@
 # Termux monet
+![Picsart_22-07-06_04-09-29-938](https://user-images.githubusercontent.com/103902727/177491288-019d0ea4-69b6-4eac-8040-80227623e2d7.png)
 
 <img src="https://user-images.githubusercontent.com/103902727/177439838-40eceea5-90d7-4854-b1e4-8ce891326b0c.png" width=50% height=50%>
 
