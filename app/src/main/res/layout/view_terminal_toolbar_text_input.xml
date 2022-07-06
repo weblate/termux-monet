@@ -1,19 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <com.google.android.material.textfield.TextInputLayout
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/terminal_toolbar_text_input"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:imeOptions="actionSend|flagNoFullscreen"
-    android:maxLines="1"
-    android:inputType="text"
-    android:importantForAutofill="no"
-    android:backgroundTint="@android:color/system_accent1_10"
-    android:textColor="@android:color/white"
-    android:textColorHighlight="@android:color/system_accent3_10"
-    android:paddingTop="0dp"
-    android:textCursorDrawable="@null"
-    android:paddingBottom="0dp"
-    tools:ignore="LabelFor"
-</com.google.android.material.textfield.TextInputLayout>
-
+    android:id="@+id/terminal_toolbar_text_input"
+    <EditText
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/terminal_toolbar_text_inputbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:imeOptions="actionSend|flagNoFullscreen"
+        android:maxLines="1"
+        android:inputType="text"
+        android:importantForAutofill="no"
+        android:backgroundTint="@android:color/system_accent1_10"
+        android:textColor="@android:color/white"
+        android:textColorHighlight="@android:color/system_accent3_10"
+        android:paddingTop="0dp"
+        android:textCursorDrawable="@null"
+        android:paddingBottom="0dp"
+        android:hint="Command..."
+        tools:ignore="LabelFor" />
+</com.google.android.material.textfield.TextInputLayout
