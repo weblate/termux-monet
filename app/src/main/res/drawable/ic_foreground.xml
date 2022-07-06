@@ -6,7 +6,7 @@
 
     <!-- Keep in sync with non-adaptive ic_launcher.xml -->
     <path
-        android:fillColor="#FFFFFF"
+        android:fillColor="@android:color/system_accent1_100"
         android:pathData="M34,38
                           h6
                           l12,16
@@ -17,7 +17,7 @@
         />
 
     <path
-        android:fillColor="#FFFFFF"
+        android:fillColor="@android:color/system_accent1_100"
         android:pathData="M56,66
                           h18
                           v4
