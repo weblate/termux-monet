@@ -45,6 +45,7 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/application_name"
         android:requestLegacyExternalStorage="true"
+        android:hasFragileUserData="true"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="false"
         android:theme="@style/Theme.TermuxApp.DayNight.DarkActionBar"
