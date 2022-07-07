@@ -104,7 +104,7 @@ Users must post complete report (optionally without sensitive info) when reporti
 
 ***
 
-### Forking Instructions
+### Forking
 
 - Check [`TermuxConstants`](https://github.com/DevMoxxie/termux-monet/blob/master/termux-shared/src/main/java/com/termux/shared/termux/TermuxConstants.java) javadocs for instructions on what changes to make in the app to change package name.
 - Keep targetSdk 28 to avoid login error `not exec("/data/data/com.termux/files/usr/bin/login"): Permission denied`.
