@@ -43,7 +43,7 @@ adb shell settings put global settings_enable_monitor_phantom_procs false
 setprop persist.sys.fflag.override.settings_enable_monitor_phantom_procs false
 ```
 
-** A better deactivation method for Root is coming soon!***
+***A better deactivation method for Root is coming soon!***
 
 ***
 
