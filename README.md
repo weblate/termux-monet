@@ -41,6 +41,18 @@ adb shell "/system/bin/device_config put activity_manager max_phantom_processes 
 adb shell settings put global settings_enable_monitor_phantom_procs false
 ```
 
+#### Deactivation Instructions (ROOT):
+- On Termux (or any Terminal Emulator), paste the following commands on the following order:
+```
+su -c /system/bin/device_config set_sync_disabled_for_tests persistent
+```
+```
+su -c /system/bin/device_config put activity_manager max_phantom_processes 2147483647
+```
+```
+su -c setprop persist.sys.fflag.override.settings_enable_monitor_phantom_procs false
+```
+
 ***A better deactivation method for Root is coming soon!***
 
 ***
