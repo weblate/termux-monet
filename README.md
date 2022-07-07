@@ -1,14 +1,13 @@
 <p align="center">
 <img src="https://user-images.githubusercontent.com/103902727/177491288-019d0ea4-69b6-4eac-8040-80227623e2d7.png">
 </p>
-
 <div align="center">
     <img src="https://github.com/DevMoxxie/termux-monet/workflows/Build/badge.svg"
       alt="Build_status" />
     <img src="https://github.com/DevMoxxie/termux-monet/workflows/Unit%20tests/badge.svg"
       alt="Testing_status" />
 </div>
-
+<br />
 <div align="center">
     <img src="https://img.shields.io/static/v1?label=Android&message=12%2B&color=brightgreen&style=flat&logo=android"
       alt="Android_Version" />
@@ -17,7 +16,7 @@
     <img src="https://img.shields.io/discord/641256914684084234.svg?label=&logo=discord&logoColor=ffffff&color=5865F2&link=https://discord.gg/HXpF69X"
       alt="_time_stamp_" />
 </div>
-
+<br />
 
 <p align="center">
 <img src="https://user-images.githubusercontent.com/103902727/177439838-40eceea5-90d7-4854-b1e4-8ce891326b0c.png" width=50% height=50%>
