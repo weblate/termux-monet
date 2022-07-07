@@ -16,8 +16,8 @@
 
 ***
 ## Contents
-- [Phantom Process Killer](#Phantom Process Killer)
-- [Nightly Releases](#Nightly Releases)
+- [Phantom Process Killer](#PhantomProcessKiller)
+- [Nightly Releases](#Nightly)
 - [Wikis](#Wikis)
 - [Miscellaneous](#Miscellaneous)
 - [Debugging](#Debugging)
@@ -47,7 +47,7 @@ setprop persist.sys.fflag.override.settings_enable_monitor_phantom_procs false
 
 ***
 
-### Nightly Releases
+### Nightly
 
 Termux application can be obtained on `Github` either from [`Github Releases`](https://github.com/termux/termux-app/releases) for version `>= 0.118.0` or from [`Github Build`](https://github.com/termux/termux-app/actions/workflows/debug_build.yml) action workflows.
 
