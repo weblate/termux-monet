@@ -86,7 +86,7 @@ su -c setprop persist.sys.fflag.override.settings_enable_monitor_phantom_procs f
 ## Wikis
 
 - [Termux Wiki](https://wiki.termux.com/wiki/)
-- [Termux App Wiki](https://github.com/DevMoxxir/termux-monet/wiki)
+- [Termux App Wiki](https://github.com/termux/termux-app/wiki)
 - [Termux Packages Wiki](https://github.com/termux/termux-packages/wiki)
 
 ***
