@@ -1,4 +1,6 @@
-![Termux Monet Logo](https://user-images.githubusercontent.com/103902727/177491288-019d0ea4-69b6-4eac-8040-80227623e2d7.png)
+<p align="center">
+<img src="https://user-images.githubusercontent.com/103902727/177491288-019d0ea4-69b6-4eac-8040-80227623e2d7.png">
+</p>
 
 [![Build status](https://github.com/DevMoxxie/termux-monet/workflows/Build/badge.svg)](https://github.com/DevMoxxie/termux-monet/actions)
 [![Testing status](https://github.com/DevMoxxie/termux-monet/workflows/Unit%20tests/badge.svg)](https://github.com/DevMoxxie/termux-monet/actions)
@@ -6,7 +8,9 @@
 [![Join the Termux discord server](https://img.shields.io/discord/641256914684084234.svg?label=&logo=discord&logoColor=ffffff&color=5865F2)](https://discord.gg/HXpF69X)
 [![Termux library releases at Jitpack](https://jitpack.io/v/termux/termux-app.svg)](https://jitpack.io/#termux/termux-app)
 
+<p align="center">
 <img src="https://user-images.githubusercontent.com/103902727/177439838-40eceea5-90d7-4854-b1e4-8ce891326b0c.png" width=50% height=50%>
+</p>
 
 ***
 ## ONLY `ANDROID 12+` IS SUPPORTED!
@@ -24,7 +28,7 @@
 - [Forking Instructions](#Forking)
 ***
 
-### PhantomProcessKiller
+## PhantomProcessKiller
 
 **NOTICE:**
 > **Termux is broken on Android 12+.** Android OS will kill any (phantom) processes greater than 32 (limit is for all apps combined) and also kill any processes using excessive CPU. You may get `[Process completed (signal 9) - press Enter]` message in the terminal without actually exiting the shell process yourself. Check the related issue [#2366](https://github.com/termux/termux-app/issues/2366), [issue tracker](https://issuetracker.google.com/u/1/issues/205156966), [gist with details](https://gist.github.com/agnostic-apollo/dc7e47991c512755ff26bd2d31e72ca8) and [this TLDR comment](https://github.com/termux/termux-app/issues/2366#issuecomment-1009269410) on how to disable trimming of phantom processes.
@@ -57,7 +61,7 @@ su -c setprop persist.sys.fflag.override.settings_enable_monitor_phantom_procs f
 
 ***
 
-### Nightly
+## Nightly
 
 > Termux-Monet application can be obtained on **Github** either from [`Github Releases`](https://github.com/DevMoxxie/termux-monet/releases) for **stable releases** or from [`Github Actions`](https://github.com/DevMoxxie/termux-monet/actions/workflows/debug_build.yml) for the latest **unstable releases**.
 
@@ -69,7 +73,7 @@ su -c setprop persist.sys.fflag.override.settings_enable_monitor_phantom_procs f
 
 ***
 
-### Wikis
+## Wikis
 
 - [Termux Wiki](https://wiki.termux.com/wiki/)
 - [Termux App Wiki](https://github.com/DevMoxxir/termux-monet/wiki)
@@ -77,7 +81,7 @@ su -c setprop persist.sys.fflag.override.settings_enable_monitor_phantom_procs f
 
 ***
 
-### Miscellaneous
+## Miscellaneous
 - [FAQ](https://wiki.termux.com/wiki/FAQ)
 - [Termux File System Layout](https://github.com/termux/termux-packages/wiki/Termux-file-system-layout)
 - [Differences From Linux](https://wiki.termux.com/wiki/Differences_from_Linux)
@@ -94,7 +98,7 @@ su -c setprop persist.sys.fflag.override.settings_enable_monitor_phantom_procs f
 
 ***
 
-### Debugging
+## Debugging
 
 You can help debug problems of the `Termux` app and its plugins by setting appropriate `logcat` `Log Level` in `Termux` app settings -> `<APP_NAME>` -> `Debugging` -> `Log Level` (Requires `Termux` app version `>= 0.118.0`). The `Log Level` defaults to `Normal` and log level `Verbose` currently logs additional information. Its best to revert log level to `Normal` after you have finished debugging since private data may otherwise be passed to `logcat` during normal operation and moreover, additional logging increases execution time.
 
@@ -116,7 +120,7 @@ Users must post complete report (optionally without sensitive info) when reporti
 
 ***
 
-### Forking
+## Forking
 
 - Check [`TermuxConstants`](https://github.com/DevMoxxie/termux-monet/blob/master/termux-shared/src/main/java/com/termux/shared/termux/TermuxConstants.java) javadocs for instructions on what changes to make in the app to change package name.
 - Keep targetSdk 28 to avoid login error `not exec("/data/data/com.termux/files/usr/bin/login"): Permission denied`.
