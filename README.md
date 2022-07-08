@@ -69,6 +69,20 @@ su -c setprop persist.sys.fflag.override.settings_enable_monitor_phantom_procs f
 
 ***A better deactivation method for Root is coming soon!***
 
+#### Check if PhantomProcessKiller was Disabled (ROOT):
+```
+su -c /system/bin/dumpsys activity settings | grep max_phantom_processes
+```
+```
+su -c /system/bin/device_config get activity_manager max_phantom_processes
+```
+- Both commands above should return `2147483647`
+
+```
+su -c getprop persist.sys.fflag.override.settings_enable_monitor_phantom_procs
+```
+- It should return "false"
+
 ***
 
 ## Nightly
