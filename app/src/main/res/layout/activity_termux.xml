@@ -12,6 +12,8 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
+        android:layout_marginHorizontal="0dp"
+        android:layout_marginVertical="0dp"
         android:orientation="vertical">
 
         <androidx.drawerlayout.widget.DrawerLayout
@@ -27,8 +29,8 @@
                 android:layout_height="match_parent"
                 android:defaultFocusHighlightEnabled="false"
                 android:focusableInTouchMode="true"
-                android:layout_marginRight="0dp"
-                android:layout_marginLeft="0dp"
+                android:layout_marginRight="3dp"
+                android:layout_marginLeft="3dp"
                 android:scrollbarThumbVertical="@drawable/terminal_scroll_shape"
                 android:scrollbars="vertical"
                 android:importantForAutofill="no"
