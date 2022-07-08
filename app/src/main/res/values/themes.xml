@@ -21,7 +21,7 @@
         <item name="colorPrimary">@color/black</item>
         <item name="colorPrimaryVariant">@color/black</item>
 
-        <!-- Splash screen background -->
+        <!-- Splash screen background --> 
         <item name="android:windowBackground">@android:color/system_neutral1_900</item>
 
         <!-- Avoid action mode toolbar pushing down terminal content when
