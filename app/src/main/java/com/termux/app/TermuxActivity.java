@@ -240,6 +240,10 @@ public final class TermuxActivity extends AppCompatActivity implements ServiceCo
             getWindow().addFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN);
         }
 
+        // FullScreen
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS, 
+        WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
+
         setTermuxTerminalViewAndClients();
 
         setTerminalToolbarView(savedInstanceState);
