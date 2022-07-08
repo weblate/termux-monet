@@ -28,6 +28,9 @@
              selecting text on pre-6.0 (non-floating toolbar). -->
         <item name="android:windowActionModeOverlay">true</item>
 
+        <!-- Transparent Status Bar and NavigationBar -->
+        <item name="android:enforceNavigationBarContrast">false</item>
+        <item name="android:enforceStatusBarContrast">false</item>
         <item name="android:navigationBarColor">@android:color/transparent</item>
         <item name="android:statusBarColor">@android:color/transparent</item>
         <item name="android:windowTranslucentStatus">true</item>
