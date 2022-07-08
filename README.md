@@ -13,8 +13,8 @@
       alt="Android_Version" />
     <img src="https://img.shields.io/badge/Updated-July 06, 2022-informational.svg?longCache=true&style=flat&link=https://github.com/DevMoxxie/termux-monet/releases"
       alt="Updated" />
-    <img src="https://img.shields.io/discord/641256914684084234.svg?label=&logo=discord&logoColor=ffffff&color=5865F2&link=https://discord.gg/HXpF69X"
-      alt="TermuxDiscord" />
+    <img src="https://img.shields.io/badge/License-GPLv3-informational.svg"
+      alt="GPL_v3" />
 </div>
 <br />
 
