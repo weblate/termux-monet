@@ -26,7 +26,7 @@
 ## ONLY `ANDROID 12+` IS SUPPORTED!
 ***
 
-[Termux-Monet](https://github.com/DevMoxxie/termux-monet) is a modified fork of [Termux](https://github.com/termux/termux-app), an Android terminal application and Linux environment, with Monet Theming Implementations.
+[Termux-Monet](https://github.com/DevMoxxie/termux-monet) is a unofficial, modified fork of [Termux](https://github.com/termux/termux-app), an Android terminal application and Linux environment, with Monet Theming Implementations.
 
 ***
 ## Contents
