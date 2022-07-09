@@ -156,6 +156,8 @@ Users must post complete report (optionally without sensitive info) when reporti
 - Enable github actions and do any commit to build termux. e.g. upload a placeholder file.
 - Create empty releases. You don't need to manually upload termux apks, Github Actions will do all the job for you.
 
+***
+
 <div align="center">
     <img src="https://img.shields.io/github/downloads/DevMoxxie/termux-monet/total?color=brightgreen&label=Downloads"
       alt="Downloads" />
