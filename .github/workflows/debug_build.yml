@@ -1,26 +1,19 @@
 name: Build
 
 on:
-  push:
-    branches:
-      - master
-      - android-10
-  pull_request:
-    branches:
-      - master
-      - android-10
+  workflow_dispatch
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
     - name: Clone repository
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
     - name: Build
       run: |
         ./gradlew assembleDebug
     - name: Store generated APK file
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v3
       with:
         name: termux-app
         path: ./app/build/outputs/apk/debug
