@@ -3,6 +3,10 @@ name: Trigger Termux Library Builds on Jitpack
 on:
   workflow_dispatch
 
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: true
+
 jobs:
   trigger-termux-library-builds:
     runs-on: ubuntu-latest
