@@ -11,7 +11,6 @@
 
     <!-- TermuxApp DayNight DarkActionBar theme. -->
     <style name="Theme.TermuxApp.DayNight.DarkActionBar" parent="Theme.BaseActivity.DayNight.DarkActionBar"/>
-        <item name="android:itemBackground">@android:color/system_neutral1_900</item>
         <item name="android:colorBackground">@android:color/system_neutral1_900</item>
 
     <!-- TermuxApp DayNight NoActionBar theme. -->
