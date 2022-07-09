@@ -1,20 +1,14 @@
 name: Publish library packages
 
 on:
-  push:
-    branches:
-    - master
-    paths:
-    - 'terminal-emulator/build.gradle'
-    - 'terminal-view/build.gradle'
-    - 'termux-shared/build.gradle'
+  workflow_dispatch
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
     - name: Clone repository
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
     - name: Perform release build
       run: |
         ./gradlew assembleRelease
