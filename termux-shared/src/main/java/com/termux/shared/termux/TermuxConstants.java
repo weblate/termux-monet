@@ -350,6 +350,7 @@ public final class TermuxConstants {
     public static final String TERMUX_PACKAGE_NAME = "com.termux"; // Default: "com.termux"
     /** Termux Github repo name */
     public static final String TERMUX_GITHUB_REPO_NAME = "termux-monet"; // Default: "termux-app"
+    public static final String TERMUX_DEFAULT_GITHUB_REPO_NAME = "termux-app"; // Default: "termux-app"
     /** Termux Github repo url */
     public static final String TERMUX_GITHUB_REPO_URL = TERMUX_GITHUB_ORGANIZATION_URL + "/" + TERMUX_GITHUB_REPO_NAME; // Default: "https://github.com/termux/termux-app"
     public static final String TERMUX_DEFAULT_GITHUB_REPO_URL = TERMUX_DEFAULT_GITHUB_ORGANIZATION_URL + "/" + TERMUX_DEFAULT_GITHUB_REPO_NAME; // Default: "https://github.com/termux/termux-app"
