@@ -9,7 +9,7 @@
 </div>
 <br />
 <div align="center">
-    <img src="https://img.shields.io/static/v1?label=Android&message=12%2B&color=brightgreen&style=flat&logo=android&link=https://www.android.com/android-12/"
+    <img src="https://img.shields.io/static/v1?label=Android&message=12%2B&color=brightgreen&style=flat&logo=android&logoColor=white&link=https://www.android.com/android-12/"
       alt="Android_Version" />
     <img src="https://img.shields.io/github/last-commit/DevMoxxie/termux-monet/master?color=informational&label=Updated&logo=github&link=https://github.com/DevMoxxie/termux-monet/releases"
       alt="Updated" />
