@@ -1,4 +1,4 @@
-name: Unit tests
+name: Testing
 
 on:
   workflow_dispatch
