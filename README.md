@@ -15,8 +15,8 @@
       alt="Updated" />
     <img src="https://img.shields.io/github/v/release/DevMoxxie/termux-monet?color=orange&label=Latest&logo=github&link=https://github.com/DevMoxxie/termux-monet/releases"
       alt="Latest" />
-    <img src="https://img.shields.io/badge/License-GPLv3-informational.svg?logo=gnu"
-      alt="GPL_v3" />
+    <img src="https://img.shields.io/badge/License-GPLv3_only-informational.svg?logo=gnu"
+      alt="GPLv3_only" href='https://www.gnu.org/licenses/gpl-3.0.html'/>
 </div>
 <br />
 
