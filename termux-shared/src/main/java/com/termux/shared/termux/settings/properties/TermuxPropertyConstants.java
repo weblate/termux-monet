@@ -194,7 +194,7 @@ public final class TermuxPropertyConstants {
     public static final String KEY_TERMINAL_CURSOR_BLINK_RATE =  "terminal-cursor-blink-rate"; // Default: "terminal-cursor-blink-rate"
     public static final int IVALUE_TERMINAL_CURSOR_BLINK_RATE_MIN = TerminalView.TERMINAL_CURSOR_BLINK_RATE_MIN;
     public static final int IVALUE_TERMINAL_CURSOR_BLINK_RATE_MAX = TerminalView.TERMINAL_CURSOR_BLINK_RATE_MAX;
-    public static final int DEFAULT_IVALUE_TERMINAL_CURSOR_BLINK_RATE = 0;
+    public static final int DEFAULT_IVALUE_TERMINAL_CURSOR_BLINK_RATE = 530;
 
 
 
@@ -237,7 +237,7 @@ public final class TermuxPropertyConstants {
     public static final String KEY_TERMINAL_MARGIN_HORIZONTAL =  "terminal-margin-horizontal"; // Default: "terminal-margin-horizontal"
     public static final int IVALUE_TERMINAL_MARGIN_HORIZONTAL_MIN = 0;
     public static final int IVALUE_TERMINAL_MARGIN_HORIZONTAL_MAX = 100;
-    public static final int DEFAULT_IVALUE_TERMINAL_MARGIN_HORIZONTAL = 3;
+    public static final int DEFAULT_IVALUE_TERMINAL_MARGIN_HORIZONTAL = 0;
 
     /** Defines the key for the terminal margin on top and bottom in dp units */
     public static final String KEY_TERMINAL_MARGIN_VERTICAL =  "terminal-margin-vertical"; // Default: "terminal-margin-vertical"
@@ -326,7 +326,7 @@ public final class TermuxPropertyConstants {
     /** Defines the key for extra keys */
     public static final String KEY_EXTRA_KEYS =  "extra-keys"; // Default: "extra-keys"
     //public static final String DEFAULT_IVALUE_EXTRA_KEYS = "[[ESC, TAB, CTRL, ALT, {key: '-', popup: '|'}, DOWN, UP]]"; // Single row
-    public static final String DEFAULT_IVALUE_EXTRA_KEYS = "[['ESC','/',{key: '-', popup: '|'},'HOME','UP','END','PGUP'], ['TAB','CTRL','ALT','LEFT','DOWN','RIGHT','PGDN']]"; // Double row
+    public static final String DEFAULT_IVALUE_EXTRA_KEYS = "[['ESC', '/', {key: '|', popup: '-'}, 'HOME', 'UP', 'END', 'PGUP', 'PASTE'], ['TAB', {key: 'CTRL', popup: 'SHIFT'}, 'ALT', 'LEFT', 'DOWN', 'RIGHT', 'PGDN', {key: 'KEYBOARD', popup: {macro: 'CTRL c'}}]]"; // Double row
 
     /** Defines the key for extra keys style */
     public static final String KEY_EXTRA_KEYS_STYLE =  "extra-keys-style"; // Default: "extra-keys-style"
