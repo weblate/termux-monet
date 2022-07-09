@@ -11,7 +11,7 @@
 <div align="center">
     <img src="https://img.shields.io/static/v1?label=Android&message=12%2B&color=brightgreen&style=flat&logo=android&link=https://www.android.com/android-12/"
       alt="Android_Version" />
-    <img src="https://img.shields.io/badge/Updated-July 06, 2022-informational.svg?longCache=true&style=flat&link=https://github.com/DevMoxxie/termux-monet/releases"
+    <img src="https://img.shields.io/github/last-commit/DevMoxxie/termux-monet/master?color=informational&label=Updated&logo=github&link=https://github.com/DevMoxxie/termux-monet/releases"
       alt="Updated" />
     <img src="https://img.shields.io/badge/License-GPLv3-informational.svg"
       alt="GPL_v3" />
