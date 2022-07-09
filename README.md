@@ -2,9 +2,9 @@
 <img src="https://raw.githubusercontent.com/DevMoxxie/termux-monet/master/art/Picsart_22-07-09_04-09-35-567.png">
 </p>
 <div align="center">
-    <img src="https://github.com/DevMoxxie/termux-monet/workflows/Build/badge.svg"
+    <img src="https://github.com/DevMoxxie/termux-monet/actions/workflows/debug_build.yml/badge.svg?branch=master"
       alt="Build_status" />
-    <img src="https://github.com/DevMoxxie/termux-monet/workflows/Unit%20tests/badge.svg"
+    <img src="https://github.com/DevMoxxie/termux-monet/actions/workflows/run_tests.yml/badge.svg?branch=master"
       alt="Testing_status" />
 </div>
 <br />
