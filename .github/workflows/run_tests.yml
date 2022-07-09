@@ -3,6 +3,10 @@ name: Test
 on:
   workflow_dispatch
 
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: true
+
 jobs:
   testing:
     runs-on: ubuntu-latest
