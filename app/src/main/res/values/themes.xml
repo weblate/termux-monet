@@ -52,7 +52,7 @@
         <item name="extraKeysButtonBackgroundColor">@android:color/system_neutral1_900</item>
         <item name="extraKeysButtonActiveBackgroundColor">@android:color/system_accent2_600</item>
 
-        <item name="android:popupBackground">@android:color/system_neutral1_900</item>
+        <item name="android:background">@android:color/system_neutral1_900</item>
 
     </style>
 
