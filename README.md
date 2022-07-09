@@ -20,8 +20,6 @@
 </div>
 <br />
 
-https://img.shields.io/github/downloads/DevMoxxie/termux-monet/total?color=brightgreen
-
 <p align="center">
 <img src="https://raw.githubusercontent.com/DevMoxxie/termux-monet/master/art/Screenshot_20220709-041144_Termux.png" width=50% height=50%>
 </p>
@@ -157,3 +155,10 @@ Users must post complete report (optionally without sensitive info) when reporti
 - If forking termux plugins, check [Forking and Local Development](https://github.com/DevMoxxie/termux-monet/wiki/Termux-Libraries#forking-and-local-development) for info on how to use termux libraries for plugins.
 - Enable github actions and do any commit to build termux. e.g. upload a placeholder file.
 - Create empty releases. You don't need to manually upload termux apks, Github Actions will do all the job for you.
+
+<div align="center">
+    <img src="https://img.shields.io/github/downloads/DevMoxxie/termux-monet/total?color=brightgreen&label=Downloads"
+      alt="Downloads" />
+    <img src="https://img.shields.io/github/forks/DevMoxxie/termux-monet?style=social"
+      alt="Fork" />
+</div>
