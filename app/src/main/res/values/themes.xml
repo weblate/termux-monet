@@ -34,7 +34,7 @@
         <item name="android:enforceStatusBarContrast">false</item>
         <item name="android:navigationBarColor">@android:color/system_neutral1_900</item>
         <item name="android:statusBarColor">@android:color/transparent</item>
-        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentStatus">false</item>
         <item name="android:windowTranslucentNavigation">false</item>
 
         <!-- https://developer.android.com/training/tv/start/start.html#transition-color -->
