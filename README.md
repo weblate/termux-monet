@@ -2,9 +2,9 @@
 <img src="https://raw.githubusercontent.com/DevMoxxie/termux-monet/master/art/Picsart_22-07-09_04-09-35-567.png">
 </p>
 <div align="center">
-    <img src="https://github.com/DevMoxxie/termux-monet/actions/workflows/debug_build.yml/badge.svg?branch=master"
+    <img src="https://img.shields.io/github/workflow/status/DevMoxxie/termux-monet/Build%20nightly/master?label=Build&logo=gradle"
       alt="Build_status" />
-    <img src="https://github.com/DevMoxxie/termux-monet/actions/workflows/run_tests.yml/badge.svg?branch=master"
+    <img src="https://img.shields.io/github/workflow/status/DevMoxxie/termux-monet/Test%20app/master?label=Test&logo=gradle"
       alt="Testing_status" />
 </div>
 <br />
@@ -13,10 +13,14 @@
       alt="Android_Version" />
     <img src="https://img.shields.io/github/last-commit/DevMoxxie/termux-monet/master?color=informational&label=Updated&logo=github&link=https://github.com/DevMoxxie/termux-monet/releases"
       alt="Updated" />
-    <img src="https://img.shields.io/badge/License-GPLv3-informational.svg"
+    <img src="https://img.shields.io/github/v/release/DevMoxxie/termux-monet?color=orange&label=Latest&logo=github&link=https://github.com/DevMoxxie/termux-monet/releases"
+      alt="Latest" />
+    <img src="https://img.shields.io/badge/License-GPLv3-informational.svg?logo=gnu"
       alt="GPL_v3" />
 </div>
 <br />
+
+https://img.shields.io/github/downloads/DevMoxxie/termux-monet/total?color=brightgreen
 
 <p align="center">
 <img src="https://raw.githubusercontent.com/DevMoxxie/termux-monet/master/art/Screenshot_20220709-041144_Termux.png" width=50% height=50%>
