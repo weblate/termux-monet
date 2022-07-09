@@ -1,12 +1,7 @@
 name: Test app
 
 on:
-  workflow_dispatch:
-    inputs:
-      caption:
-        description: "Workflow caption:"
-        required: false
-        default: "HELLO WORLD!"
+  workflow_dispatch
 
 concurrency:
   group: ${{ github.workflow }}
@@ -14,7 +9,6 @@ concurrency:
 
 jobs:
   testing:
-    caption:${{ github.event.inputs.caption }}
     runs-on: ubuntu-latest
     steps:
     - name: Clone repository
