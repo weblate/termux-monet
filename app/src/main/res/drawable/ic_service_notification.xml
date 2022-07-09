@@ -14,11 +14,11 @@
 
         <path
             android:pathData="M5,4H2L8,12L2,20H5L11,12L5,4Z"
-            android:fillColor="#ffffff"/>
+            android:fillColor="@android:color/system_accent1_10"/>
 
         <path
             android:pathData="M13,18H22V20H13V18Z"
-            android:fillColor="#ffffff"/>
+            android:fillColor="@android:color/system_accent1_10"/>
 
     </group>
 </vector>
