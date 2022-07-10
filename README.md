@@ -165,7 +165,7 @@ Users must post complete report (optionally without sensitive info) when reporti
 - Create empty releases. You don't need to manually upload termux apks, Github Actions will do all the job for you.
 
 <p align="center">
-<img src="https://raw.githubusercontent.com/DevMoxxie/termux-monet/master/art/ic_launcher.svg" width=50% height=50%>
+<img src="https://raw.githubusercontent.com/DevMoxxie/termux-monet/master/art/ic_monet.svg" width=50% height=50%>
 </p>
 
 ***
