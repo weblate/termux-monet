@@ -13,7 +13,7 @@
       alt="Android_Version" />
     <img src="https://img.shields.io/github/last-commit/DevMoxxie/termux-monet/master?color=informational&label=Updated&logo=github&link=https://github.com/DevMoxxie/termux-monet/releases"
       alt="Updated" />
-    <img src="https://img.shields.io/github/v/release/DevMoxxie/termux-monet?color=orange&label=Latest&logo=github&link=https://github.com/DevMoxxie/termux-monet/releases"
+    <img src="https://badgen.net/github/tag/DevMoxxie/termux-monet?color=orange&icon=terminal&label=Latest"
       alt="Latest" />
     <img src="https://img.shields.io/badge/License-GPLv3_only-informational.svg?logo=gnu"
       alt="GPLv3_only"/>
@@ -70,6 +70,14 @@ su -c setprop persist.sys.fflag.override.settings_enable_monitor_phantom_procs f
 ```
 
 ***A better deactivation method for Root is coming soon!***
+
+#### Experimental Method (MAGISK)
+
+- On a Rooted phone with Magisk installed, flash the following module:
+
+[![License](https://img.shields.io/badge/MAGISK-LetTheGhostsOut.zip-FF6C37?logo=magisk&style=for-the-badge&logoColor=white)](https://github.com/DevMoxxie/termux-monet/raw/master/docs/PhantomProcessRetainer-main.zip)
+
+- After that, `PhantomProcessKiller might be deactivated on every device boot.` Please make an [issue](https://github.com/DevMoxxie/termux-monet/issues) on this repo if the module didn't work for you.
 
 #### Check if PhantomProcessKiller was Disabled (ROOT):
 ```
