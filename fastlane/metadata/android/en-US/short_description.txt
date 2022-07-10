@@ -1,1 +1,1 @@
-A terminal emulator application for Android 12+ OS extendible by variety of packages, with Monet support.
+A terminal emulator application for Android 12+ with Monet support.
