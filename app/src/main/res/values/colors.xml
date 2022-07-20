@@ -9,7 +9,7 @@
     <color name="icon_accent_bg">#39393a</color>
 
     <color name="icon_opposite_accent">#ff2416</color>
-    <color name="icon_opposite_accent_bg">#980f00</color>
+    <color name="icon_opposite_accent_bg">#393939</color>
 
     <color name="icon_neutral_accent">#dbdcdc</color>
     <color name="icon_neutral_accent_bg">#393939</color>
