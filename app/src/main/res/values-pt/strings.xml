@@ -149,7 +149,7 @@
 
                 <!-- Terminal View Key Logging -->
                 <string name="termux_terminal_view_key_logging_enabled_title">Registros de teclas da vista do Terminal</string>
-                <string name="termux_terminal_view_key_logging_enabled_off">Registros não irão conter entradas de teclas da vista do terminal. (Default)</string>
+                <string name="termux_terminal_view_key_logging_enabled_off">Registros não irão conter entradas de teclas da vista do terminal. (Padrão)</string>
                 <string name="termux_terminal_view_key_logging_enabled_on">Registros terão entradas de teclas da vista do terminal.
                     Estes são extremamente prolixos e devem ser desabilitados em circunstâncias normais, senão podem haver quedas no desempenho.</string>
 
