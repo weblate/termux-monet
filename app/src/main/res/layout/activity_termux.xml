@@ -103,7 +103,7 @@
             android:visibility="gone"
             android:layout_width="match_parent"
             android:layout_height="37.5dp"
-            android:background="@android:color/system_neutral1_900"
+            android:background="@color/background_accent"
             android:layout_alignParentBottom="true" />
 
     </RelativeLayout>
