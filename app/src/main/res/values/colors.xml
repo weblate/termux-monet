@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="main_accent">@android:color/system_accent1_10</color>
-    <color name="highlight_accent">@android:color/system_neutral1_800</color>
-    <color name="opposite_accent">@android:color/system_accent3_10</color>
-    <color name="background_accent">@android:color/system_neutral1_900</color>
+    <color name="main_accent">#fbfbfc</color>
+    <color name="highlight_accent">#242424</color>
+    <color name="opposite_accent">#ff8068</color>
+    <color name="background_accent">#101010</color> 
 
-    <color name="icon_accent">@android:color/system_accent1_100</color>
-    <color name="icon_accent_bg">@android:color/system_neutral2_700</color>
+    <color name="icon_accent">#dbdcdc</color>
+    <color name="icon_accent_bg">#39393a</color>
 
-    <color name="icon_opposite_accent">@android:color/system_accent3_100</color>
-    <color name="icon_opposite_accent_bg">@android:color/system_accent3_700</color>
+    <color name="icon_opposite_accent">#ff2416</color>
+    <color name="icon_opposite_accent_bg">#980f00</color>
 
-    <color name="icon_neutral_accent">@android:color/system_neutral1_100</color>
-    <color name="icon_neutral_accent_bg">@android:color/system_neutral1_700</color>
+    <color name="icon_neutral_accent">#dbdcdc</color>
+    <color name="icon_neutral_accent_bg">#393939</color>
 </resources>
