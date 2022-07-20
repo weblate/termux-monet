@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ripple xmlns:android="http://schemas.android.com/apk/res/android"
-    android:color="@android:color/system_accent2_200" >
+    android:color="@color/highlight_accent" >
     <item>
-        <color android:color="@android:color/white" />
+        <color android:color="@color/background_accent" />
     </item>
 </ripple>
