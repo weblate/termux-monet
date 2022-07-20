@@ -68,6 +68,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_gravity="top"
+                    android:textColor="@android:color/white"
                     android:layout_weight="1"
                     android:choiceMode="singleChoice"
                     android:longClickable="true" />

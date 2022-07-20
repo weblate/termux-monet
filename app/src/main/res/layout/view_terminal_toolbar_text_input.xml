@@ -15,5 +15,5 @@
     android:textCursorDrawable="@null"
     android:paddingBottom="0dp"
     android:hint="@string/extra_keys_command_hint"
-    android:textColorHint="@color/highlight_accent"
+    android:textColorHint="@color/icon_neutral_accent_bg"
     tools:ignore="LabelFor" />
