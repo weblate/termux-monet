@@ -22,7 +22,7 @@
         <item name="colorPrimary">@color/black</item>
         <item name="colorPrimaryVariant">@color/black</item>
 
-        <!-- Splash screen background --> 
+        <!-- Splash screen background -->
         <item name="android:windowBackground">@color/background_accent</item>
 
         <!-- Avoid action mode toolbar pushing down terminal content when
@@ -42,9 +42,9 @@
         <item name="android:windowAllowEnterTransitionOverlap">true</item>
 
         <!-- Left drawer. -->
-        <item name="buttonBarButtonStyle">@style/TermuxActivity.Drawer.ButtonBarStyle.Light</item>
-        <item name="termuxActivityDrawerBackground">@color/white</item>
-        <item name="termuxActivityDrawerImageTint">@color/black</item>
+        <item name="buttonBarButtonStyle">@style/TermuxActivity.Drawer.ButtonBarStyle.Dark</item>
+        <item name="termuxActivityDrawerBackground">@color/background_accent</item>
+        <item name="termuxActivityDrawerImageTint">@color/main_accent</item>
 
         <!-- Extra keys colors. -->
         <item name="extraKeysButtonTextColor">@color/main_accent</item>
