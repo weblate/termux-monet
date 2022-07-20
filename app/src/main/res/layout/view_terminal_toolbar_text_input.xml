@@ -14,5 +14,5 @@
     android:paddingTop="0dp"
     android:textCursorDrawable="@null"
     android:paddingBottom="0dp"
-    android:hint="Command..."
+    android:hint="@string/extra_keys_command_hint"
     tools:ignore="LabelFor" />

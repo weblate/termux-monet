@@ -58,6 +58,9 @@
     <string name="msg_disabling_terminal_toolbar">Disabling Terminal Toolbar</string>
 
 
+    <!-- Terminal Extra Keys -->
+    <string name="extra_keys_command_hint">Insert command...</string>
+
 
     <!-- Terminal Popup -->
     <string name="action_select_url">Select URL</string>
@@ -126,7 +129,7 @@
 
     <!-- Miscellaneous -->
     <string name="error_termux_service_start_failed_general">Failed to start TermuxService. Check logcat for exception message.</string>
-    <string name="error_termux_service_start_failed_bg">Failed to start TermuxService while app is in background due to android bg restrictions.</string>
+    <string name="error_termux_service_start_failed_bg">Failed to start TermuxService while app is in background due to android background restrictions.</string>
 
 
 

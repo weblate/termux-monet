@@ -58,6 +58,9 @@
     <string name="msg_disabling_terminal_toolbar">Desabilitando a barra de ferramentas</string>
 
 
+    <!-- Terminal Extra Keys -->
+    <string name="extra_keys_command_hint">Inserir comando...</string>
+
 
     <!-- Terminal Popup -->
     <string name="action_select_url">Selecionar URL</string>
