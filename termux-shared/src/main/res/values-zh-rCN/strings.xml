@@ -53,14 +53,14 @@
 
 
     <!-- ReportActivity -->
-    <string name="title_report_text">Report Text</string>
+    <string name="title_report_text">报告文本</string>
     <string name="msg_report_truncated">**Report Truncated**\n\nReport is too large to view here.
         Use `Save To File` option from options menu (3-dots on top right) and view it in an external text editor app.\n\n##\n\n</string>
 
 
 
     <!-- ShareUtils -->
-    <string name="title_share_with">Share With</string>
+    <string name="title_share_with">共同分享</string>
     <string name="title_open_url_with">Open URL With</string>
     <string name="msg_storage_permission_not_granted">The storage permission not granted.</string>
     <string name="msg_file_saved_successfully">The %1$s file saved successfully at \"%2$s\"</string>
@@ -103,10 +103,10 @@
 
 
     <!-- Miscellaneous -->
-    <string name="action_yes">Yes</string>
-    <string name="action_no">No</string>
+    <string name="action_yes">是的</string>
+    <string name="action_no">不</string>
     <string name="action_copy">复制</string>
-    <string name="action_share">Share</string>
+    <string name="action_share">分享</string>
     <string name="action_cancel">中止</string>
     <string name="action_save_to_file">Save To File</string>
 
@@ -128,7 +128,7 @@
 
     <!-- Log Level -->
     <string name="log_level_title">Log Level</string>
-    <string name="log_level_off">Off</string>
+    <string name="log_level_off">离开</string>
     <string name="log_level_normal">Normal</string>
     <string name="log_level_debug">Debug</string>
     <string name="log_level_verbose">Verbose</string>
