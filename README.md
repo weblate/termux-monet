@@ -1,5 +1,5 @@
 <p align="center">
-<img src="https://raw.githubusercontent.com/DevMoxxie/termux-monet/master/art/Picsart_22-07-09_04-09-35-567.png">
+<img src="https://raw.githubusercontent.com/DevMoxxie/termux-monet/master/art/logo.png">
 </p>
 <div align="center">
     <img src="https://img.shields.io/github/workflow/status/DevMoxxie/termux-monet/Build%20nightly/master?label=Build&logo=gradle"
@@ -21,7 +21,7 @@
 <br />
 
 <p align="center">
-<img src="https://raw.githubusercontent.com/DevMoxxie/termux-monet/master/art/Screenshot_20220709-041144_Termux.png" width=50% height=50%>
+<img src="https://raw.githubusercontent.com/DevMoxxie/termux-monet/master/art/screenshot.png" width=50% height=50%>
 </p>
 
 ***
