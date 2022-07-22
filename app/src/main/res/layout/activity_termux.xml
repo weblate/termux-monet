@@ -69,6 +69,7 @@
                     android:layout_height="0dp"
                     android:layout_gravity="top"
                     android:layout_weight="1"
+                    android:divider="@android:color/transparent"
                     android:choiceMode="singleChoice"
                     android:longClickable="true" />
 
