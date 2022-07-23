@@ -1,4 +1,4 @@
-The `termux/termux-app` repository and its fork, `DevMoxxie/termux-monet`, are released under [GPLv3 only](https://www.gnu.org/licenses/gpl-3.0.html) license.
+The `termux/termux-app` repository and its fork, `HardcodedCat/termux-monet`, are released under [GPLv3 only](https://www.gnu.org/licenses/gpl-3.0.html) license.
 
 ### Exceptions
 

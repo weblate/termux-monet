@@ -1,19 +1,19 @@
 <p align="center">
-<img src="https://raw.githubusercontent.com/DevMoxxie/termux-monet/master/art/logo.png">
+<img src="https://raw.githubusercontent.com/HardcodedCat/termux-monet/master/art/logo.png">
 </p>
 <div align="center">
-    <img src="https://img.shields.io/github/workflow/status/DevMoxxie/termux-monet/Build%20nightly/master?label=Build&logo=gradle"
+    <img src="https://img.shields.io/github/workflow/status/HardcodedCat/termux-monet/Build%20nightly/master?label=Build&logo=gradle"
       alt="Build_status" />
-    <img src="https://img.shields.io/github/workflow/status/DevMoxxie/termux-monet/Test%20app/master?label=Test&logo=gradle"
+    <img src="https://img.shields.io/github/workflow/status/HardcodedCat/termux-monet/Test%20app/master?label=Test&logo=gradle"
       alt="Testing_status" />
 </div>
 <br />
 <div align="center">
     <img src="https://img.shields.io/static/v1?label=Android&message=12%2B&color=brightgreen&style=flat&logo=android&logoColor=white&link=https://www.android.com/android-12/"
       alt="Android_Version" />
-    <img src="https://img.shields.io/github/last-commit/DevMoxxie/termux-monet/master?color=informational&label=Updated&logo=github&link=https://github.com/DevMoxxie/termux-monet/releases"
+    <img src="https://img.shields.io/github/last-commit/HardcodedCat/termux-monet/master?color=informational&label=Updated&logo=github&link=https://github.com/HardcodedCat/termux-monet/releases"
       alt="Updated" />
-    <img src="https://badgen.net/github/tag/DevMoxxie/termux-monet?color=orange&icon=terminal&label=Latest"
+    <img src="https://badgen.net/github/tag/HardcodedCat/termux-monet?color=orange&icon=terminal&label=Latest"
       alt="Latest" />
     <img src="https://img.shields.io/badge/License-GPLv3_only-informational.svg?logo=gnu"
       alt="GPLv3_only"/>
@@ -21,14 +21,14 @@
 <br />
 
 <p align="center">
-<img src="https://raw.githubusercontent.com/DevMoxxie/termux-monet/master/art/screenshot.png" width=50% height=50%>
+<img src="https://raw.githubusercontent.com/HardcodedCat/termux-monet/master/art/screenshot.png" width=50% height=50%>
 </p>
 
 ***
 ## ONLY `ANDROID 12+` IS SUPPORTED!
 ***
 
-[Termux-Monet](https://github.com/DevMoxxie/termux-monet) is a unofficial, modified fork of [Termux](https://github.com/termux/termux-app), an Android terminal application and Linux environment, with Monet Theming Implementations.
+[Termux-Monet](https://github.com/HardcodedCat/termux-monet) is a unofficial, modified fork of [Termux](https://github.com/termux/termux-app), an Android terminal application and Linux environment, with Monet Theming Implementations.
 
 ***
 ## Contents
@@ -75,9 +75,9 @@ su -c setprop persist.sys.fflag.override.settings_enable_monitor_phantom_procs f
 
 - On a Rooted phone with Magisk installed, flash the following module:
 
-    > [![](https://img.shields.io/static/v1?message=LetTheGhostsOut.zip&logo=magisk&labelColor=5c5c5c&color=00af9c&logoColor=white&label=%20&style=for-the-badge)](https://github.com/DevMoxxie/termux-monet/raw/master/docs/PhantomProcessRetainer-main.zip)
+    > [![](https://img.shields.io/static/v1?message=LetTheGhostsOut.zip&logo=magisk&labelColor=5c5c5c&color=00af9c&logoColor=white&label=%20&style=for-the-badge)](https://github.com/HardcodedCat/termux-monet/raw/master/docs/PhantomProcessRetainer-main.zip)
 
-- After that, `PhantomProcessKiller might be deactivated on every device boot.` Please make an [issue](https://github.com/DevMoxxie/termux-monet/issues) on this repo if the module didn't work for you.
+- After that, `PhantomProcessKiller might be deactivated on every device boot.` Please make an [issue](https://github.com/HardcodedCat/termux-monet/issues) on this repo if the module didn't work for you.
 
 #### Check if PhantomProcessKiller was Disabled (ROOT):
 ```
@@ -97,7 +97,7 @@ su -c getprop persist.sys.fflag.override.settings_enable_monitor_phantom_procs
 
 ## Nightly
 
-> Termux-Monet application can be obtained on **Github** either from [`Github Releases`](https://github.com/DevMoxxie/termux-monet/releases) for **stable releases** or from [`Github Actions`](https://github.com/DevMoxxie/termux-monet/actions/workflows/debug_build.yml) for the latest **unstable releases**.
+> Termux-Monet application can be obtained on **Github** either from [`Github Releases`](https://github.com/HardcodedCat/termux-monet/releases) for **stable releases** or from [`Github Actions`](https://github.com/HardcodedCat/termux-monet/actions/workflows/debug_build.yml) for the latest **unstable releases**.
 
 #### Releases (Stable)
  - The APKs for `Github Releases` will be listed under `Assets` drop-down of a release. These are automatically attached when a new version is released.
@@ -156,23 +156,23 @@ Users must post complete report (optionally without sensitive info) when reporti
 
 ## Forking
 
-- Check [`TermuxConstants`](https://github.com/DevMoxxie/termux-monet/blob/master/termux-shared/src/main/java/com/termux/shared/termux/TermuxConstants.java) javadocs for instructions on what changes to make in the app to change package name.
+- Check [`TermuxConstants`](https://github.com/HardcodedCat/termux-monet/blob/master/termux-shared/src/main/java/com/termux/shared/termux/TermuxConstants.java) javadocs for instructions on what changes to make in the app to change package name.
 - Keep targetSdk 28 to avoid login error `not exec("/data/data/com.termux/files/usr/bin/login"): Permission denied`.
 - You also need to recompile bootstrap zip for the new package name. Check [building bootstrap](https://github.com/termux/termux-packages/wiki/For-maintainers#build-bootstrap-archives), [here](https://github.com/termux/termux-app/issues/1983) and [here](https://github.com/termux/termux-app/issues/2081#issuecomment-865280111).
 - Currently, not all plugins use `TermuxConstants` from `termux-shared` library and have hardcoded `com.termux` values and will need to be manually patched.
-- If forking termux plugins, check [Forking and Local Development](https://github.com/DevMoxxie/termux-monet/wiki/Termux-Libraries#forking-and-local-development) for info on how to use termux libraries for plugins.
+- If forking termux plugins, check [Forking and Local Development](https://github.com/HardcodedCat/termux-monet/wiki/Termux-Libraries#forking-and-local-development) for info on how to use termux libraries for plugins.
 - Enable github actions and do any commit to build termux. e.g. upload a placeholder file.
 - Create empty releases. You don't need to manually upload termux apks, Github Actions will do all the job for you.
 
 ***
 
 <p align="center">
-<img src="https://raw.githubusercontent.com/DevMoxxie/termux-monet/master/art/ic_monet.svg" width=50% height=50%>
+<img src="https://raw.githubusercontent.com/HardcodedCat/termux-monet/master/art/ic_monet.svg" width=50% height=50%>
 </p>
 
 <div align="center">
-    <img src="https://img.shields.io/github/downloads/DevMoxxie/termux-monet/total?color=brightgreen&label=Downloads"
+    <img src="https://img.shields.io/github/downloads/HardcodedCat/termux-monet/total?color=brightgreen&label=Downloads"
       alt="Downloads" />
-    <img src="https://img.shields.io/github/forks/DevMoxxie/termux-monet?style=social"
+    <img src="https://img.shields.io/github/forks/HardcodedCat/termux-monet?style=social"
       alt="Fork" />
 </div>
