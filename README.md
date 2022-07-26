@@ -25,7 +25,7 @@
 </p>
 
 ***
-## MONET IS AVAILABLE ONLY ON `ANDROID 12+`! LOWER VERSIONS WILL DISPLAY A HARDCODED MONET THEME
+## MONET IS AVAILABLE ONLY ON `ANDROID 12+`! LOWER VERSIONS WILL DISPLAY A HARDCODED, BLACK AND WHITE MONET THEME
 ***
 
 [Termux-Monet](https://github.com/HardcodedCat/termux-monet) is a unofficial, modified fork of [Termux](https://github.com/termux/termux-app), an Android terminal application and Linux environment, with Monet Theming Implementations.
