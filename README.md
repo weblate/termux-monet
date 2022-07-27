@@ -165,6 +165,11 @@ Users must post complete report (optionally without sensitive info) when reporti
 - Enable github actions and do any commit to build termux. e.g. upload a placeholder file.
 - Create empty releases. You don't need to manually upload termux apks, Github Actions will do all the job for you.
 
+## Special Thanks
+
+- Thanks for [Módulos.tk](https://t.me/moduloyappstk) for sharing and supporting the project!
+- Thanks for [Termux](https://github.com/termux/termux-app) for creating this incredible project!
+
 ***
 
 <p align="center">
