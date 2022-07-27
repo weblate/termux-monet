@@ -88,7 +88,7 @@
 
     <string name="action_report_issue">报告问题</string>
     <string name="msg_generating_report">生成报告</string>
-    <string name="msg_add_termux_debug_info">添加 termux 调试信息以报告？</string>
+    <string name="msg_add_termux_debug_info">添加 &TERMUX_APP_NAME; 调试信息以报告？</string>
 
     <string name="error_styling_not_installed">未安装 &TERMUX_STYLING_APP_NAME; 插件.</string>
     <string name="action_styling_install">安装</string>

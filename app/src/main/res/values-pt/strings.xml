@@ -26,17 +26,17 @@
 
 
     <!-- Termux Bootstrap Packages Installation -->
-    <string name="bootstrap_installer_body">Instalando pacotes de inicialização...</string>
-    <string name="bootstrap_error_title">Impossível instalar pacotes de inicialização</string>
-    <string name="bootstrap_error_body">&TERMUX_APP_NAME; não pôde instalar os pacotes de inicialização.</string>
+    <string name="bootstrap_installer_body">Instalando pacotes de Bootstrap...</string>
+    <string name="bootstrap_error_title">Impossível instalar pacotes de Bootstrap</string>
+    <string name="bootstrap_error_body">&TERMUX_APP_NAME; não pôde instalar os pacotes de Bootstrap.</string>
     <string name="bootstrap_error_abort">Cancelar</string>
     <string name="bootstrap_error_try_again">Tentar Novamente</string>
     <string name="bootstrap_error_not_primary_user_message">&TERMUX_APP_NAME; só pode ser executado no usuário principal.
-        \nOs binários de pacotes de inicialização compilados para &TERMUX_APP_NAME; tem seus caminhos $PREFIX codificados e não podem ser instalados
+        \nOs binários de pacotes de Bootstrap compilados para &TERMUX_APP_NAME; tem seus caminhos $PREFIX codificados e não podem ser instalados
         em qualquer outro diretório além de:\n%1$s.</string>
     <string name="bootstrap_error_installed_on_portable_sd">&TERMUX_APP_NAME; não pode ser instalado em
         armazenamentos portáteis/externos/removíveis em seu dispositivo.
-        \nOs binários de pacotes de inicialização compilados para &TERMUX_APP_NAME; tem seus caminhos $PREFIX codificados e não podem ser instalados
+        \nOs binários de pacotes de Bootstrap compilados para &TERMUX_APP_NAME; tem seus caminhos $PREFIX codificados e não podem ser instalados
         em qualquer outro diretório além de:\n%1$s.</string>
 
 

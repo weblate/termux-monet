@@ -71,9 +71,9 @@
     <string name="error_sending_sigkill_to_process">Enviando SIGKILL ao processo em solicitação do usuário ou devido ao Android interrompendo o serviço de execução.</string>
     <string name="error_executable_unset">Executável \"%1$s\" não definido para comandos da linha de comando.</string>
     <string name="error_execution_cancelled">A Execução foi cancelada pois o serviço de execução está sendo interrompido.</string>
-    <string name="error_failed_to_execute_termux_session_command">Falha ao executar o comando de sessão termux \"%1$s\"</string>
+    <string name="error_failed_to_execute_termux_session_command">Falha ao executar o comando de sessão &TERMUX_APP_NAME; \"%1$s\"</string>
     <string name="error_failed_to_execute_app_shell_command">Falha ao executar o comando da linha de comando de aplicação \"%1$s\"</string>
-    <string name="error_exception_received_while_executing_termux_session_command">Exceção obtida ao executar o comando de sessão termux \"%1$s\". \nExceção: %2$s</string>
+    <string name="error_exception_received_while_executing_termux_session_command">Exceção obtida ao executar o comando de sessão &TERMUX_APP_NAME; \"%1$s\". \nExceção: %2$s</string>
     <string name="error_exception_received_while_executing_app_shell_command">Exeção obtida ao executar o comando de linha de comando de aplicação \"%1$s\". \nExceção: %2$s</string>
 
 
@@ -89,10 +89,10 @@
         **serão automaticamente fechados/deletados**. Você pode opcionalmente remover qualquer informação de seu dispositivo
         que você considere privada/sensitiva ou não deseja compartilhar por não ser relevante ao problema.
         \n\nNós não fornecemos ajuda relacionada a qualquer tipo de ferramenta/script de Hackeamento. Quaisquer perguntas sobre no email,
-        Github ou qualquer outra comunidade e fórum oficial do Termux **serão automaticamente fechadas/deletadas** e podem ocasionar
+        Github ou qualquer outra comunidade e fórum oficial do &TERMUX_APP_NAME; **serão automaticamente fechadas/deletadas** e podem ocasionar
         em banimento **temporário ou permanente**. Veja %1$s/wiki/Hacking para mais detalhes.</string>
 
-    <string name="msg_termux_app_required_by_app">O &TERMUX_APP_NAME; é requisitado pelo app %1$s para executar comandos do Termux.</string>
+    <string name="msg_termux_app_required_by_app">O &TERMUX_APP_NAME; é requisitado pelo app %1$s para executar comandos do &TERMUX_APP_NAME;.</string>
     <string name="error_termux_app_package_context_not_accessible">A aplicação (contexto do pacote) &TERMUX_APP_NAME; não é acessível.</string>
     <string name="error_termux_prefix_dir_path_not_accessible">A aplicação &TERMUX_APP_NAME; e o diretório $PREFIX não são acessíveis pelo app %1$s.
         Isto pode ocorrer pois você não possui a aplicação &TERMUX_APP_NAME; devidamente instalada e configurada app ou devido a &TERMUX_APP_NAME;
