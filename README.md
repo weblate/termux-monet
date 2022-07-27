@@ -39,6 +39,7 @@
 - [Miscellaneous](#Miscellaneous)
 - [Debugging](#Debugging)
 - [Forking Instructions](#Forking)
+- [Special Thanks](#Special)
 ***
 
 ## PhantomProcessKiller
