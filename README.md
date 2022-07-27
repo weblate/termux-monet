@@ -33,16 +33,16 @@
 
 ***
 ## Contents
-- [Phantom Process Killer](#PhantomProcessKiller)
-- [Nightly Releases](#Nightly)
+- [Phantom Process Killer](#Phantom-Process-Killer)
+- [Nightly Releases](#Nightly-Builds)
 - [Wikis](#Wikis)
 - [Miscellaneous](#Miscellaneous)
 - [Debugging](#Debugging)
 - [Forking Instructions](#Forking)
-- [Special Thanks](#Special Thanks)
+- [Special Thanks](#Special-Thanks)
 ***
 
-## PhantomProcessKiller
+## Phantom Process Killer
 
 **NOTICE:**
 > **Termux is broken on Android 12+.** Android OS will kill any (phantom) processes greater than 32 (limit is for all apps combined) and also kill any processes using excessive CPU. You may get `[Process completed (signal 9) - press Enter]` message in the terminal without actually exiting the shell process yourself. Check the related issue [#2366](https://github.com/termux/termux-app/issues/2366), [issue tracker](https://issuetracker.google.com/u/1/issues/205156966), [gist with details](https://gist.github.com/agnostic-apollo/dc7e47991c512755ff26bd2d31e72ca8) and [this TLDR comment](https://github.com/termux/termux-app/issues/2366#issuecomment-1009269410) on how to disable trimming of phantom processes.
@@ -97,7 +97,7 @@ su -c getprop persist.sys.fflag.override.settings_enable_monitor_phantom_procs
 
 ***
 
-## Nightly
+## Nightly Builds
 
 > Termux-Monet application can be obtained on **Github** either from [`Github Releases`](https://github.com/HardcodedCat/termux-monet/releases) for **stable releases** or from [`Github Actions`](https://github.com/HardcodedCat/termux-monet/actions/workflows/debug_build.yml) for the latest **unstable releases**.
 
