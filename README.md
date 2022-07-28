@@ -168,7 +168,7 @@ Users must post complete report (optionally without sensitive info) when reporti
 
 ## Special Thanks
 
-- Thanks for [Módulos.tk](https://t.me/moduloyappstk) for sharing and supporting the project!
+- Thanks for [MódulOS.tk](https://t.me/moduloyappstk) for sharing and supporting the project!
 - Thanks for [Termux](https://github.com/termux/termux-app) for creating this incredible app!
 
 ***
