@@ -71,8 +71,6 @@ su -c /system/bin/device_config put activity_manager max_phantom_processes 21474
 su -c setprop persist.sys.fflag.override.settings_enable_monitor_phantom_procs false
 ```
 
-***A better deactivation method for Root is coming soon!***
-
 #### Experimental Method (MAGISK)
 
 - On a Rooted phone with Magisk installed, flash the following module:
