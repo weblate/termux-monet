@@ -1,27 +1,33 @@
 <p align="center">
-<img src="https://raw.githubusercontent.com/HardcodedCat/termux-monet/master/art/logo.png">
+  <img src="/art/logo.png?raw=true">
 </p>
 <div align="center">
-    <img src="https://img.shields.io/github/workflow/status/HardcodedCat/termux-monet/Build%20nightly/master?label=Build&logo=gradle"
-      alt="Build_status" />
-    <img src="https://img.shields.io/github/workflow/status/HardcodedCat/termux-monet/Test%20app/master?label=Test&logo=gradle"
-      alt="Testing_status" />
+  <a href="https://github.com/HardcodedCat/termux-monet/actions/workflows/debug_build.yml?query=branch%3Amaster">
+    <img src="https://img.shields.io/github/workflow/status/HardcodedCat/termux-monet/Build%20nightly/master?label=Build&logo=gradle"/>
+  </a>
+  <a href="https://github.com/HardcodedCat/termux-monet/actions/workflows/run_tests.yml?query=branch%3Amaster">
+    <img src="https://img.shields.io/github/workflow/status/HardcodedCat/termux-monet/Test%20app/master?label=Test&logo=gradle"/>
+  </a>
 </div>
 <br />
 <div align="center">
-    <img src="https://img.shields.io/static/v1?label=Android&message=12%2B&color=brightgreen&style=flat&logo=android&logoColor=white&link=https://www.android.com/android-12/"
-      alt="Android_Version" />
-    <img src="https://img.shields.io/github/last-commit/HardcodedCat/termux-monet/master?color=informational&label=Updated&logo=github&link=https://github.com/HardcodedCat/termux-monet/releases"
-      alt="Updated" />
-    <img src="https://badgen.net/github/tag/HardcodedCat/termux-monet?color=orange&icon=terminal&label=Latest"
-      alt="Latest" />
-    <img src="https://img.shields.io/badge/License-GPLv3_only-informational.svg?logo=gnu"
-      alt="GPLv3_only"/>
+  <a href="https://www.android.com/android-12/">
+    <img src="https://img.shields.io/static/v1?label=Android&message=12%2B&color=brightgreen&style=flat&logo=android&logoColor=white"/>
+  </a>
+  <a href="https://github.com/HardcodedCat/termux-monet/commits/master">
+    <img src="https://img.shields.io/github/last-commit/HardcodedCat/termux-monet/master?color=informational&label=Updated&logo=github"/>
+  </a>
+  <a href="https://github.com/HardcodedCat/termux-monet/releases">
+    <img src="https://badgen.net/github/tag/HardcodedCat/termux-monet?color=orange&icon=terminal&label=Latest"/>
+  </a>
+  <a href="/LICENSE.md">
+    <img src="https://img.shields.io/badge/License-GPLv3_only-informational.svg?logo=gnu"/>
+  </a>
 </div>
 <br />
 
 <p align="center">
-<img src="https://raw.githubusercontent.com/HardcodedCat/termux-monet/master/art/screenshot.png" width=50% height=50%>
+  <img src="/art/screenshot.png?raw=true" width=50% height=50%>
 </p>
 
 ***
