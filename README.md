@@ -20,7 +20,7 @@
   <a href="https://github.com/HardcodedCat/termux-monet/releases">
     <img src="https://badgen.net/github/tag/HardcodedCat/termux-monet?color=orange&icon=terminal&label=Latest"/>
   </a>
-  <a href="/LICENSE.md">
+  <a href="/LICENSE">
     <img src="https://img.shields.io/badge/License-GPLv3_only-informational.svg?logo=gnu"/>
   </a>
 </div>
