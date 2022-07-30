@@ -176,8 +176,10 @@ Users must post complete report (optionally without sensitive info) when reporti
 </p>
 
 <div align="center">
-    <img src="https://img.shields.io/github/downloads/HardcodedCat/termux-monet/total?color=brightgreen&label=Downloads"
-      alt="Downloads" />
-    <img src="https://img.shields.io/github/forks/HardcodedCat/termux-monet?style=social"
-      alt="Fork" />
+  <a href="https://github.com/HardcodedCat/termux-monet/releases">
+    <img src="https://img.shields.io/github/downloads/HardcodedCat/termux-monet/total?color=brightgreen&label=Downloads"/>
+  </a>
+  <a href="https://github.com/search?q=termux-monet+fork%3Aonly&type=repositories">
+    <img src="https://img.shields.io/github/forks/HardcodedCat/termux-monet?style=social"/>
+  </a>
 </div>
