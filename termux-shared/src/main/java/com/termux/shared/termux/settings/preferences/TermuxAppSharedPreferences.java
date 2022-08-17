@@ -125,6 +125,14 @@ public class TermuxAppSharedPreferences {
     }
 
 
+    public boolean isRemoveTaskOnActivityFinishEnabled() {
+        return SharedPreferenceUtils.getBoolean(mSharedPreferences, TERMUX_APP.KEY_ACTIVITY_FINISH_REMOVE_TASK, TERMUX_APP.DEFAULT_VALUE_KEY_ACTIVITY_FINISH_REMOVE_TASK);
+    }
+
+    public void setRemoveTaskOnActivityFinishEnabled(boolean value) {
+        SharedPreferenceUtils.setBoolean(mSharedPreferences, TERMUX_APP.KEY_ACTIVITY_FINISH_REMOVE_TASK, value, false);
+    }
+
 
     public boolean shouldKeepScreenOn() {
         return SharedPreferenceUtils.getBoolean(mSharedPreferences, TERMUX_APP.KEY_KEEP_SCREEN_ON, TERMUX_APP.DEFAULT_VALUE_KEEP_SCREEN_ON);

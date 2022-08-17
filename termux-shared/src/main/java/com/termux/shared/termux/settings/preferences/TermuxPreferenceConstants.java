@@ -117,6 +117,12 @@ public final class TermuxPreferenceConstants {
         public static final String KEY_SOFT_KEYBOARD_ENABLED_ONLY_IF_NO_HARDWARE = "soft_keyboard_enabled_only_if_no_hardware";
         public static final boolean DEFAULT_VALUE_KEY_SOFT_KEYBOARD_ENABLED_ONLY_IF_NO_HARDWARE = false;
 
+        /**
+         * Defines the key for whether termux will remove itself from the recent apps screen when
+         * it closes itself.
+         */
+        public static final String KEY_ACTIVITY_FINISH_REMOVE_TASK =  "activity_finish_remove_task";
+        public static final boolean DEFAULT_VALUE_KEY_ACTIVITY_FINISH_REMOVE_TASK = false;
 
         /**
          * Defines the key for whether to always keep screen on.
