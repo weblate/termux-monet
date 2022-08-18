@@ -79,7 +79,10 @@ import java.util.Set;
  *      - Add `KEY_DELETE_TMPDIR_FILES_OLDER_THAN_X_DAYS_ON_EXIT`.
  *
  * - 0.18.0 (2022-06-13)
- *      - Add `KEY_DISABLE_FILE_SHARE_RECEIVER` and `KEY_DISABLE_FILE_VIEW_RECEIVER`.
+ *      - Add `KEY_DISABLE_FILE_SHARE_RECEIVER` and `KEY_DISABLE_FILE_VIEW_RECEIVER`
+ *
+ * - 0.19.0 (2022-08-18)
+ *      - Add `KEY_ACTIVITY_FINISH_REMOVE_TASK`.
  */
 
 /**
@@ -160,6 +163,14 @@ public final class TermuxPropertyConstants {
 
     /** Defines the key for whether to use fullscreen workaround */
     public static final String KEY_USE_FULLSCREEN_WORKAROUND =  "use-fullscreen-workaround"; // Default: "use-fullscreen-workaround"
+
+
+
+    /**
+     * Defines the key for whether termux will remove itself from the recent apps screen when
+     * it closes itself.
+     */
+    public static final String KEY_ACTIVITY_FINISH_REMOVE_TASK =  "remove-termux-activity-from-recents-on-exit"; // Default: "remove-termux-activity-from-recents-on-exit"
 
 
 
@@ -404,6 +415,7 @@ public final class TermuxPropertyConstants {
         KEY_USE_FULLSCREEN,
         KEY_USE_FULLSCREEN_WORKAROUND,
         TermuxConstants.PROP_ALLOW_EXTERNAL_APPS,
+        KEY_ACTIVITY_FINISH_REMOVE_TASK,
 
         /* int */
         KEY_BELL_BEHAVIOUR,
@@ -449,6 +461,7 @@ public final class TermuxPropertyConstants {
         KEY_USE_CTRL_SPACE_WORKAROUND,
         KEY_USE_FULLSCREEN,
         KEY_USE_FULLSCREEN_WORKAROUND,
+        KEY_ACTIVITY_FINISH_REMOVE_TASK,
         TermuxConstants.PROP_ALLOW_EXTERNAL_APPS
     ));
 

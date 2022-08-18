@@ -610,7 +610,8 @@ public final class TermuxActivity extends AppCompatActivity implements ServiceCo
     public void finishActivityIfNotFinishing() {
         // prevent duplicate calls to finish() if called from multiple places
         if (!TermuxActivity.this.isFinishing()) {
-            finishAndRemoveTask();
+            if (mProperties.isRemovingTaskOnActivityFinishEnabled())  finishAndRemoveTask();
+            else finish();
         }
     }
 

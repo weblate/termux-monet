@@ -626,6 +626,10 @@ public abstract class TermuxSharedProperties {
         return (boolean) getInternalPropertyValue(TermuxPropertyConstants.KEY_USE_FULLSCREEN_WORKAROUND, true);
     }
 
+    public boolean isRemovingTaskOnActivityFinishEnabled() {
+        return (boolean) getInternalPropertyValue(TermuxPropertyConstants.KEY_ACTIVITY_FINISH_REMOVE_TASK, true);
+    }
+
     public int getBellBehaviour() {
         return (int) getInternalPropertyValue(TermuxPropertyConstants.KEY_BELL_BEHAVIOUR, true);
     }
