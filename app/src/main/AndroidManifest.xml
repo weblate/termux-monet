@@ -40,10 +40,13 @@
     <application
         android:name=".app.TermuxApplication"
         android:allowBackup="true"
+        android:fullBackupContent="true"
         android:banner="@drawable/banner"
         android:extractNativeLibs="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/application_name"
+        android:hardwareAccelerated="true"
+        android:largeHeap="true"
         android:requestLegacyExternalStorage="true"
         android:hasFragileUserData="true"
         android:roundIcon="@mipmap/ic_launcher_round"
