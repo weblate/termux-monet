@@ -9,7 +9,7 @@
     android:inputType="text"
     android:importantForAutofill="no"
     android:backgroundTint="@color/main_accent"
-    android:textColorHighlight="@color/opposite_accent"
+    android:textColorHighlight="@color/hint_accent"
     android:paddingTop="0dp"
     android:textCursorDrawable="@null"
     android:paddingBottom="0dp"
