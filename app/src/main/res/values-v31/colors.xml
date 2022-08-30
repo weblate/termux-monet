@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="main_accent">@android:color/system_accent1_600</color>
-    <color name="highlight_accent">@android:color/system_accent2_100</color>
+    <color name="highlight_accent">@android:color/system_accent2_200</color>
     <color name="opposite_accent">@android:color/system_accent3_600</color>
     <color name="background_accent">@android:color/system_neutral1_50</color>
 
@@ -13,6 +13,5 @@
 
     <color name="icon_neutral_accent">@android:color/system_neutral1_700</color>
     <color name="icon_neutral_accent_bg">@android:color/system_neutral1_100</color>
-
-    <color name="sessiontitle">#000000</color>
 </resources>
+
