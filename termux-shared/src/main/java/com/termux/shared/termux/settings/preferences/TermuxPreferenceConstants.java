@@ -1,7 +1,7 @@
 package com.termux.shared.termux.settings.preferences;
 
 /*
- * Version: v0.16.0
+ * Version: v0.17.0
  *
  * Changelog
  *
@@ -69,6 +69,9 @@ package com.termux.shared.termux.settings.preferences;
  * - 0.16.0 (2022-06-11)
  *      - Added following to `TERMUX_APP`:
  *          `KEY_APP_SHELL_NUMBER_SINCE_BOOT` and `KEY_TERMINAL_SESSION_NUMBER_SINCE_BOOT`.
+ *
+ * - 0.17.0 (2022-08-18)
+ *      - Add `KEY_ACTIVITY_FINISH_REMOVE_TASK`.
  */
 
 import com.termux.shared.shell.command.ExecutionCommand;
@@ -122,7 +125,7 @@ public final class TermuxPreferenceConstants {
          * it closes itself.
          */
         public static final String KEY_ACTIVITY_FINISH_REMOVE_TASK =  "activity_finish_remove_task";
-        public static final boolean DEFAULT_VALUE_KEY_ACTIVITY_FINISH_REMOVE_TASK = false;
+        public static final boolean DEFAULT_VALUE_KEY_ACTIVITY_FINISH_REMOVE_TASK = true;
 
         /**
          * Defines the key for whether to always keep screen on.
