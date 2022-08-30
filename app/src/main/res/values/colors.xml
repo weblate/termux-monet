@@ -3,7 +3,8 @@
     <color name="main_accent">#fbfbfc</color>
     <color name="highlight_accent">#242424</color>
     <color name="opposite_accent">#ff8068</color>
-    <color name="background_accent">#101010</color> 
+    <color name="background_accent">#101010</color>
+    <color name="hint_accent">#393939</color>
 
     <color name="icon_accent">#dbdcdc</color>
     <color name="icon_accent_bg">#39393a</color>
