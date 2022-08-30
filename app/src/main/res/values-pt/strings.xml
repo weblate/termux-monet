@@ -201,6 +201,11 @@
                     Deverá ser habilitado para tentar corrigir casos em que o teclado virtual cobre parte das teclas extra/vista do terminal.
                     Caso esta opção faça a tela piscar, desative-a. (Padrão)</string>
 
+                <!-- Terminal View Activity Remove Task -->
+                <string name="termux_terminal_view_activity_remove_title">Desabilitar permanência nos apps recentes</string>
+                <string name="termux_terminal_view_activity_remove_off">Quando não houver sessões ativas, &TERMUX_APP_NAME; irá fechar e permanecer visível nos apps recentes.</string>
+                <string name="termux_terminal_view_activity_remove_on">&TERMUX_APP_NAME; irá fechar e não permanecerá nos apps recentes quando não houverem sessões de terminal ativas. (Padrão)</string>
+
 
 
     <!-- Termux:API App Preferences -->

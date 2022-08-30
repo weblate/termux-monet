@@ -203,6 +203,11 @@
                     Debe habilitarse para intentar solucionar el problema en el que el teclado en pantalla cubre parte de las teclas adicionales/vista de terminal.
                     Si hace que la pantalla parpadee en sus dispositivos, desactívelo. (Defecto)</string>
 
+                <!-- Terminal View Activity Remove Task -->
+                <string name="termux_terminal_view_activity_remove_title">Deshabilitar la permanencia en apps recientes</string>
+                <string name="termux_terminal_view_activity_remove_off">Cuando no hay sesiones activas, &TERMUX_APP_NAME; se cerrará y permanecerá visible en las apps recientes.</string>
+                <string name="termux_terminal_view_activity_remove_on">&TERMUX_APP_NAME; se cerrará y no permanecerá en apps recientes cuando no haya sesiones de terminal activas. (Defecto)</string>
+
 
 
     <!-- Termux:API App Preferences -->

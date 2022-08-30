@@ -195,6 +195,11 @@
                 <string name="termux_terminal_view_terminal_margin_adjustment_off">终端保证金调整将被禁用。</string>
                 <string name="termux_terminal_view_terminal_margin_adjustment_on">将启用终端保证金调整。应该启用它以尝试修复软键盘覆盖部分额外键/终端视图的问题。如果它导致设备上的屏幕闪烁，请禁用它。 （默认）</string>
 
+                <!-- Terminal View Activity Remove Task -->
+                <string name="termux_terminal_view_activity_remove_title">防止停留在最近的应用程序上</string>
+                <string name="termux_terminal_view_activity_remove_off">一旦关闭所有终端会话，&TERMUX_APP_NAME; 将关闭并在最近的应用程序中保持可见。</string>
+                <string name="termux_terminal_view_activity_remove_on">&TERMUX_APP_NAME; 如果没有活动的终端会话，将关闭并从最近的应用程序中删除自己。 （默认）</string>
+
 
 
     <!-- Termux:API App Preferences -->
