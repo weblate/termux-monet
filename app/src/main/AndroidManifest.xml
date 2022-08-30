@@ -52,7 +52,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="false"
         android:theme="@style/Theme.TermuxApp.DayNight.DarkActionBar"
-        tools:targetApi="m">
+        tools:targetApi="n">
 
         <activity
             android:name=".app.TermuxActivity"
