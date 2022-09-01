@@ -35,10 +35,10 @@
     <string name="bootstrap_error_not_primary_user_message">&TERMUX_APP_NAME; 只能以主用户身份运行。
         \n编译的 Bootstrap 二进制文件 &TERMUX_APP_NAME; 有硬编码 $PREFIX 路径，
         不能安装在任何路径下 %1$s.</string>
-    <string name="bootstrap_error_installed_on_portable_sd">&TERMUX_APP_NAME; cannot be installed on
-        portable/external/removable sd card on your device.
-        \nBootstrap binaries compiled for &TERMUX_APP_NAME; have hardcoded $PREFIX path and cannot be installed
-        under any path other than:\n%1$s.</string>
+    <string name="bootstrap_error_installed_on_portable_sd">&TERMUX_APP_NAME; 无法安装在
+         设备上的便携式/外部/可移动 sd 卡。
+        \n为 &TERMUX_APP_NAME; 编译的引导程序二进制文件； 具有硬编码的 $PREFIX 路径并且无法安装
+         在以下任何路径下：\n%1$s.</string>
 
 
 
@@ -104,16 +104,16 @@
 
     <!-- TermuxService -->
     <string name="error_display_over_other_apps_permission_not_granted_to_start_terminal">&TERMUX_APP_NAME; 需要“在其他应用上显示”权限才能从 Android >= 10 的后台启动终端会话。从“设置”->“应用”-> 授予它 &TERMUX_APP_NAME; -> 先进的</string>
-    <string name="error_termux_service_invalid_execution_command_runner">Invalid execution command runner to TermuxService: `%1$s`</string>
-    <string name="error_termux_service_unsupported_execution_command_runner">Unsupported execution command runner to TermuxService: `%1$s`</string>
-    <string name="error_termux_service_unsupported_execution_command_shell_create_mode">Unsupported execution command shell create mode to TermuxService: `%1$s`</string>
-    <string name="error_termux_service_execution_command_shell_name_unset">Shell name not set but `%1$s` shell create mode passed</string>
+    <string name="error_termux_service_invalid_execution_command_runner">TermuxService 的无效执行命令运行程序：`%1$s`</string>
+    <string name="error_termux_service_unsupported_execution_command_runner">TermuxService 不支持的执行命令运行程序：`%1$s`</string>
+    <string name="error_termux_service_unsupported_execution_command_shell_create_mode">不支持对 TermuxService 的执行命令 shell 创建模式：`%1$s`</string>
+    <string name="error_termux_service_execution_command_shell_name_unset">未设置外壳名称，但通过了 `%1$s` 外壳创建模式</string>
 
 
 
     <!-- Termux RunCommandService -->
     <string name="error_run_command_service_invalid_intent_action">对 RunCommandService 的无效意图操作： `%1$s`</string>
-    <string name="error_run_command_service_invalid_execution_command_runner">Invalid execution command runner to RunCommandService: `%1$s`</string>
+    <string name="error_run_command_service_invalid_execution_command_runner">RunCommandService 的无效执行命令运行程序：`%1$s`</string>
     <string name="error_run_command_service_mandatory_extra_missing">RunCommandService 缺少必要的额外内容： \"%1$s\"</string>
     <string name="error_run_command_service_api_help">访问 %1$s 有关 RUN_COMMAND 意图用法的更多信息。</string>
 
@@ -127,8 +127,8 @@
 
 
     <!-- Miscellaneous -->
-    <string name="error_termux_service_start_failed_general">Failed to start TermuxService. Check logcat for exception message.</string>
-    <string name="error_termux_service_start_failed_bg">Failed to start TermuxService while app is in background due to android background restrictions.</string>
+    <string name="error_termux_service_start_failed_general">无法启动 TermuxService。 检查 logcat 是否有异常消息。</string>
+    <string name="error_termux_service_start_failed_bg">由于 android 后台限制，应用在后台时无法启动 TermuxService。</string>
 
 
 
@@ -151,18 +151,18 @@
 
                 <!-- Terminal View Key Logging -->
                 <string name="termux_terminal_view_key_logging_enabled_title">终端视图键记录</string>
-                <string name="termux_terminal_view_key_logging_enabled_off">日志将没有终端视图键的条目。 （默认）</string>
+                <string name="termux_terminal_view_key_logging_enabled_off">日志将没有终端视图键的条目。（默认）</string>
                 <string name="termux_terminal_view_key_logging_enabled_on">Logcat 日志将包含终端视图键的条目。这些非常冗长，在正常情况下应该禁用，否则会导致性能问题。</string>
 
                 <!-- Plugin Error Notifications -->
                 <string name="termux_plugin_error_notifications_enabled_title">插件错误通知</string>
                 <string name="termux_plugin_error_notifications_enabled_off">禁用插件错误的闪烁和通知。</string>
-                <string name="termux_plugin_error_notifications_enabled_on">显示插件错误的闪烁和通知。 （默认）</string>
+                <string name="termux_plugin_error_notifications_enabled_on">显示插件错误的闪烁和通知。（默认）</string>
 
                 <!-- Crash Report Notifications -->
                 <string name="termux_crash_report_notifications_enabled_title">崩溃报告通知</string>
                 <string name="termux_crash_report_notifications_enabled_off">禁用崩溃报告的通知。</string>
-                <string name="termux_crash_report_notifications_enabled_on">显示崩溃报告的通知。 （默认）</string>
+                <string name="termux_crash_report_notifications_enabled_on">显示崩溃报告的通知。（默认）</string>
 
 
         <!-- Terminal IO Preferences -->
@@ -193,7 +193,7 @@
                 <!-- Terminal View Margin Adjustment -->
                 <string name="termux_terminal_view_terminal_margin_adjustment_title">终端保证金调整</string>
                 <string name="termux_terminal_view_terminal_margin_adjustment_off">终端保证金调整将被禁用。</string>
-                <string name="termux_terminal_view_terminal_margin_adjustment_on">将启用终端保证金调整。应该启用它以尝试修复软键盘覆盖部分额外键/终端视图的问题。如果它导致设备上的屏幕闪烁，请禁用它。 （默认）</string>
+                <string name="termux_terminal_view_terminal_margin_adjustment_on">将启用终端保证金调整。应该启用它以尝试修复软键盘覆盖部分额外键/终端视图的问题。如果它导致设备上的屏幕闪烁，请禁用它。（默认）</string>
 
                 <!-- Terminal View Activity Remove Task -->
                 <string name="termux_terminal_view_activity_remove_title">防止停留在最近的应用程序上</string>
@@ -210,7 +210,7 @@
 
     <!-- Termux:Float App Preferences -->
     <string name="termux_float_preferences_title">&TERMUX_FLOAT_APP_NAME;</string>
-    <string name="termux_float_preferences_summary">Preferences for &TERMUX_FLOAT_APP_NAME; app</string>
+    <string name="termux_float_preferences_summary">配置文件在 &TERMUX_FLOAT_APP_NAME; app</string>
 
 
 
@@ -222,7 +222,7 @@
 
     <!-- Termux:Widget App Preferences -->
     <string name="termux_widget_preferences_title">&TERMUX_WIDGET_APP_NAME;</string>
-    <string name="termux_widget_preferences_summary">Preferences for &TERMUX_WIDGET_APP_NAME; app</string>
+    <string name="termux_widget_preferences_summary">配置文件在 &TERMUX_WIDGET_APP_NAME; app</string>
 
 
 

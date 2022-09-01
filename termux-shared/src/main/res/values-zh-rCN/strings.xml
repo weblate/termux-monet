@@ -14,91 +14,91 @@
 
 <resources>
 
-    <string name="msg_directory_absolute_path">%1$s Directory Absolute Path: \"%2$s\"</string>
+    <string name="msg_directory_absolute_path">%1$s 目录绝对路径：\"%2$s\"</string>
 
 
 
     <!-- PackageUtils -->
-    <string name="error_app_not_installed_or_disabled_warning">The %1$s (%2$s) app is not installed or is disabled.</string>
-    <string name="error_get_package_context_failed_title">Failed To Get Package Context</string>
-    <string name="error_get_package_context_failed_message">Failed to get package context for the \"%1$s\" package.
-        This may be because the app package is not installed or it has different APK signature from the current app.</string>
-    <string name="error_get_package_context_failed_help_url_message">Check %1$s for more details.</string>
-    <string name="error_get_component_state_failed">Failed to get %1$s/%2$s component state</string>
-    <string name="error_enable_component_failed">Failed to enable %1$s/%2$s component</string>
-    <string name="error_disable_component_failed">Failed to disable %1$s/%2$s component</string>
+    <string name="error_app_not_installed_or_disabled_warning">%1$s (%2$s) 应用程序未安装或被禁用。</string>
+    <string name="error_get_package_context_failed_title">获取包上下文失败</string>
+    <string name="error_get_package_context_failed_message">无法获取 \"%1$s\" 包的包上下文。
+         这可能是因为应用程序包未安装或与当前应用程序具有不同的 APK 签名。</string>
+    <string name="error_get_package_context_failed_help_url_message">查看 %1$s 了解更多详情。</string>
+    <string name="error_get_component_state_failed">未能获得 %1$s/%2$s 组件状态</string>
+    <string name="error_enable_component_failed">无法启用 %1$s/%2$s 组件</string>
+    <string name="error_disable_component_failed">未能禁用 %1$s/%2$s 组件</string>
 
 
 
     <!-- PermissionUtils -->
-    <string name="message_sudo_please_grant_permissions">Please grant requested permission(s)</string>
-    <string name="error_failed_to_request_permissions">Failed to request permissions with request code %1$d: %2$s</string>
-    <string name="error_attempted_to_check_for_permissions_not_requested">Attempted to check for permissions that have not been requested in app manifest: %1$s</string>
-    <string name="error_attempted_to_ask_for_permissions_not_requested">Attempted to ask for permissions that have not been requested in app manifest: %1$s</string>
-    <string name="error_has_not_requested_legacy_external_storage">The \"%1$s\" package is targeting targetSdkVersion %2$d and is running on android sdk %3$d but has not set requestLegacyExternalStorage to true in app manifest</string>
-    <string name="msg_requires_dump_and_package_usage_stats_permissions">Requires `DUMP` and `PACKAGE_USAGE_STATS` permission</string>
-    <string name="error_display_over_other_apps_permission_not_granted">%1$s requires
-        \"Display over other apps\" permission to start activities and services from background on Android >= 10.
-        Grants it from Android Settings -> Apps -> %1$s -> Advanced -> Draw over other apps.
-        The permission name may be different on different devices, like on Xiaomi, its called
-        \"Display pop-up windows while running in the background\", check https://dontkillmyapp.com
-        for device specific issues.</string>
+    <string name="message_sudo_please_grant_permissions">请授予请求的权限</string>
+    <string name="error_failed_to_request_permissions">使用请求代码 %1$d 请求权限失败：%2$s</string>
+    <string name="error_attempted_to_check_for_permissions_not_requested">已尝试检查应用清单中未请求的权限：%1$s</string>
+    <string name="error_attempted_to_ask_for_permissions_not_requested">尝试请求未在应用清单中请求的权限：%1$s</string>
+    <string name="error_has_not_requested_legacy_external_storage">\"%1$s\" 包以 targetSdkVersion %2$d 为目标，并在 android sdk %3$d 上运行，但未在应用清单中将 requestLegacyExternalStorage 设置为 true</string>
+    <string name="msg_requires_dump_and_package_usage_stats_permissions">需要 `DUMP` 和 `PACKAGE_USAGE_STATS` 权限</string>
+    <string name="error_display_over_other_apps_permission_not_granted">%1$s 需要
+         \"显示在其他应用程序之上" 从 Android 后台启动活动和服务的权限 >= 10。
+         从 Android 设置 -> 应用程序 -> %1$s -> 高级 -> 绘制其他应用程序授予它。
+         权限名称在不同设备上可能不同，比如在小米上，它叫做
+         \"在后台运行时显示弹出窗口\"，检查 https://dontkillmyapp.com
+         针对设备特定问题。</string>
 
 
 
     <!-- TermuxPluginUtils -->
-    <string name="error_allow_external_apps_ungranted">%1$s requires `allow-external-apps`
-        property to be set to `true` in `%2$s` file.</string>
+    <string name="error_allow_external_apps_ungranted">%1$s 需要 `allow-external-apps`
+         在 `%2$s` 文件中要设置为 `true` 的属性。</string>
 
 
 
     <!-- ReportActivity -->
     <string name="title_report_text">报告文本</string>
-    <string name="msg_report_truncated">**Report Truncated**\n\nReport is too large to view here.
-        Use `Save To File` option from options menu (3-dots on top right) and view it in an external text editor app.\n\n##\n\n</string>
+    <string name="msg_report_truncated">**报告被截断**\n\n报告太大，无法在此处查看。
+        使用选项菜单中的 `保存到文件` 选项（右上角的 3 个点）并在外部文本编辑器应用程序中查看它。\n\n##\n\n</string>
 
 
 
     <!-- ShareUtils -->
     <string name="title_share_with">共同分享</string>
-    <string name="title_open_url_with">Open URL With</string>
-    <string name="msg_storage_permission_not_granted">The storage permission not granted.</string>
-    <string name="msg_file_saved_successfully">The %1$s file saved successfully at \"%2$s\"</string>
+    <string name="title_open_url_with">打开网址</string>
+    <string name="msg_storage_permission_not_granted">未授予存储权限。</string>
+    <string name="msg_file_saved_successfully">%1$s 文件成功保存在 \"%2$s\"</string>
 
 
 
     <!-- Shell -->
-    <string name="error_sending_sigkill_to_process">Sending SIGKILL to process on user request or because android is killing the execution service</string>
-    <string name="error_executable_unset">Executable not set \"%1$s\" for shell command</string>
-    <string name="error_execution_cancelled">Execution has been cancelled since execution service is being killed</string>
-    <string name="error_failed_to_execute_termux_session_command">Failed to execute \"%1$s\" &TERMUX_APP_NAME; session command</string>
-    <string name="error_failed_to_execute_app_shell_command">Failed to execute \"%1$s\" app shell command</string>
-    <string name="error_exception_received_while_executing_termux_session_command">Exception received while to executing \"%1$s\" &TERMUX_APP_NAME; session command.\nException: %2$s</string>
-    <string name="error_exception_received_while_executing_app_shell_command">Exception received while to executing \"%1$s\" app shell command.\nException: %2$s</string>
+    <string name="error_sending_sigkill_to_process">发送 SIGKILL 以处理用户请求或因为 android 正在终止执行服务</string>
+    <string name="error_executable_unset">可执行文件未为 shell 命令设置 \"%1$s\" </string>
+    <string name="error_execution_cancelled">由于执行服务被杀死，执行已被取消</string>
+    <string name="error_failed_to_execute_termux_session_command">未能执行 \"%1$s\" &TERMUX_APP_NAME; 会话命令</string>
+    <string name="error_failed_to_execute_app_shell_command">未能执行 \"%1$s\" 应用程序外壳命令</string>
+    <string name="error_exception_received_while_executing_termux_session_command">执行 \"%1$s\" &TERMUX_APP_NAME; 时收到异常 会话命令。\n异常: %2$s</string>
+    <string name="error_exception_received_while_executing_app_shell_command">执行 \"%1$s\" 应用程序 shell 命令时收到异常。\n异常: %2$s</string>
 
 
 
     <!-- TermuxUtils -->
     <string name="msg_report_issue">
-        If you want to report this issue, then copy its text from the options menu (3-dots on top right) and post
-        an issue on one of the following links.
-        \n\nIf you are posting a &TERMUX_APP_NAME; app crash report, then please provide details on what you were doing that
-        caused the crash and how to reproduce it, if possible.
-        \n\nIf you are posting an issue on Github, then post it in the repository at which the report belongs at.
-        Issues opened or emails sent with **(partial) screenshots** instead of copied text or a file of this report
-        **will likely be automatically closed/deleted**. You may optionally remove any device specific info that
-        you consider private or don\'t want to share or that is not relevant to the issue.
-        \n\nWe do not provide support for any hacking related tools/scripts. Any questions asked about them over email,
-        on github or other official &TERMUX_APP_NAME; community forums **will likely be automatically closed/deleted** and may
-        even result in **temporary or permanent** ban. Check %1$s/wiki/Hacking for details.</string>
+        如果您想报告此问题，请从选项菜单（右上角的 3 点）复制其文本并发布
+         以下链接之一的问题。
+         \n\n如果您要发布 &TERMUX_APP_NAME; 应用程序崩溃报告，然后请提供有关您正在执行的操作的详细信息
+         导致崩溃以及如何重现它，如果可能的话。
+         \n\n如果您在 Github 上发布问题，请将其发布到报告所属的存储库中。
+         打开的问题或发送的电子邮件带有**（部分）屏幕截图**，而不是复制的文本或此报告的文件
+         **可能会自动关闭/删除**。 您可以选择删除任何设备特定信息
+         您认为私人或不想分享或与问题无关。
+         \n\n我们不支持任何与黑客相关的工具/脚本。 通过电子邮件询问有关他们的任何问题，
+         在github或其他官方 &TERMUX_APP_NAME; 社区论坛**可能会自动关闭/删除**并且可能
+         甚至导致**临时或永久**禁令。 查看 %1$s/wiki/Hacking 了解详情。</string>
 
-    <string name="msg_termux_app_required_by_app">The &TERMUX_APP_NAME; is required by the %1$s app to run &TERMUX_APP_NAME; commands.</string>
-    <string name="error_termux_app_package_context_not_accessible">The &TERMUX_APP_NAME; app (package context) is not accessible.</string>
-    <string name="error_termux_prefix_dir_path_not_accessible">The &TERMUX_APP_NAME; app $PREFIX directory is not accessible by the %1$s app.
-        This may be because you have not installed or setup &TERMUX_APP_NAME; app or
-        &TERMUX_APP_NAME; app and %1$s app both have different APK signatures because you have managed to install both apps from different sources.
-        It may also be because &TERMUX_APP_NAME; $PREFIX directory \"&TERMUX_PREFIX_DIR_PATH;\" does not exist or does not have read,
-        write and execute permissions.</string>
+    <string name="msg_termux_app_required_by_app">&TERMUX_APP_NAME;  %1$s 应用需要运行 &TERMUX_APP_NAME; 命令。</string>
+    <string name="error_termux_app_package_context_not_accessible">&TERMUX_APP_NAME; 应用程序（包上下文）不可访问。</string>
+    <string name="error_termux_prefix_dir_path_not_accessible">&TERMUX_APP_NAME;  %1$s 应用程序无法访问 app $PREFIX 目录。
+         这可能是因为您没有安装或设置 &TERMUX_APP_NAME; 应用程序或
+         &TERMUX_APP_NAME;  app 和 %1$s app 都有不同的 APK 签名，因为您已经设法从不同的来源安装了这两个应用程序。
+        也可能是因为 &TERMUX_APP_NAME;  $PREFIX 目录\"&TERMUX_PREFIX_DIR_PATH;\" 不存在或没有读取，
+         写入和执行权限。</string>
 
 
 
@@ -108,31 +108,31 @@
     <string name="action_copy">复制</string>
     <string name="action_share">分享</string>
     <string name="action_cancel">中止</string>
-    <string name="action_save_to_file">Save To File</string>
+    <string name="action_save_to_file">保存到文件</string>
 
-    <string name="msg_storage_permission_granted_on_request">The storage permission granted by user on request</string>
-    <string name="msg_storage_permission_not_granted_on_request">The storage permission not granted by user on request</string>
+    <string name="msg_storage_permission_granted_on_request">用户根据请求授予的存储权限</string>
+    <string name="msg_storage_permission_not_granted_on_request">用户未按请求授予的存储权限</string>
 
 
 
     <!-- Launcher Icons -->
-    <string name="action_enable_launcher_icon">Enable Launcher Icon</string>
-    <string name="action_disable_launcher_icon">Disable Launcher Icon</string>
-    <string name="msg_enabling_launcher_icon">Enabling %1$s app launcher icon</string>
-    <string name="msg_disabling_launcher_icon">Disabling %1$s app launcher icon</string>
-    <string name="setting_launcher_icon_title">Launcher Icon Enabled</string>
-    <string name="setting_launcher_icon_enabled_off">Launcher Icon will be disabled.</string>
-    <string name="setting_launcher_icon_enabled_on">Launcher Icon will be enabled. (Default)</string>
+    <string name="action_enable_launcher_icon">启用启动器图标</string>
+    <string name="action_disable_launcher_icon">禁用启动器图标</string>
+    <string name="msg_enabling_launcher_icon">启用 %1$s 应用启动器图标</string>
+    <string name="msg_disabling_launcher_icon">禁用 %1$s 应用启动器图标</string>
+    <string name="setting_launcher_icon_title">启动器图标已启用</string>
+    <string name="setting_launcher_icon_enabled_off">启动器图标将被禁用。</string>
+    <string name="setting_launcher_icon_enabled_on">启动器图标将被启用。（默认）</string>
 
 
 
     <!-- Log Level -->
-    <string name="log_level_title">Log Level</string>
+    <string name="log_level_title">日志级别</string>
     <string name="log_level_off">离开</string>
-    <string name="log_level_normal">Normal</string>
-    <string name="log_level_debug">Debug</string>
-    <string name="log_level_verbose">Verbose</string>
-    <string name="log_level_unknown">*Unknown*</string>
-    <string name="log_level_value">Logcat log level set to \"%1$s\"</string>
+    <string name="log_level_normal">普通的</string>
+    <string name="log_level_debug">调试</string>
+    <string name="log_level_verbose">详细</string>
+    <string name="log_level_unknown">*未知*</string>
+    <string name="log_level_value">Logcat 日志级别设置为 \"%1$s\"</string>
 
 </resources>
