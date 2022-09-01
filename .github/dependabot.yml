@@ -12,6 +12,7 @@ updates:
     ignore:
       - dependency-name: "androidx.preference:preference"
       - dependency-name: "com.android.tools:desugar_jdk_libs"
+
   - package-ecosystem: "github-actions"
     directory: "/" # Location of package manifests
     schedule:
