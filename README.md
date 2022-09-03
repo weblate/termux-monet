@@ -125,11 +125,11 @@ su -c getprop persist.sys.fflag.override.settings_enable_monitor_phantom_procs
 ***
 
 ## True italic fonts
-> As described in #2829, true italic fonts support can be enabled when placing an italic font in `~/.termux/font-italic.ttf`
+> As described in https://github.com/termux/termux-app/pull/2829, true italic fonts support can be enabled when placing an italic font in `~/.termux/font-italic.ttf`
 
 ***
 ## Running termux from ADB
-> As described in #1969, it is possible to access Termux directrly from adb shell via run-as. see the following example:
+> As described in https://github.com/termux/termux-app/pull/1969, it is possible to access Termux directrly from adb shell via run-as. see the following example:
 
 ```% adb shell
 dreamlte:/ $ run-as com.termux
