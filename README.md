@@ -11,8 +11,8 @@
 </div>
 <br />
 <div align="center">
-  <a href="https://www.android.com/android-12/">
-    <img src="https://img.shields.io/static/v1?label=Android&message=12%2B&color=brightgreen&style=flat&logo=android&logoColor=white"/>
+  <a href="https://www.android.com/versions/oreo-8-0/">
+    <img src="https://img.shields.io/static/v1?label=Android&message=8%2B&color=brightgreen&style=flat&logo=android&logoColor=white"/>
   </a>
   <a href="https://github.com/HardcodedCat/termux-monet/commits/master">
     <img src="https://img.shields.io/github/last-commit/HardcodedCat/termux-monet/master?color=informational&label=Updated&logo=github"/>
