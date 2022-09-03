@@ -43,6 +43,8 @@
 - [Nightly Releases](#Nightly-Builds)
 - [Wikis](#Wikis)
 - [Miscellaneous](#Miscellaneous)
+- [True italic fonts](#True-italic-fonts)
+- [Running termux from ADB](#Running-termux-from-ADB)
 - [Debugging](#Debugging)
 - [Disclaimer](#Disclaimer)
 - [Forking Instructions](#Forking)
@@ -119,6 +121,25 @@ su -c getprop persist.sys.fflag.override.settings_enable_monitor_phantom_procs
 - [Termux Wiki](https://wiki.termux.com/wiki/)
 - [Termux App Wiki](https://github.com/termux/termux-app/wiki)
 - [Termux Packages Wiki](https://github.com/termux/termux-packages/wiki)
+
+***
+
+## True italic fonts
+> As described in #2829, true italic fonts support can be enabled when placing an italic font in `~/.termux/font-italic.ttf`
+
+***
+## Running termux from ADB
+> As described in #1969, it is possible to access Termux directrly from adb shell via run-as. see the following example:
+
+```% adb shell
+dreamlte:/ $ run-as com.termux
+dreamlte:/data/data/com.termux $ PATH=/data/data/com.termux/files/usr/bin LD_PRELOAD=/data/data/com.termux/files/usr/lib/libtermux-exec.so /data/data/com.termux/files/usr/bin/bash -l
+~ $ python
+Python 3.9.2 (default, Feb 22 2021, 12:26:04)
+[Clang 9.0.8 (https://android.googlesource.com/toolchain/llvm-project 98c855489 on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>>
+```
 
 ***
 
