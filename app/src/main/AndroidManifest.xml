@@ -55,7 +55,7 @@
         android:debuggable="true"
         android:supportsRtl="false"
         android:theme="@style/Theme.TermuxApp.DayNight.DarkActionBar"
-        tools:targetApi="n">
+        tools:targetApi="o">
 
         <activity
             android:name=".app.TermuxActivity"
@@ -65,7 +65,7 @@
             android:launchMode="singleTask"
             android:resizeableActivity="true"
             android:theme="@style/Theme.TermuxActivity.DayNight.NoActionBar"
-            tools:targetApi="n">
+            tools:targetApi="o">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -102,7 +102,7 @@
             android:label="@string/application_name"
             android:parentActivityName=".app.TermuxActivity"
             android:resizeableActivity="true"
-            tools:targetApi="n" />
+            tools:targetApi="o" />
 
         <activity
             android:name=".app.activities.SettingsActivity"
@@ -122,7 +122,7 @@
             android:noHistory="true"
             android:resizeableActivity="true"
             android:taskAffinity="${TERMUX_PACKAGE_NAME}.filereceiver"
-            tools:targetApi="n">
+            tools:targetApi="o">
         </activity>
 
         <activity-alias
