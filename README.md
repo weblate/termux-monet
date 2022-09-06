@@ -44,6 +44,7 @@
 - [Wikis](#Wikis)
 - [Miscellaneous](#Miscellaneous)
 - [True italic fonts](#True-italic-fonts)
+- [Displaying images with sixel](#Displaying-images-with-sixel)
 - [Running termux from ADB](#Running-termux-from-ADB)
 - [Debugging](#Debugging)
 - [Disclaimer](#Disclaimer)
@@ -126,6 +127,13 @@ su -c getprop persist.sys.fflag.override.settings_enable_monitor_phantom_procs
 
 ## True italic fonts
 > As described in https://github.com/termux/termux-app/pull/2829, true italic fonts support can be enabled when placing an italic font in `~/.termux/font-italic.ttf`
+
+***
+
+## Displaying images with sixel
+> As described in https://github.com/termux/termux-app/pull/2973, Termux can display images and gifs using sixel and iterm2 protocols.
+> For displaying images and gifs using `Sixel`, use `img2sixel image.png`
+> For displaying images and gifs using `iTerm2`, use https://iterm2.com/utilities/imgcat script. `./imgcat image.png`
 
 ***
 ## Running termux from ADB
