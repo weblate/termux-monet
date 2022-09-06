@@ -132,9 +132,10 @@ su -c getprop persist.sys.fflag.override.settings_enable_monitor_phantom_procs
 
 ## Displaying images in Termux
 
-.> As described in https://github.com/termux/termux-app/pull/2973, Termux can display images and gifs using sixel and iterm2 protocols.
+> As described in https://github.com/termux/termux-app/pull/2973, Termux can display images and gifs using sixel and iterm2 protocols.
+
 > For displaying images and gifs using `Sixel`, do `pkg install libsixel` and use `img2sixel image.png`
->
+
 > For displaying images and gifs using `iTerm2`, download and use the [imgcat](https://iterm2.com/utilities/imgcat) script, with the command `./imgcat image.png`
 
 ***
