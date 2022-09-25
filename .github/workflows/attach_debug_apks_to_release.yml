@@ -11,13 +11,13 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        package_variant: [ apt-android-7, apt-android-5 ]
+        package_variant: [ apt-android-7 ]
     env:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
     steps:
       - name: Clone repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           ref: ${{ env.GITHUB_REF }}
 

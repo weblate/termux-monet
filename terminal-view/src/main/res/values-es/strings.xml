@@ -1,0 +1,7 @@
+<resources>
+
+<!-- Spanish translation by CrazyBytesVE -->
+  <string name="paste_text">Pegar</string>
+  <string name="copy_text">Copiar</string>
+  <string name="text_selection_more">Más…</string>
+</resources>

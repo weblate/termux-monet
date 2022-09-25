@@ -1,21 +1,18 @@
-name: Unit tests
+name: Test app
 
 on:
-  push:
-    branches:
-      - master
-      - android-10
-  pull_request:
-    branches:
-      - master
-      - android-10
+  workflow_dispatch
+
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: true
 
 jobs:
   testing:
     runs-on: ubuntu-latest
     steps:
     - name: Clone repository
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
     - name: Execute tests
       run: |
         ./gradlew test

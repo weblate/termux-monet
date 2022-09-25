@@ -1,9 +1,11 @@
 name: Trigger Termux Library Builds on Jitpack
 
 on:
-  release:
-    types:
-      - published
+  workflow_dispatch
+
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: true
 
 jobs:
   trigger-termux-library-builds:

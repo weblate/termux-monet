@@ -58,6 +58,9 @@
     <string name="msg_disabling_terminal_toolbar">Disabling Terminal Toolbar</string>
 
 
+    <!-- Terminal Extra Keys -->
+    <string name="extra_keys_command_hint">Insert command...</string>
+
 
     <!-- Terminal Popup -->
     <string name="action_select_url">Select URL</string>
@@ -84,7 +87,7 @@
 
     <string name="action_report_issue">Report Issue</string>
     <string name="msg_generating_report">Generating Report</string>
-    <string name="msg_add_termux_debug_info">Add termux debug info to report?</string>
+    <string name="msg_add_termux_debug_info">Add &TERMUX_APP_NAME; debug info to report?</string>
 
     <string name="error_styling_not_installed">The &TERMUX_STYLING_APP_NAME; Plugin App is not installed.</string>
     <string name="action_styling_install">Install</string>
@@ -126,7 +129,7 @@
 
     <!-- Miscellaneous -->
     <string name="error_termux_service_start_failed_general">Failed to start TermuxService. Check logcat for exception message.</string>
-    <string name="error_termux_service_start_failed_bg">Failed to start TermuxService while app is in background due to android bg restrictions.</string>
+    <string name="error_termux_service_start_failed_bg">Failed to start TermuxService while app is in background due to android background restrictions.</string>
 
 
 
@@ -197,6 +200,11 @@
                 <string name="termux_terminal_view_terminal_margin_adjustment_on">Terminal margin adjustment will be enabled.
                     It should be enabled to try to fix the issue where soft keyboard covers part of extra keys/terminal view.
                     If it causes screen flickering on your devices, then disable it. (Default)</string>
+
+                <!-- Terminal View Activity Remove Task -->
+                <string name="termux_terminal_view_activity_remove_title">Prevent from remaining on recent apps</string>
+                <string name="termux_terminal_view_activity_remove_off">Once closed all terminal sessions, &TERMUX_APP_NAME; will close and remain visible in recent apps.</string>
+                <string name="termux_terminal_view_activity_remove_on">&TERMUX_APP_NAME; will close and remove itself from recent apps if there are no active terminal sessions. (Default)</string>
 
 
 

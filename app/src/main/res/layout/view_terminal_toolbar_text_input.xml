@@ -8,9 +8,11 @@
     android:maxLines="1"
     android:inputType="text"
     android:importantForAutofill="no"
-    android:textColor="@android:color/white"
-    android:textColorHighlight="@android:color/darker_gray"
+    android:backgroundTint="@color/main_accent"
+    android:textColorHighlight="@color/hint_accent"
     android:paddingTop="0dp"
     android:textCursorDrawable="@null"
     android:paddingBottom="0dp"
+    android:hint="@string/extra_keys_command_hint"
+    android:textColorHint="@color/hint_accent"
     tools:ignore="LabelFor" />

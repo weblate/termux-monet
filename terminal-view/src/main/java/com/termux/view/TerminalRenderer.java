@@ -1,8 +1,11 @@
 package com.termux.view;
 
+import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.Paint;
 import android.graphics.PorterDuff;
+import android.graphics.Rect;
+import android.graphics.RectF;
 import android.graphics.Typeface;
 
 import com.termux.terminal.TerminalBuffer;
@@ -20,6 +23,7 @@ public final class TerminalRenderer {
 
     final int mTextSize;
     final Typeface mTypeface;
+    final Typeface mItalicTypeface;
     private final Paint mTextPaint = new Paint();
 
     /** The width of a single mono spaced character obtained by {@link Paint#measureText(String)} on a single 'X'. */
@@ -33,9 +37,19 @@ public final class TerminalRenderer {
 
     private final float[] asciiMeasures = new float[127];
 
-    public TerminalRenderer(int textSize, Typeface typeface) {
+    /** The width of a single mono spaced character obtained by {@link Paint#measureText(String)} on a single 'X'. */
+    final float mItalicFontWidth;
+    /** The {@link Paint#getFontSpacing()}. See http://www.fampennings.nl/maarten/android/08numgrid/font.png */
+    final int mItalicFontLineSpacing;
+    /** The {@link Paint#ascent()}. See http://www.fampennings.nl/maarten/android/08numgrid/font.png */
+    private final int mItalicFontAscent;
+    /** The {@link #mFontLineSpacing} + {@link #mFontAscent}. */
+    final int mItalicFontLineSpacingAndAscent;
+
+    public TerminalRenderer(int textSize, Typeface typeface, Typeface italicTypeface) {
         mTextSize = textSize;
         mTypeface = typeface;
+        mItalicTypeface = italicTypeface;
 
         mTextPaint.setTypeface(typeface);
         mTextPaint.setAntiAlias(true);
@@ -51,6 +65,15 @@ public final class TerminalRenderer {
             sb.setCharAt(0, (char) i);
             asciiMeasures[i] = mTextPaint.measureText(sb, 0, 1);
         }
+
+        mTextPaint.setTypeface(italicTypeface);
+        mTextPaint.setAntiAlias(true);
+        mTextPaint.setTextSize(textSize);
+
+        mItalicFontLineSpacing = (int) Math.ceil(mTextPaint.getFontSpacing());
+        mItalicFontAscent = (int) Math.ceil(mTextPaint.ascent());
+        mItalicFontLineSpacingAndAscent = mItalicFontLineSpacing + mItalicFontAscent;
+        mItalicFontWidth = mTextPaint.measureText("X");
     }
 
     /** Render the terminal to a canvas with at a specified row scroll, and an optional rectangular selection. */
@@ -65,6 +88,7 @@ public final class TerminalRenderer {
         final TerminalBuffer screen = mEmulator.getScreen();
         final int[] palette = mEmulator.mColors.mCurrentColors;
         final int cursorShape = mEmulator.getCursorStyle();
+        mEmulator.setCellSize((int)mFontWidth, (int)mFontLineSpacing);
 
         if (reverseVideo)
             canvas.drawColor(palette[TextStyle.COLOR_INDEX_FOREGROUND], PorterDuff.Mode.SRC);
@@ -98,10 +122,28 @@ public final class TerminalRenderer {
                 final boolean charIsHighsurrogate = Character.isHighSurrogate(charAtIndex);
                 final int charsForCodePoint = charIsHighsurrogate ? 2 : 1;
                 final int codePoint = charIsHighsurrogate ? Character.toCodePoint(charAtIndex, line[currentCharIndex + 1]) : charAtIndex;
+                final long style = lineObject.getStyle(column);
+                if (TextStyle.isBitmap(style)) {
+                    Bitmap bm = mEmulator.getScreen().getSixelBitmap(codePoint, style);
+                    if (bm != null) {
+                        float left = column * mFontWidth;
+                        float top = heightOffset - mFontLineSpacing;
+                        RectF r = new RectF(left, top, left + mFontWidth, top + mFontLineSpacing);
+                        canvas.drawBitmap(mEmulator.getScreen().getSixelBitmap(codePoint, style), mEmulator.getScreen().getSixelRect(codePoint, style), r, null);
+                    }
+                    column += 1;
+                    measuredWidthForRun = 0.f;
+                    lastRunStyle = 0;
+                    lastRunInsideCursor = false;
+                    lastRunStartColumn = column + 1;
+                    lastRunStartIndex = currentCharIndex;
+                    lastRunFontWidthMismatch = false;
+                    currentCharIndex += charsForCodePoint;
+                    continue;
+                }
                 final int codePointWcWidth = WcWidth.width(codePoint);
                 final boolean insideCursor = (cursorX == column || (codePointWcWidth == 2 && cursorX == column + 1));
                 final boolean insideSelection = column >= selx1 && column <= selx2;
-                final long style = lineObject.getStyle(column);
 
                 // Check if the measured text width for this code point is not the same as that expected by wcwidth().
                 // This could happen for some fonts which are not truly monospace, or for more exotic characters such as
@@ -112,7 +154,7 @@ public final class TerminalRenderer {
                 final boolean fontWidthMismatch = Math.abs(measuredCodePointWidth / mFontWidth - codePointWcWidth) > 0.01;
 
                 if (style != lastRunStyle || insideCursor != lastRunInsideCursor || insideSelection != lastRunInsideSelection || fontWidthMismatch || lastRunFontWidthMismatch) {
-                    if (column == 0) {
+                    if (column == 0 || column == lastRunStartColumn) {
                         // Skip first column as there is nothing to draw, just record the current style.
                     } else {
                         final int columnWidthSinceLastRun = column - lastRunStartColumn;
@@ -168,6 +210,11 @@ public final class TerminalRenderer {
         final boolean strikeThrough = (effect & TextStyle.CHARACTER_ATTRIBUTE_STRIKETHROUGH) != 0;
         final boolean dim = (effect & TextStyle.CHARACTER_ATTRIBUTE_DIM) != 0;
 
+        final float fontWidth = italic ? mItalicFontWidth : mFontWidth;
+        final int fontLineSpacing = italic ? mItalicFontLineSpacing : mFontLineSpacing;
+        final int fontAscent = italic ? mItalicFontAscent : mFontAscent;
+        final int fontLineSpacingAndAscent = italic ? mItalicFontLineSpacingAndAscent : mFontLineSpacingAndAscent;
+
         if ((foreColor & 0xff000000) != 0xff000000) {
             // Let bold have bright colors if applicable (one of the first 8):
             if (bold && foreColor >= 0 && foreColor < 8) foreColor += 8;
@@ -186,10 +233,10 @@ public final class TerminalRenderer {
             backColor = tmp;
         }
 
-        float left = startColumn * mFontWidth;
-        float right = left + runWidthColumns * mFontWidth;
+        float left = startColumn * fontWidth;
+        float right = left + runWidthColumns * fontWidth;
 
-        mes = mes / mFontWidth;
+        mes = mes / fontWidth;
         boolean savedMatrix = false;
         if (Math.abs(mes - runWidthColumns) > 0.01) {
             canvas.save();
@@ -202,12 +249,14 @@ public final class TerminalRenderer {
         if (backColor != palette[TextStyle.COLOR_INDEX_BACKGROUND]) {
             // Only draw non-default background.
             mTextPaint.setColor(backColor);
-            canvas.drawRect(left, y - mFontLineSpacingAndAscent + mFontAscent, right, y, mTextPaint);
+            canvas.drawRect(left, y - fontLineSpacingAndAscent + fontAscent, right, y, mTextPaint);
         }
 
         if (cursor != 0) {
             mTextPaint.setColor(cursor);
-            float cursorHeight = mFontLineSpacingAndAscent - mFontAscent;
+            // fontLineSpacingAndAscent - fontAscent isn't equals to
+            // fontLineSpacing?
+            float cursorHeight = fontLineSpacing;
             if (cursorStyle == TerminalEmulator.TERMINAL_CURSOR_STYLE_UNDERLINE) cursorHeight /= 4.;
             else if (cursorStyle == TerminalEmulator.TERMINAL_CURSOR_STYLE_BAR) right -= ((right - left) * 3) / 4.;
             canvas.drawRect(left, y - cursorHeight, right, y, mTextPaint);
@@ -226,14 +275,22 @@ public final class TerminalRenderer {
                 foreColor = 0xFF000000 + (red << 16) + (green << 8) + blue;
             }
 
+            mTextPaint.setTypeface(mTypeface);
+            if (italic)
+                mTextPaint.setTypeface(mItalicTypeface);
+
             mTextPaint.setFakeBoldText(bold);
             mTextPaint.setUnderlineText(underline);
-            mTextPaint.setTextSkewX(italic ? -0.35f : 0.f);
+
+            mTextPaint.setTextSkewX(0.f);
+            if (italic && mItalicTypeface.equals(mTypeface))
+                mTextPaint.setTextSkewX(-0.35f);
+
             mTextPaint.setStrikeThruText(strikeThrough);
             mTextPaint.setColor(foreColor);
 
             // The text alignment is the default Paint.Align.LEFT.
-            canvas.drawText(text, startCharIndex, runWidthChars, left, y - mFontLineSpacingAndAscent, mTextPaint);
+            canvas.drawText(text, startCharIndex, runWidthChars, left, y - fontLineSpacingAndAscent, mTextPaint);
         }
 
         if (savedMatrix) canvas.restore();
@@ -245,5 +302,9 @@ public final class TerminalRenderer {
 
     public int getFontLineSpacing() {
         return mFontLineSpacing;
+    }
+
+    public int getFontLineSpacingAndAscent() {
+        return mFontLineSpacingAndAscent;
     }
 }

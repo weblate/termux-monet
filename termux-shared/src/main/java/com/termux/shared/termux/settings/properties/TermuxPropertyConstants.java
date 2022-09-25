@@ -79,7 +79,10 @@ import java.util.Set;
  *      - Add `KEY_DELETE_TMPDIR_FILES_OLDER_THAN_X_DAYS_ON_EXIT`.
  *
  * - 0.18.0 (2022-06-13)
- *      - Add `KEY_DISABLE_FILE_SHARE_RECEIVER` and `KEY_DISABLE_FILE_VIEW_RECEIVER`.
+ *      - Add `KEY_DISABLE_FILE_SHARE_RECEIVER` and `KEY_DISABLE_FILE_VIEW_RECEIVER`
+ *
+ * - 0.19.0 (2022-08-18)
+ *      - Add `KEY_ACTIVITY_FINISH_REMOVE_TASK`.
  */
 
 /**
@@ -163,6 +166,14 @@ public final class TermuxPropertyConstants {
 
 
 
+    /**
+     * Defines the key for whether termux will remove itself from the recent apps screen when
+     * it closes itself.
+     */
+    public static final String KEY_ACTIVITY_FINISH_REMOVE_TASK =  "remove-termux-activity-from-recents-on-exit"; // Default: "remove-termux-activity-from-recents-on-exit"
+
+
+
 
 
     /* int */
@@ -194,7 +205,7 @@ public final class TermuxPropertyConstants {
     public static final String KEY_TERMINAL_CURSOR_BLINK_RATE =  "terminal-cursor-blink-rate"; // Default: "terminal-cursor-blink-rate"
     public static final int IVALUE_TERMINAL_CURSOR_BLINK_RATE_MIN = TerminalView.TERMINAL_CURSOR_BLINK_RATE_MIN;
     public static final int IVALUE_TERMINAL_CURSOR_BLINK_RATE_MAX = TerminalView.TERMINAL_CURSOR_BLINK_RATE_MAX;
-    public static final int DEFAULT_IVALUE_TERMINAL_CURSOR_BLINK_RATE = 0;
+    public static final int DEFAULT_IVALUE_TERMINAL_CURSOR_BLINK_RATE = 530;
 
 
 
@@ -237,7 +248,7 @@ public final class TermuxPropertyConstants {
     public static final String KEY_TERMINAL_MARGIN_HORIZONTAL =  "terminal-margin-horizontal"; // Default: "terminal-margin-horizontal"
     public static final int IVALUE_TERMINAL_MARGIN_HORIZONTAL_MIN = 0;
     public static final int IVALUE_TERMINAL_MARGIN_HORIZONTAL_MAX = 100;
-    public static final int DEFAULT_IVALUE_TERMINAL_MARGIN_HORIZONTAL = 3;
+    public static final int DEFAULT_IVALUE_TERMINAL_MARGIN_HORIZONTAL = 0;
 
     /** Defines the key for the terminal margin on top and bottom in dp units */
     public static final String KEY_TERMINAL_MARGIN_VERTICAL =  "terminal-margin-vertical"; // Default: "terminal-margin-vertical"
@@ -326,7 +337,7 @@ public final class TermuxPropertyConstants {
     /** Defines the key for extra keys */
     public static final String KEY_EXTRA_KEYS =  "extra-keys"; // Default: "extra-keys"
     //public static final String DEFAULT_IVALUE_EXTRA_KEYS = "[[ESC, TAB, CTRL, ALT, {key: '-', popup: '|'}, DOWN, UP]]"; // Single row
-    public static final String DEFAULT_IVALUE_EXTRA_KEYS = "[['ESC','/',{key: '-', popup: '|'},'HOME','UP','END','PGUP'], ['TAB','CTRL','ALT','LEFT','DOWN','RIGHT','PGDN']]"; // Double row
+    public static final String DEFAULT_IVALUE_EXTRA_KEYS = "[['ESC', '/', {key: '|', popup: '-'}, 'HOME', 'UP', 'END', 'PGUP', 'PASTE'], ['TAB', {key: 'CTRL', popup: 'SHIFT'}, 'ALT', 'LEFT', 'DOWN', 'RIGHT', 'PGDN', {key: 'KEYBOARD', popup: {macro: 'CTRL c'}}]]"; // Double row
 
     /** Defines the key for extra keys style */
     public static final String KEY_EXTRA_KEYS_STYLE =  "extra-keys-style"; // Default: "extra-keys-style"
@@ -404,6 +415,7 @@ public final class TermuxPropertyConstants {
         KEY_USE_FULLSCREEN,
         KEY_USE_FULLSCREEN_WORKAROUND,
         TermuxConstants.PROP_ALLOW_EXTERNAL_APPS,
+        KEY_ACTIVITY_FINISH_REMOVE_TASK,
 
         /* int */
         KEY_BELL_BEHAVIOUR,
@@ -449,6 +461,7 @@ public final class TermuxPropertyConstants {
         KEY_USE_CTRL_SPACE_WORKAROUND,
         KEY_USE_FULLSCREEN,
         KEY_USE_FULLSCREEN_WORKAROUND,
+        KEY_ACTIVITY_FINISH_REMOVE_TASK,
         TermuxConstants.PROP_ALLOW_EXTERNAL_APPS
     ));
 
