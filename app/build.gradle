@@ -36,6 +36,8 @@ android {
         implementation "io.noties.markwon:ext-strikethrough:$markwonVersion"
         implementation "io.noties.markwon:linkify:$markwonVersion"
         implementation "io.noties.markwon:recycler:$markwonVersion"
+        implementation "com.github.HardcodedCat:RealtimeBlurView_v2:1.3.2"
+
 
         implementation project(":terminal-view")
         implementation project(":termux-shared")
