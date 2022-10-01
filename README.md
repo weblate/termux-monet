@@ -239,6 +239,8 @@ Users must post complete report (optionally without sensitive info) when reporti
 > By installing this app, you agree that you're aware of its unstableness.
 > 
 > I am not responsible for bricked devices, dead SD cards, thermonuclear war, or you getting fired because Termux didn't load. Please do some research if you have any concerns about features and code included in this forked App before installing it! YOU are choosing to replace your Termux app with this one, and if you point the finger at me for messing up your terminal and device, I will laugh at you.
+>
+> Usage of Termux for attacking/hacking targets without prior mutual consent is illegal. It is the end user's responsibility to obey all applicable local, state and federal laws. Developers assume no liability and are not responsible for any misuse or damage caused by this program.
 
 ***
 
