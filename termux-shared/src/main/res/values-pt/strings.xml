@@ -84,12 +84,12 @@
         publique um problema em um dos links a seguir.
         \n\nSe você estiver publicando um relatório de falha, por favor forneça detalhes sobre o que você estava fazendo
         que causou a falha e como reproduzí-la, se possível. 
-        \n\nSe você estiver publicando um problema no Github, por favor faça-o no repositório a qual o relatório pertence.
+        \n\nSe você estiver publicando um problema no GitHub, por favor faça-o no repositório a qual o relatório pertence.
         Problemas abertos ou emails enviados com **capturas de tela (parciais)** ao invés do texto copiado ou um arquivo deste relatório
         **serão automaticamente fechados/deletados**. Você pode opcionalmente remover qualquer informação de seu dispositivo
         que você considere privada/sensitiva ou não deseja compartilhar por não ser relevante ao problema.
         \n\nNós não fornecemos ajuda relacionada a qualquer tipo de ferramenta/script de Hackeamento. Quaisquer perguntas sobre no email,
-        Github ou qualquer outra comunidade e fórum oficial do &TERMUX_APP_NAME; **serão automaticamente fechadas/deletadas** e podem ocasionar
+        GitHub ou qualquer outra comunidade e fórum oficial do &TERMUX_APP_NAME; **serão automaticamente fechadas/deletadas** e podem ocasionar
         em banimento **temporário ou permanente**. Veja %1$s/wiki/Hacking para mais detalhes.</string>
 
     <string name="msg_termux_app_required_by_app">O &TERMUX_APP_NAME; é requisitado pelo app %1$s para executar comandos do &TERMUX_APP_NAME;.</string>

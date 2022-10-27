@@ -72,6 +72,10 @@
     <string name="title_share_transcript">Transcrição do terminal</string>
     <string name="title_share_transcript_with">Enviar transcrição para:</string>
 
+    <string name="action_share_selected_text">Compartilhar seleção</string>
+    <string name="title_share_selected_text">Texto do Terminal</string>
+    <string name="title_share_selected_text_with">Enviar texto selecionado para:</string>
+
     <string name="action_autofill_password">Autopreencher senhas</string>
 
     <string name="action_reset_terminal">Resetar</string>

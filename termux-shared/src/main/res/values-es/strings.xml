@@ -86,12 +86,12 @@
         un problema en uno de los siguientes enlaces.
         \n\nSi está publicando un reporte de falla de la aplicación &TERMUX_APP_NAME;, proporcione detalles sobre lo que estaba haciendo, qué
         causó la falla y cómo reproducirla, si es posible.
-        \n\nSi está publicando un problema en Github, publíquelo en el repositorio al que pertenece el informe.
+        \n\nSi está publicando un problema en GitHub, publíquelo en el repositorio al que pertenece el informe.
         Problemas abiertos o correos electrónicos enviados con **capturas de pantalla (parciales)** en lugar de texto copiado o un archivo de este informe
         **probablemente se cerrará/eliminará automáticamente**. Opcionalmente, puede eliminar cualquier información específica del dispositivo que
         considera privado o no quiere compartir o no es relevante para el problema.
         \n\nNo brindamos soporte para ninguna herramienta o secuencia de comandos relacionada con Hacks. Cualquier pregunta sobre ellos por correo electrónico,
-        en github u otros foros oficiales de la comunidad de &TERMUX_APP_NAME; **probablemente se cerrará/eliminará automáticamente** y puede
+        en GitHub u otros foros oficiales de la comunidad de &TERMUX_APP_NAME; **probablemente se cerrará/eliminará automáticamente** y puede
         incluso resultar en una prohibición **temporal o permanente**. Consulte %1$s/wiki/Hacking para obtener más información.</string>
 
     <string name="msg_termux_app_required_by_app">La &TERMUX_APP_NAME; es requerida por la app %1$s para ejecutar comandos de &TERMUX_APP_NAME;.</string>
