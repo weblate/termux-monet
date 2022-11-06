@@ -85,6 +85,10 @@
     <string name="title_confirm_kill_process">Deseja realmente destruir esta sessão?</string>
 
     <string name="action_style_terminal">Aparência</string>
+    <string name="action_font_and_color">Fontes e Cores</string>
+    <string name="action_set_background_image">Definir Papel de parede</string>
+    <string name="action_remove_background_image">Remover Papel de parede</string>
+
     <string name="action_toggle_keep_screen_on">Manter a tela ativa</string>
     <string name="action_open_help">Ajuda</string>
     <string name="action_open_settings">Configurações</string>
@@ -209,6 +213,21 @@
                 <string name="termux_terminal_view_activity_remove_title">Desabilitar permanência nos apps recentes</string>
                 <string name="termux_terminal_view_activity_remove_off">Quando não houver sessões ativas, &TERMUX_APP_NAME; irá fechar e permanecer visível nos apps recentes.</string>
                 <string name="termux_terminal_view_activity_remove_on">&TERMUX_APP_NAME; irá fechar e não permanecerá nos apps recentes quando não houverem sessões de terminal ativas. (Padrão)</string>
+
+
+        <!-- Termux Style Preferences -->
+        <string name="termux_style_preferences_title">Aparência de &TERMUX_APP_NAME;</string>
+        <string name="termux_style_preferences_summary">Preferências para a aparência e customização de &TERMUX_APP_NAME;</string>
+
+            <!-- Background Category -->
+            <string name="termux_background_header">Papel de parede</string>
+
+                <!-- Background Image -->
+                <string name="termux_background_image_enabled_title">Exibir imagem de Papel de parede</string>
+                <string name="termux_background_image_enabled_off">O Papel de parede será desabilitado.
+                    Para habilitá-lo, certifique-se de que os arquivos de retrato e paisagem estão presentes.
+                    Se você deseja definir um novo Papel de parede, defina-o através do menu de contexto ao pressionar longamente no Terminal. (Padrão)</string>
+                <string name="termux_background_image_enabled_on">O Papel de parede será habilitado.</string>
 
 
 

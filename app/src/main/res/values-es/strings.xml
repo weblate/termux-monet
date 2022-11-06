@@ -87,6 +87,10 @@
     <string name="title_confirm_kill_process">¿Cerrar realmente esta sesión?</string>
 
     <string name="action_style_terminal">Estilo</string>
+    <string name="action_font_and_color">Fuentes y Colores</string>
+    <string name="action_set_background_image">Seleccionar Fondo de pantalla</string>
+    <string name="action_remove_background_image">Remover Fondo de pantalla</string>
+
     <string name="action_toggle_keep_screen_on">Mantener pantalla encendida</string>
     <string name="action_open_help">Ayuda</string>
     <string name="action_open_settings">Ajustes</string>
@@ -211,6 +215,21 @@
                 <string name="termux_terminal_view_activity_remove_title">Deshabilitar la permanencia en apps recientes</string>
                 <string name="termux_terminal_view_activity_remove_off">Cuando no hay sesiones activas, &TERMUX_APP_NAME; se cerrará y permanecerá visible en las apps recientes.</string>
                 <string name="termux_terminal_view_activity_remove_on">&TERMUX_APP_NAME; se cerrará y no permanecerá en apps recientes cuando no haya sesiones de terminal activas. (Defecto)</string>
+
+
+        <!-- Termux Style Preferences -->
+        <string name="termux_style_preferences_title">Apariencia del &TERMUX_APP_NAME;</string>
+        <string name="termux_style_preferences_summary">Preferencias de apariencia y personalización del &TERMUX_APP_NAME;</string>
+
+            <!-- Background Category -->
+            <string name="termux_background_header">Fondo de pantalla</string>
+
+                <!-- Background Image -->
+                <string name="termux_background_image_enabled_title">Mostrar imagen de fondo de pantalla</string>
+                <string name="termux_background_image_enabled_off">El fondo de pantalla estará deshabilitado.
+                    Para habilitarlo, asegúrese de que los archivos retrato y paisaje estén presentes.
+                    Si desea configurar un nuevo fondo de pantalla, configúrelo a través del menú contextual presionando prolongadamente en la Terminal. (Defecto)</string>
+                <string name="termux_background_image_enabled_on">El fondo de pantalla estará habilitado.</string>
 
 
 

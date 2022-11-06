@@ -223,17 +223,17 @@
 
 
         <!-- Termux Style Preferences -->
-        <string name="termux_style_preferences_title">Termux Style</string>
-        <string name="termux_style_preferences_summary">Preferences for termux style</string>
+        <string name="termux_style_preferences_title">&TERMUX_APP_NAME; Appearance</string>
+        <string name="termux_style_preferences_summary">Preferences for &TERMUX_APP_NAME; appearance and customisation</string>
 
             <!-- Background Category -->
             <string name="termux_background_header">Background</string>
 
                 <!-- Background Image -->
-                <string name="termux_background_image_enabled_title">Background Image Enabled</string>
+                <string name="termux_background_image_enabled_title">Display background image</string>
                 <string name="termux_background_image_enabled_off">Background image will be disabled.
-                    To enable it appropriate portrait and landscape file should be present.
-                    If you want to set new background, set it from context menu by long click on terminal. (Default)</string>
+                    To enable it, make sure that appropriate portrait and landscape files are present.
+                    If you want to set a new background, set it from context menu by long click on Terminal. (Default)</string>
                 <string name="termux_background_image_enabled_on">Background image will be enabled.</string>
 
 
