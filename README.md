@@ -178,6 +178,15 @@ Version: 3
 > For displaying images using `iTerm2`, download the [imgcat](https://iterm2.com/utilities/imgcat) script, and use it with the command `./imgcat image.png`
 
 ***
+
+## Wallpaper support
+> As described in https://github.com/termux/termux-app/pull/3079, Wallpapers can be defined either by placing `background_landscape.jpeg` and `background.jpeg` on `.termux` folder or by selecting the option `Set background image` inside the terminal context menu, under "Appearance".
+> Background image loading can also be enabled/disabled from settings. From Termux Settings -> Termux -> Termux Style -> Background Image.
+
+> An wallpaper overlay color can be defined through `termux.properties`, by using the key `background-overlay-color=#COLOR`. Supported color formats are `#AARRGGBB` and `#RRGGBB`
+
+***
+
 ## Running termux from ADB
 > As described in https://github.com/termux/termux-app/pull/1969, it is possible to access Termux directrly from adb shell via run-as. see the following example:
 
