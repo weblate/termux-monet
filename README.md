@@ -59,9 +59,9 @@
 > **Modified:**
 > - [Termux:Styling](https://github.com/HardcodedCat/termux-styling)
 > - [Termux:API](https://github.com/HardcodedCat/termux-api)
+> - [Termux:Boot](https://github.com/HardcodedCat/termux-boot)
 >
 > **Unmodified:**
-> - [Termux:Boot](https://github.com/termux/termux-boot)
 > - [Termux:Float](https://github.com/termux/termux-float)
 > - [Termux:Tasker](https://github.com/termux/termux-tasker)
 > - [Termux:Widget](https://github.com/termux/termux-widget)
