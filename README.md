@@ -54,17 +54,15 @@
 
 ## Termux Monet and Plugins
 
-> The [Termux Monet](https://github.com/HardcodedCat/termux-monet) fork app comes with the following optional plugin apps:
+> The [Termux Monet](https://github.com/HardcodedCat/termux-monet) fork app comes with the following optional modified plugin apps:
 >
-> **Modified:**
+> **These are Modified Plugins. All these repos are Forks from termux-app**
 > - [Termux:Styling](https://github.com/HardcodedCat/termux-styling)
 > - [Termux:API](https://github.com/HardcodedCat/termux-api)
 > - [Termux:Boot](https://github.com/HardcodedCat/termux-boot)
->
-> **Unmodified:**
-> - [Termux:Float](https://github.com/termux/termux-float)
-> - [Termux:Tasker](https://github.com/termux/termux-tasker)
-> - [Termux:Widget](https://github.com/termux/termux-widget)
+> - [Termux:Float](https://github.com/HardcodedCat/termux-float)
+> - [Termux:Tasker](https://github.com/HardcodedCat/termux-tasker)
+> - [Termux:Widget](https://github.com/HardcodedCat/termux-widget)
 
 ***
 
