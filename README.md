@@ -21,7 +21,7 @@
     <img src="https://badgen.net/github/tag/HardcodedCat/termux-monet?color=orange&icon=terminal&label=Latest"/>
   </a>
   <a href="/LICENSE">
-    <img src="https://img.shields.io/badge/License-GPLv3_only-informational.svg?logo=gnu"/>
+    <img src="https://img.shields.io/badge/License-GPLv3_only-informational.svg?logo=gnu&label=License"/>
   </a>
 </div>
 <br />
