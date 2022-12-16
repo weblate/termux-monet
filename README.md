@@ -3,10 +3,10 @@
 </p>
 <div align="center">
   <a href="https://github.com/HardcodedCat/termux-monet/actions/workflows/debug_build.yml?query=branch%3Amaster">
-    <img src="https://img.shields.io/github/workflow/status/HardcodedCat/termux-monet/Build%20nightly/master?label=Build&logo=gradle"/>
+    <img src="https://img.shields.io/github/actions/workflow/status/HardcodedCat/termux-monet/debug_build.yml?branch=master&label=Build&logo=gradle"/>
   </a>
   <a href="https://github.com/HardcodedCat/termux-monet/actions/workflows/run_tests.yml?query=branch%3Amaster">
-    <img src="https://img.shields.io/github/workflow/status/HardcodedCat/termux-monet/Test%20app/master?label=Test&logo=gradle"/>
+    <img src="https://img.shields.io/github/actions/workflow/status/HardcodedCat/termux-monet/run_tests.yml?branch=master&label=Test&logo=gradle"/>
   </a>
 </div>
 <br />
