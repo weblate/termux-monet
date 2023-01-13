@@ -1,20 +1,5 @@
-plugins {
-    id "com.jfrog.bintray" version "1.7.3"
-    id "com.github.dcendents.android-maven" version "2.0"
-}
-
 apply plugin: 'com.android.library'
-
-ext {
-    bintrayName = 'terminal-emulator'
-    publishedGroupId = 'com.termux'
-    libraryName = 'TerminalEmulator'
-    artifact = 'terminal-emulator'
-    libraryDescription = 'The terminal emulator used in Termux'
-    siteUrl = 'https://github.com/termux/termux'
-    gitUrl = 'https://github.com/termux/termux.git'
-    libraryVersion = '0.52'
-}
+apply plugin: 'maven-publish'
 
 android {
     compileSdkVersion project.properties.compileSdkVersion.toInteger()
@@ -61,7 +46,26 @@ tasks.withType(Test) {
 }
 
 dependencies {
-    testImplementation 'junit:junit:4.13'
+    testImplementation 'junit:junit:4.13.2'
 }
 
-apply from: '../scripts/bintray-publish.gradle'
+task sourceJar(type: Jar) {
+    from android.sourceSets.main.java.srcDirs
+    classifier "sources"
+}
+
+afterEvaluate {
+    publishing {
+        publications {
+            // Creates a Maven publication called "release".
+            release(MavenPublication) {
+                from components.release
+                groupId = 'com.termux'
+                artifactId = 'terminal-emulator'
+                version = '0.52'
+                artifact(sourceJar)
+            }
+        }
+    }
+}
+
