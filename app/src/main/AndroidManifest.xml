@@ -44,7 +44,7 @@
         android:allowBackup="true"
         android:fullBackupContent="true"
         android:banner="@drawable/banner"
-        android:extractNativeLibs="true"
+        android:extractNativeLibs="false"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/application_name"
         android:hardwareAccelerated="true"
@@ -238,8 +238,8 @@
             android:name="com.sec.android.support.multiwindow"
             android:value="true" />
 
-        <meta-data 
-            android:name="com.lge.support.SPLIT_WINDOW" 
+        <meta-data
+            android:name="com.lge.support.SPLIT_WINDOW"
             android:value="true" />
 
     </application>
