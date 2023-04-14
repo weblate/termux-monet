@@ -16,14 +16,14 @@
     <string name="permission_run_command_label">在&TERMUX_APP_NAME; 环境中运行命令</string>
     <string name="permission_run_command_description">在 &TERMUX_APP_NAME; 环境中运行任意命令</string>
     <!-- Termux Bootstrap Packages Installation -->
-    <string name="bootstrap_installer_body">安装引导程序包...</string>
+    <string name="bootstrap_installer_body">正在安装引导程序包…</string>
     <string name="bootstrap_error_title">无法安装引导程序包</string>
     <string name="bootstrap_error_body">&TERMUX_APP_NAME; 无法安装引导程序包.</string>
     <string name="bootstrap_error_abort">中止</string>
     <string name="bootstrap_error_try_again">再试一次</string>
     <string name="bootstrap_error_not_primary_user_message">&TERMUX_APP_NAME; 只能以主用户身份运行。
-        \n编译的 Bootstrap 二进制文件 &TERMUX_APP_NAME; 有硬编码 $PREFIX 路径，
-        不能安装在任何路径下 %1$s.</string>
+\n编译的 Bootstrap 二进制文件 &TERMUX_APP_NAME; 有硬编码 $PREFIX 路径， 不能安装此路径以外的任何路径：
+\n%1$s。</string>
     <string name="bootstrap_error_installed_on_portable_sd">&TERMUX_APP_NAME; 无法安装在
          设备上的便携式/外部/可移动 sd 卡。
         \n为 &TERMUX_APP_NAME; 编译的引导程序二进制文件； 具有硬编码的 $PREFIX 路径并且无法安装
@@ -45,7 +45,7 @@
     <!-- Terminal Popup -->
     <string name="action_select_url">选择网址</string>
     <string name="title_select_url_dialog">点击网址复制或长按打开</string>
-    <string name="title_select_url_none_found">在终端中没有找到网址</string>
+    <string name="title_select_url_none_found">在终端中没有找到网址。</string>
     <string name="msg_select_url_copied_to_clipboard">网址已复制到剪贴板</string>
     <string name="action_share_transcript">分享终端抄本</string>
     <string name="title_share_transcript">终端抄本</string>
@@ -55,7 +55,7 @@
     <string name="title_share_selected_text_with">将选定的文本发送到:</string>
     <string name="action_autofill_password">自动填充密码</string>
     <string name="action_reset_terminal">重置</string>
-    <string name="msg_terminal_reset">终端重置.</string>
+    <string name="msg_terminal_reset">重置终端</string>
     <string name="action_kill_process">杀死会话 (%d)</string>
     <string name="title_confirm_kill_process">确定杀死这个会话吗?</string>
     <string name="action_style_terminal">样式</string>
@@ -156,4 +156,15 @@
     <!-- Donate Preference -->
     <string name="donate_preference_title">捐赠</string>
     <string name="action_font_and_color">字体和颜色</string>
+    <string name="action_remove_background_image">移除背景图片</string>
+    <string name="error_background_image_loading_failed">无法加载背景图片，正在设置背景色。</string>
+    <string name="termux_background_header">背景</string>
+    <string name="title_restore_background_image">检测到背景图片，需要恢复它吗？</string>
+    <string name="termux_background_image_enabled_on">将启用背景图片。</string>
+    <string name="termux_background_image_enabled_title">显示背景图片</string>
+    <string name="action_set_background_image">设置背景图片</string>
+    <string name="error_background_image_loading_from_gallery_failed">无法加载图片，请尝试使用其他图片。</string>
+    <string name="termux_style_preferences_title">&TERMUX_APP_NAME; 外观</string>
+    <string name="termux_style_preferences_summary">&TERMUX_APP_NAME; 的自定义外观设置</string>
+    <string name="termux_background_image_enabled_off">（默认）背景图像已被禁用。要启用它，请确保存在适当的纵向和横向文件。如果要设置新的背景图片，请通过长按终端从上下文菜单中进行设置。</string>
 </resources>
