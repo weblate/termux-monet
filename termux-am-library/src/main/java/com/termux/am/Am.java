@@ -78,11 +78,30 @@ public class Am extends BaseCommand {
             case "to-app-uri":
                 runToUri(Intent.URI_ANDROID_APP_SCHEME);
                 break;
+            case "printid":
+                printAndroidId();
+                break;
+            case "printid2":
+                printAndroidId2();
+                break;
             default:
                 showError("Error: unknown command '" + op + "'");
                 break;
         }
     }
+
+    private void printAndroidId() {
+        String androidId = android.provider.Settings.Secure.getString(app.getContentResolver(), android.provider.Settings.Secure.ANDROID_ID);
+        out.println("Android ID: " + androidId);
+    }
+
+    private void printAndroidId2() {
+        String androidId = android.provider.Settings.Secure.getString(app.getContentResolver(), android.provider.Settings.Secure.ANDROID_ID);
+        PrintWriter pw = new PrintWriter(out);
+        pw.println("Android ID: " + androidId);
+        pw.flush();
+    }
+
 
     private Intent makeIntent() throws URISyntaxException {
         mRepeat = 0;
