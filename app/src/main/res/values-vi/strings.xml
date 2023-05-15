@@ -1,2 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<!DOCTYPE resources [
+<!ENTITY TERMUX_PACKAGE_NAME "com.termux">
+<!ENTITY TERMUX_APP_NAME "Termux">
+<!ENTITY TERMUX_API_APP_NAME "Termux:API">
+<!ENTITY TERMUX_BOOT_APP_NAME "Termux:Boot">
+<!ENTITY TERMUX_FLOAT_APP_NAME "Termux:Float">
+<!ENTITY TERMUX_STYLING_APP_NAME "Termux:Styling">
+<!ENTITY TERMUX_TASKER_APP_NAME "Termux:Tasker">
+<!ENTITY TERMUX_WIDGET_APP_NAME "Termux:Widget">
+]>
+<resources>
+    <string name="title_rename_session">Đặt tên phiên</string>
+    <string name="action_rename_session_confirm">Đặt</string>
+    <string name="title_create_named_session">Đặt tên phiên mới</string>
+    <string name="action_create_named_session_confirm">Tạo</string>
+    <string name="action_toggle_soft_keyboard">Bàn phím</string>
+    <string name="msg_enabling_terminal_toolbar">Bật Thanh công cụ đầu cuối</string>
+    <string name="msg_disabling_terminal_toolbar">Tắt thanh công cụ đầu cuối</string>
+    <string name="extra_keys_command_hint">Chèn lệnh...</string>
+    <string name="action_select_url">Chọn URL</string>
+    <string name="title_select_url_none_found">Không tìm thấy URL trong thiết bị đầu cuối.</string>
+    <string name="msg_select_url_copied_to_clipboard">Đã sao chép URL vào khay nhớ tạm</string>
+    <string name="bootstrap_error_title">Không thể cài đặt bootstrap</string>
+    <string name="bootstrap_error_body">&TERMUX_APP_NAME; không thể cài đặt các gói bootstrap.</string>
+    <string name="bootstrap_error_installed_on_portable_sd">Không thể cài đặt &TERMUX_APP_NAME; trên thẻ sd di động/gắn ngoài/tháo rời trên thiết bị của bạn.
+\nCác tệp nhị phân Bootstrap được biên dịch cho &TERMUX_APP_NAME; có đường dẫn $PREFIX được mã hóa cứng và không thể cài đặt theo bất kỳ đường dẫn nào khác ngoài:
+\n%1$s.</string>
+    <string name="action_new_session">phiên mới</string>
+    <string name="shared_user_label">&TERMUX_APP_NAME; user</string>
+    <string name="permission_run_command_label">Chạy lệnh trong môi trường &TERMUX_APP_NAME;</string>
+    <string name="bootstrap_installer_body">Đang cài đặt gói bootstrap…</string>
+    <string name="action_new_session_failsafe">Dự phòng</string>
+    <string name="title_max_terminals_reached">Đã đạt đến thiết bị đầu cuối tối đa</string>
+    <string name="msg_max_terminals_reached">Đóng những cái hiện có trước khi tạo cái mới.</string>
+    <string name="bootstrap_error_not_primary_user_message">&TERMUX_APP_NAME; chỉ có thể được chạy với tư cách là người dùng chính.
+\nCác tệp nhị phân Bootstrap được biên dịch cho &TERMUX_APP_NAME; có đường dẫn $PREFIX được mã hóa cứng và không thể cài đặt theo bất kỳ đường dẫn nào khác ngoài:
+\n%1$s.</string>
+    <string name="title_select_url_dialog">Nhấp vào URL để sao chép hoặc nhấn và giữ để mở</string>
+    <string name="bootstrap_error_abort">Huỷ bỏ</string>
+    <string name="bootstrap_error_try_again">Thử lại</string>
+    <string name="permission_run_command_description">thực thi các lệnh tùy ý trong môi trường &TERMUX_APP_NAME; và truy cập tệp</string>
+</resources>
