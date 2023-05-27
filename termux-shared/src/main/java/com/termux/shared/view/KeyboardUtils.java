@@ -113,7 +113,11 @@ public class KeyboardUtils {
         // https://medium.com/androiddevelopers/animating-your-keyboard-fb776a8fb66d
         // https://stackoverflow.com/a/65194077/14686958
         if (activity != null && activity.getWindow() != null)
-            activity.getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_ADJUST_RESIZE);
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
+                activity.getWindow().setDecorFitsSystemWindows(false);
+            } else {
+                activity.getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_ADJUST_RESIZE);
+            }
     }
 
     /**
