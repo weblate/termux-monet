@@ -474,7 +474,12 @@ public class PackageUtils {
      */
     @Nullable
     public static Integer getVersionCodeForPackage(@Nullable final PackageInfo packageInfo) {
-        return packageInfo != null ? packageInfo.versionCode : null;
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P) {
+            return packageInfo != null ? (int) packageInfo.getLongVersionCode() : null;
+        } else {
+            // backward compatibility for Android API < 28
+            return packageInfo != null ? packageInfo.versionCode : null;
+        }
     }
 
     /**
