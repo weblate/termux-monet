@@ -70,7 +70,6 @@ public final class ImageUtils {
             } else {
                 bitmap = MediaStore.Images.Media.getBitmap(context.getContentResolver(), uri);
             }
-            bitmap = MediaStore.Images.Media.getBitmap(context.getContentResolver(), uri);
         } catch (IOException e) {
             Logger.logStackTraceWithMessage(LOG_TAG, "Failed to load bitmap from " + uri, e);
         }
