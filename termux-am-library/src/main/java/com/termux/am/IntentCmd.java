@@ -292,7 +292,7 @@ public class IntentCmd {
                     intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                     break;
                 case "--activity-clear-when-task-reset":
-                    intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_WHEN_TASK_RESET);
+                    intent.addFlags(Intent.FLAG_ACTIVITY_NEW_DOCUMENT);
                     break;
                 case "--activity-exclude-from-recents":
                     intent.addFlags(Intent.FLAG_ACTIVITY_EXCLUDE_FROM_RECENTS);
