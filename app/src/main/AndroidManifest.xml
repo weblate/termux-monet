@@ -115,7 +115,7 @@
 
         <activity
             android:name=".app.api.file.FileReceiverActivity"
-            android:excludeFromRecents="true"
+            android:excludeFromRecents="false"
             android:exported="false"
             android:noHistory="true"
             android:resizeableActivity="true"
