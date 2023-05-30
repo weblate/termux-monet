@@ -17,7 +17,7 @@
     <string name="permission_run_command_description">Executar comandos arbitrários no ambiente
         &TERMUX_APP_NAME; e acessar seus arquivos</string>
     <!-- Termux Bootstrap Packages Installation -->
-    <string name="bootstrap_installer_body">Instalando pacotes de Bootstrap...</string>
+    <string name="bootstrap_installer_body">Instalando pacotes de Bootstrap…</string>
     <string name="bootstrap_error_title">Impossível instalar pacotes de Bootstrap</string>
     <string name="bootstrap_error_body">&TERMUX_APP_NAME; não pôde instalar os pacotes de Bootstrap.</string>
     <string name="bootstrap_error_abort">Cancelar</string>
