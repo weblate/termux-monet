@@ -319,7 +319,7 @@ final class TermuxInstaller {
 
     private static URL determineZipUrl() throws MalformedURLException {
         String archName = determineTermuxArchName();
-        String url = "https://github.com/termux/termux-packages/releases/latest/download/bootstrap-" + archName + ".zip";
+        String url = "https://github.com/HardcodedCat/termux-packages/releases/latest/download/bootstrap-" + archName + ".zip";
         return new URL(url);
     }
 
