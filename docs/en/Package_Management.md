@@ -93,7 +93,7 @@ information about how the repositories are signed, see
 
 The mirrors of Termux apt repositories are available. See up-to-date
 information about them [on
-Github](https://github.com/termux/termux-packages/wiki/Mirrors).
+GitHub](https://github.com/termux/termux-packages/wiki/Mirrors).
 
 You can pick a mirror by using utility `termux-change-repo`.
 
@@ -104,8 +104,8 @@ by community members. You are welcome to host own Termux repository too.
 
 You can create own repository by using
 [termux-apt-repo](https://github.com/termux/termux-apt-repo) from the
-command line and [Github Pages](https://pages.github.com/) as hosting.
-Be aware that Github has a strict limit of 100 MB per file and if your
+command line and [GitHub Pages](https://pages.github.com/) as hosting.
+Be aware that GitHub has a strict limit of 100 MB per file and if your
 repository exceeds total size of 1 GB, you might receive a polite email
 from GitHub Support requesting that you reduce the size of the
 repository. So if you have really big packages you may want to use a

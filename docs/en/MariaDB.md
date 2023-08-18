@@ -9,7 +9,7 @@ Install package "mariadb":
 
 The installation should finish without any error. If error occurred, you
 probably need to report the issue on
-[Github](https://github.com/termux/termux-packages/issues).
+[GitHub](https://github.com/termux/termux-packages/issues).
 
 The command shown above will also initialize the database with **2
 all-privilege accounts** (introduced perhaps in MariaDB 10.4.x). The

@@ -17,7 +17,7 @@ provide tips and tricks about Termux usage.
 
 
 You may contribute to Termux project by making pull requests in our
-[Github repositories](https://github.com/termux) or by improving Termux
+[GitHub repositories](https://github.com/termux) or by improving Termux
 Wiki.
 
 ## What is Termux

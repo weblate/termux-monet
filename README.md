@@ -10,7 +10,7 @@
     <img src="https://img.shields.io/github/actions/workflow/status/HardcodedCat/termux-monet/run_tests.yml?branch=master&label=Test&logo=gradle"/>
   </a>
   <a href="https://hosted.weblate.org/engage/termux-monet/">
-    <img src="https://hosted.weblate.org/widgets/termux-monet/-/termux-app/svg-badge.svg" alt="Translation status" />
+    <img src="https://hosted.weblate.org/widgets/termux-monet/-/svg-badge.svg" alt="Translation status" />
   </a>
 </div>
 <br />
@@ -37,7 +37,7 @@
 
 ***
 <a href="https://hosted.weblate.org/engage/termux-monet/">
-<img src="https://hosted.weblate.org/widgets/termux-monet/-/termux-app/multi-blue.svg" alt="Translation status" align="center"/>
+<img src="https://hosted.weblate.org/widgets/termux-monet/-/multi-blue.svg" alt="Translation status" align="center"/>
 </a>
 
 #### Currently Using Weblate for Translations!
@@ -76,6 +76,7 @@ Join us in https://hosted.weblate.org/engage/termux-monet/
 > - [Termux:Float](https://github.com/HardcodedCat/termux-float)
 > - [Termux:Tasker](https://github.com/HardcodedCat/termux-tasker)
 > - [Termux:Widget](https://github.com/HardcodedCat/termux-widget)
+> - [Termux:GUI](https://github.com/HardcodedCat/termux-gui)
 
 ***
 

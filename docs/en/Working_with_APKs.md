@@ -40,7 +40,7 @@ file](https://github.com/BuildAPKs/db.BuildAPKs/blob/master/BNAMES)
 holds built APK statistics: GitHub login, date stamp, repository
 projects download size, build time, the number of AndroidManifest.xml
 files found and how many APKs were successfully built on device for each
-login that successfully built at least one APK on device from Github
+login that successfully built at least one APK on device from GitHub
 with BuildAPKs.
 
 You can build Android browsers and file managers in Termux by issuing

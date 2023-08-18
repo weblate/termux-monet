@@ -5,7 +5,7 @@ community worldwide. Here are a few ways to get in touch:
 ## Official communities
 
 - **Homepage** : <https://termux.dev/>
-- **Github** : <https://github.com/termux/>
+- **GitHub** : <https://github.com/termux/>
 - **Gitter** : <https://gitter.im/termux/termux>
 - **Discord** : <https://discord.gg/HXpF69X>
 - **[IRC](IRC)** : Channel \#Termux on

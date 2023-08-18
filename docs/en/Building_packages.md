@@ -3,7 +3,7 @@
 ## Using Termux build environment
 
 A recommended way of building is to use official build environment
-available on Github: <https://github.com/termux/termux-packages>. See
+available on GitHub: <https://github.com/termux/termux-packages>. See
 [Termux Developer's
 Wiki](https://github.com/termux/termux-packages/wiki) for tips about its
 usage.

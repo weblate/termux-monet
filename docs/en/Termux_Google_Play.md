@@ -8,7 +8,7 @@ preserve data when re-installing the application.
 
 ## About the issue
 
-Github discussion: <https://github.com/termux/termux-app/issues/1072>
+GitHub discussion: <https://github.com/termux/termux-app/issues/1072>
 
 If Termux application was built with target SDK level "29" or higher, it
 will be eligible for SELinux restriction of execve() system call on data

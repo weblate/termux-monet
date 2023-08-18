@@ -2,6 +2,7 @@ apply plugin: 'com.android.library'
 apply plugin: 'maven-publish'
 
 android {
+    namespace "com.termux.shared"
     compileSdkVersion project.properties.compileSdkVersion.toInteger()
 
     dependencies {
@@ -11,7 +12,7 @@ android {
         // Do not bump androidx.core:core to 1.9.0, since it's gonna fail Task :app:compileDebugJavaWithJavac and Task :app:mergeDebugShaders at build
         implementation "androidx.core:core:1.8.0"
         implementation "com.google.android.material:material:1.8.0"
-        implementation "com.google.guava:guava:31.1-jre"
+        implementation "com.google.guava:guava:32.0.1-jre"
         implementation "io.noties.markwon:core:$markwonVersion"
         implementation "io.noties.markwon:ext-strikethrough:$markwonVersion"
         implementation "io.noties.markwon:linkify:$markwonVersion"
@@ -25,7 +26,7 @@ android {
         // Bumping commons-io to a version higher than 2.5
         // will cause runtime exceptions on android < 8 due
         // to missing classes like java.nio.file.Path.
-        implementation "commons-io:commons-io:2.11.0"
+        implementation "commons-io:commons-io:2.13.0"
 
         implementation project(":terminal-view")
 
@@ -54,8 +55,8 @@ android {
         // Flag to enable support for the new language APIs
         coreLibraryDesugaringEnabled true
 
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
     }
     externalNativeBuild {
         ndkBuild {
@@ -73,7 +74,7 @@ dependencies {
 
 task sourceJar(type: Jar) {
     from android.sourceSets.main.java.srcDirs
-    classifier "sources"
+    archiveClassifier.set("sources")
 }
 
 afterEvaluate {
