@@ -266,8 +266,8 @@ public class TermuxTerminalSessionActivityClient extends TermuxTerminalSessionCl
         if (mBellSoundPool == null) {
             mBellSoundPool = new SoundPool.Builder().setMaxStreams(1).setAudioAttributes(new AudioAttributes.Builder().setContentType(AudioAttributes.CONTENT_TYPE_SONIFICATION).setUsage(AudioAttributes.USAGE_ASSISTANCE_SONIFICATION).build()).build();
             try {
-                mBellSoundId = mBellSoundPool.load(mActivity, R.raw.bell, 1);
-            } catch (Exception e) {
+                mBellSoundId = mBellSoundPool.load(mActivity, com.termux.shared.R.raw.bell, 1);
+            } catch (Exception e){
                 // Catch java.lang.RuntimeException: Unable to resume activity {com.termux/com.termux.app.TermuxActivity}: android.content.res.Resources$NotFoundException: File res/raw/bell.ogg from drawable resource ID
                 Logger.logStackTraceWithMessage(LOG_TAG, "Failed to load bell sound pool", e);
             }

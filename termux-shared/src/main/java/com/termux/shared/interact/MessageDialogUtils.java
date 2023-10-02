@@ -43,9 +43,16 @@ public class MessageDialogUtils {
      *                         is pressed.
      * @param onDismiss The {@link DialogInterface.OnDismissListener} to run when dialog is dismissed.
      */
-    public static void showMessage(Context context, String titleText, String messageText, String positiveText, final DialogInterface.OnClickListener onPositiveButton, String negativeText, final DialogInterface.OnClickListener onNegativeButton, final DialogInterface.OnDismissListener onDismiss) {
-        AlertDialog.Builder builder = new AlertDialog.Builder(context, R.style.Theme_AppCompat_Light_Dialog);
-        LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+    public static void showMessage(Context context, String titleText, String messageText,
+                                   String positiveText,
+                                   final DialogInterface.OnClickListener onPositiveButton,
+                                   String negativeText,
+                                   final DialogInterface.OnClickListener onNegativeButton,
+                                   final DialogInterface.OnDismissListener onDismiss) {
+
+        AlertDialog.Builder builder = new AlertDialog.Builder(context, androidx.appcompat.R.style.Theme_AppCompat_Light_Dialog);
+
+        LayoutInflater inflater = (LayoutInflater) context.getSystemService( Context.LAYOUT_INFLATER_SERVICE );
         View view = inflater.inflate(R.layout.dialog_show_message, null);
         if (view != null) {
             builder.setView(view);
