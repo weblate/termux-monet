@@ -1,2 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="msg_directory_absolute_path">%1$s Percorso assoluto della cartella: \"%2$s\"</string>
+    <string name="error_app_not_installed_or_disabled_warning">L\'applicazione %1$s (%2$s) non è installata o è disabilitata.</string>
+    <string name="action_yes">Sì</string>
+    <string name="action_share">Condividi</string>
+    <string name="action_no">No</string>
+    <string name="action_save_to_file">Salva come file</string>
+    <string name="title_share_with">Condividi con</string>
+    <string name="title_open_url_with">Apri URL con</string>
+    <string name="action_copy">Copia</string>
+    <string name="action_cancel">Annulla</string>
+</resources>
