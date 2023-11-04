@@ -86,4 +86,14 @@
     <string name="error_styling_not_installed">Wtyczka &TERMUX_STYLING_APP_NAME; nie jest zainstalowana.</string>
     <string name="action_styling_install">Zainstaluj</string>
     <string name="action_kill_process">Zakończ sesję (%d)</string>
+    <string name="about_preference_title">O aplikacji</string>
+    <string name="termux_style_preferences_title">Wygląd &TERMUX_APP_NAME;</string>
+    <string name="termux_background_header">Tło</string>
+    <string name="termux_api_preferences_summary">Preferencje dla aplikacji &TERMUX_API_APP_NAME;</string>
+    <string name="termux_tasker_preferences_summary">Preferencje dla aplikacji &TERMUX_TASKER_APP_NAME;</string>
+    <string name="termux_float_preferences_summary">Preferencje dla aplikacji &TERMUX_FLOAT_APP_NAME;</string>
+    <string name="termux_terminal_view_preferences_title">Widok terminala</string>
+    <string name="termux_terminal_view_view_header">Widok</string>
+    <string name="donate_preference_title">Przekaż darowiznę</string>
+    <string name="termux_widget_preferences_summary">Preferencje dla aplikacji &TERMUX_WIDGET_APP_NAME;</string>
 </resources>
