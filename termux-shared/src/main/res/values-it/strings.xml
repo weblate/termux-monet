@@ -10,4 +10,10 @@
     <string name="title_open_url_with">Apri URL con</string>
     <string name="action_copy">Copia</string>
     <string name="action_cancel">Annulla</string>
+    <string name="log_level_off">Disabilitato</string>
+    <string name="log_level_title">Livello del log</string>
+    <string name="log_level_verbose">Dettagliato</string>
+    <string name="log_level_normal">Normale</string>
+    <string name="log_level_debug">Debug</string>
+    <string name="log_level_unknown">*Sconosciuto*</string>
 </resources>
