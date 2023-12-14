@@ -16,4 +16,14 @@
     <string name="log_level_normal">Normale</string>
     <string name="log_level_debug">Debug</string>
     <string name="log_level_unknown">*Sconosciuto*</string>
+    <string name="error_failed_to_request_permissions">Impossibile richiedere permessi con codice di richiesta %1$d: %2$s</string>
+    <string name="error_attempted_to_ask_for_permissions_not_requested">Si è tentato di chiedere permessi che non sono stati richiesti nel manifest dell\'app: %1$s</string>
+    <string name="error_attempted_to_check_for_permissions_not_requested">"Si è tentato di  verificare permessi che non sono stati richiesti nel manifest dell\'app: %1$s"</string>
+    <string name="error_get_package_context_failed_title">Impossibile ottenere il contesto del pacchetto</string>
+    <string name="error_get_package_context_failed_message">Impossibile ottenere il contesto per il pacchetto \"%1$s\". Ciò potrebbe essere dovuto al fatto che il pacchetto dell\'app non è installato o ha una firma APK differente da quella dell\'app corrente.</string>
+    <string name="message_sudo_please_grant_permissions">Per favore concedi le autorizzazioni richieste</string>
+    <string name="error_disable_component_failed">Impossibile disabilitare il componente %1$s/%2$s</string>
+    <string name="error_enable_component_failed">Impossibile abilitare il componente %1$s/%2$s</string>
+    <string name="error_get_component_state_failed">Impossibile ottenere lo stato del componente %1$s/%2$s</string>
+    <string name="error_get_package_context_failed_help_url_message">Controlla %1$s per maggiori dettagli.</string>
 </resources>
