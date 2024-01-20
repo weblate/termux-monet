@@ -77,15 +77,15 @@
     <string name="error_termux_service_execution_command_shell_name_unset">A rendszerhéj neve nincs beállítva, de a `%1$s` rendszerhéj létrehozási módja átment</string>
     <!-- Termux RunCommandService -->
     <string name="error_run_command_service_invalid_intent_action">Érvénytelen szándékkal kapcsolatos művelet a RunCommandService-hez: `%1$s`</string>
-    <string name="error_run_command_service_invalid_execution_command_runner">Érvénytelen végrehajtási parancs futója RunCommandService: `%1$s`</string>
-    <string name="error_run_command_service_mandatory_extra_missing">Kötelező extra hiányzik a RunCommandService: \"%1$s\"</string>
-    <string name="error_run_command_service_api_help">Látogasd meg %1$s a RUN_COMMAND intent használatával kapcsolatos további információkért.</string>
+    <string name="error_run_command_service_invalid_execution_command_runner">Érvénytelen végrehajtási parancs futtatója a RunCommandService: `%1$s`</string>
+    <string name="error_run_command_service_mandatory_extra_missing">Kötelező extra hiányzik a RunCommandService-ből: \"%1$s\"</string>
+    <string name="error_run_command_service_api_help">Látogasd meg %1$s a RUN_COMMAND szándék használatával kapcsolatos további információkért.</string>
     <!-- Termux File Receiver -->
     <string name="title_file_received">Fájl mentése ide: ~/downloads/</string>
     <string name="action_file_received_edit">Szerkesztés</string>
     <string name="action_file_received_open_directory">Könyvtár megnyitása</string>
     <!-- Miscellaneous -->
-    <string name="error_termux_service_start_failed_general">Nem sikerült elindítani a TermuxService szolgáltatást. Ellenőrizze a logcatben a hibaüzenetet.</string>
+    <string name="error_termux_service_start_failed_general">Nem sikerült elindítani a TermuxService szolgáltatást. Tekintse meg a logcatben a hibaüzenetet.</string>
     <string name="error_termux_service_start_failed_bg">Nem sikerült elindítani a TermuxService-t, miközben az alkalmazás a háttérben van az Android háttér korlátozásai miatt.</string>
     <!-- Termux Settings -->
     <string name="title_activity_termux_settings">&TERMUX_APP_NAME; Beállítások</string>
