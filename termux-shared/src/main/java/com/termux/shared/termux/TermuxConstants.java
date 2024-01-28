@@ -1381,6 +1381,11 @@ public final class TermuxConstants {
      */
     public static final String TERMUX_ENV_PREFIX_ROOT = "TERMUX";
 
+
+
+
+
+
     /**
      * Termux app constants.
      */
@@ -1500,11 +1505,11 @@ public final class TermuxConstants {
             // Default: "com.termux.service_wake_unlock"
             public static final String ACTION_WAKE_UNLOCK = TERMUX_PACKAGE_NAME + ".service_wake_unlock";
 
-            /**
-             * Intent action to execute command with TERMUX_SERVICE
-             */
-            // Default: "com.termux.service_execute"
-            public static final String ACTION_SERVICE_EXECUTE = TERMUX_PACKAGE_NAME + ".service_execute";
+            /** Intent action to execute command with TERMUX_SERVICE */
+            public static final String ACTION_SERVICE_EXECUTE = TERMUX_PACKAGE_NAME + ".service_execute"; // Default: "com.termux.service_execute"
+
+            /** Intent action to execute command with TERMUX_SERVICE */
+            public static final String ACTION_SERVICE_STOP = TERMUX_PACKAGE_NAME + ".service_execution_stop"; // Default: "com.termux.service_execute"
 
             /**
              * Uri scheme for paths sent via intent to TERMUX_SERVICE
@@ -1638,10 +1643,13 @@ public final class TermuxConstants {
             /**
              * Intent {@code String} extra for the optional suffix of the result files that should
              * be created in {@link #EXTRA_RESULT_DIRECTORY} if {@link #EXTRA_RESULT_SINGLE_FILE} is
-             * {@code false} for the TERMUX_SERVICE.ACTION_SERVICE_EXECUTE intent
-             */
-            // Default: "com.termux.execute.result_files_suffix"
-            public static final String EXTRA_RESULT_FILES_SUFFIX = TERMUX_PACKAGE_NAME + ".execute.result_files_suffix";
+             * {@code false} for the TERMUX_SERVICE.ACTION_SERVICE_EXECUTE intent */
+            public static final String EXTRA_RESULT_FILES_SUFFIX = TERMUX_PACKAGE_NAME + ".execute.result_files_suffix"; // Default: "com.termux.execute.result_files_suffix"
+            /** Intent {@code long} extra for graceperiod between SIGTERM and SIGKILL
+             * for the TERMUX_SERVICE.ACTION_SERVICE_STOP intent */
+            public static final String EXTRA_TERMINATE_GRACE_PERIOD = TERMUX_PACKAGE_NAME + ".execute.stop.delay";
+
+
 
             /**
              * The value for {@link #EXTRA_SESSION_ACTION} extra that will set the new session as
