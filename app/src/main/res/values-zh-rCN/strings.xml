@@ -41,7 +41,7 @@
     <string name="msg_enabling_terminal_toolbar">启用终端工具栏</string>
     <string name="msg_disabling_terminal_toolbar">禁用终端工具栏</string>
     <!-- Terminal Extra Keys -->
-    <string name="extra_keys_command_hint">输入命令...</string>
+    <string name="extra_keys_command_hint">输入命令…</string>
     <!-- Terminal Popup -->
     <string name="action_select_url">选择网址</string>
     <string name="title_select_url_dialog">点击网址复制或长按打开</string>
