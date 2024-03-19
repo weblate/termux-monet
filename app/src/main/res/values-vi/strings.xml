@@ -26,7 +26,7 @@
     <string name="bootstrap_error_installed_on_portable_sd">Không thể cài đặt &TERMUX_APP_NAME; trên thẻ sd di động/gắn ngoài/tháo rời trên thiết bị của bạn.
 \nCác tệp nhị phân Bootstrap được biên dịch cho &TERMUX_APP_NAME; có đường dẫn $PREFIX được mã hóa cứng và không thể cài đặt theo bất kỳ đường dẫn nào khác ngoài:
 \n%1$s.</string>
-    <string name="action_new_session">phiên mới</string>
+    <string name="action_new_session">Phiên mới</string>
     <string name="shared_user_label">&TERMUX_APP_NAME; user</string>
     <string name="permission_run_command_label">Chạy lệnh trong môi trường &TERMUX_APP_NAME;</string>
     <string name="bootstrap_installer_body">Đang cài đặt gói bootstrap…</string>
