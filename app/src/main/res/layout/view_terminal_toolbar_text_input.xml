@@ -1,9 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/terminal_toolbar_text_input_button"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:backgroundTint="@color/background_accent"
+        android:padding="0dp"
+        android:text="\u276e"
+        android:textColor="@color/main_accent"
+        android:textSize="24sp"
+        app:cornerRadius="0dp"
+        app:iconPadding="0dp" />
+
 <com.google.android.material.textfield.TextInputEditText xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/terminal_toolbar_text_input"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_weight="1"
     android:imeOptions="actionSend|flagNoFullscreen"
     android:maxLines="1"
     android:inputType="text"
@@ -16,3 +35,4 @@
     android:hint="@string/extra_keys_command_hint"
     android:textColorHint="@color/hint_accent"
     tools:ignore="LabelFor" />
+</LinearLayout>

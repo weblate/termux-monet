@@ -1,14 +1,18 @@
 package com.termux.app.terminal.io;
 
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.EditText;
 import androidx.annotation.NonNull;
 import androidx.viewpager.widget.PagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 import com.termux.R;
 import com.termux.app.TermuxActivity;
+import com.termux.app.activities.SettingsActivity;
+import com.termux.shared.activity.ActivityUtils;
 import com.termux.shared.termux.extrakeys.ExtraKeysView;
 import com.termux.terminal.TerminalSession;
 
@@ -53,6 +57,13 @@ public class TerminalToolbarViewPager {
                 }
             } else {
                 layout = inflater.inflate(R.layout.view_terminal_toolbar_text_input, collection, false);
+
+                final Button button = layout.findViewById(R.id.terminal_toolbar_text_input_button);
+                button.setOnClickListener(v -> {
+                    ViewPager pager = mActivity.getTerminalToolbarViewPager();
+                    pager.setCurrentItem(1, true);
+                });
+
                 final EditText editText = layout.findViewById(R.id.terminal_toolbar_text_input);
                 if (mSavedTextInput != null) {
                     editText.setText(mSavedTextInput);
