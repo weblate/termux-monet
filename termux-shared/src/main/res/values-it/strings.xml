@@ -26,4 +26,6 @@
     <string name="error_enable_component_failed">Impossibile abilitare il componente %1$s/%2$s</string>
     <string name="error_get_component_state_failed">Impossibile ottenere lo stato del componente %1$s/%2$s</string>
     <string name="error_get_package_context_failed_help_url_message">Controlla %1$s per maggiori dettagli.</string>
+    <string name="msg_requires_dump_and_package_usage_stats_permissions">Necessaria l\'autorizzazione `DUMP` e `PACKAGE_USAGE_STATS`</string>
+    <string name="error_has_not_requested_legacy_external_storage">Il pacchetto \"%1$s\" sta puntando a targetSdkVersion %2$d ed è in esecuzione su android sdk %3$d ma non ha impostato `requestLegacyExternalStorage` su `true` nel manifest dell\'applicazione</string>
 </resources>
