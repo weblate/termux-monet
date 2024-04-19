@@ -2,4 +2,5 @@
 <resources>
     <string name="paste_text">Dán</string>
     <string name="copy_text">Sao chép</string>
+    <string name="text_selection_more">Nhiều hơn…</string>
 </resources>
