@@ -1,4 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources [
+<!ENTITY TERMUX_PACKAGE_NAME "com.termux">
+<!ENTITY TERMUX_APP_NAME "Termux">
+<!ENTITY TERMUX_API_APP_NAME "Termux:API">
+<!ENTITY TERMUX_BOOT_APP_NAME "Termux:Boot">
+<!ENTITY TERMUX_FLOAT_APP_NAME "Termux:Float">
+<!ENTITY TERMUX_STYLING_APP_NAME "Termux:Styling">
+<!ENTITY TERMUX_TASKER_APP_NAME "Termux:Tasker">
+<!ENTITY TERMUX_WIDGET_APP_NAME "Termux:Widget">
+]>
 <resources>
     <string name="action_new_session">نشست جدید</string>
     <string name="action_create_named_session_confirm">ایجاد</string>
@@ -34,4 +44,5 @@
     <string name="action_file_received_open_directory">باز کردن شاخه</string>
     <string name="title_restore_background_image">تصویر پس‌زمینه تشخیص داده شد. آیا می‌خواهید آن را بازیابی کنید؟</string>
     <string name="action_rename_session_confirm">نشاندن</string>
+    <string name="permission_run_command_label">Run commands in &TERMUX_APP_NAME; environment</string>
 </resources>
