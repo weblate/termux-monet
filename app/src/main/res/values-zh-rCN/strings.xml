@@ -108,7 +108,7 @@
     <!-- Plugin Error Notifications -->
     <string name="termux_plugin_error_notifications_enabled_title">插件错误通知</string>
     <string name="termux_plugin_error_notifications_enabled_off">禁用插件错误的闪烁和通知。</string>
-    <string name="termux_plugin_error_notifications_enabled_on">显示插件错误的闪烁和通知。（默认）</string>
+    <string name="termux_plugin_error_notifications_enabled_on">当插件错误时闪烁和显示通知。（默认）</string>
     <!-- Crash Report Notifications -->
     <string name="termux_crash_report_notifications_enabled_title">崩溃报告通知</string>
     <string name="termux_crash_report_notifications_enabled_off">禁用崩溃报告的通知。</string>
