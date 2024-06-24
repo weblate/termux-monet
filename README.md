@@ -150,7 +150,9 @@ su -c getprop persist.sys.fflag.override.settings_enable_monitor_phantom_procs
 
 The [test key](https://github.com/termux/termux-app/blob/master/app/testkey_untrusted.jks) shall not be used to impersonate @termux and can't be used for this anyway. This key is not trusted by us and it is quite easy to detect its use in user generated content.
 
-Keystore information:
+<details>
+<summary>Keystore information</summary>
+
 ```
 Alias name: alias
 Creation date: Oct 4, 2019
