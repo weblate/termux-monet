@@ -48,6 +48,11 @@ Join us in https://hosted.weblate.org/engage/termux-monet/
 #### LOWER VERSIONS WILL DISPLAY A STATIC, BLACK AND WHITE MONET THEME
 ***
 
+# Termux-Monet can be updated by using [Obtainium](https://github.com/ImranR98/Obtainium)
+Here's a quick tutorial on how to add it to the app.
+![Uploadit](https://github.com/KitsunedFox/termux-monet/assets/103902727/bc2a236e-04ee-416c-a37c-d50c69e52b24)
+***
+
 [Termux-Monet](https://github.com/HardcodedCat/termux-monet) is a unofficial, modified fork of [Termux](https://github.com/termux/termux-app), an Android terminal application and Linux environment, with Monet Theming Implementations.
 
 ***
