@@ -50,6 +50,7 @@ Join us in https://hosted.weblate.org/engage/termux-monet/
 
 # Termux-Monet can be updated by using [Obtainium](https://github.com/ImranR98/Obtainium)
 Here's a quick tutorial on how to add it to the app.
+
 ![Uploadit](https://github.com/KitsunedFox/termux-monet/assets/103902727/bc2a236e-04ee-416c-a37c-d50c69e52b24)
 ***
 
