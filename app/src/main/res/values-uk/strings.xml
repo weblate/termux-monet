@@ -56,7 +56,7 @@
 \nБінарники bootstrap, скомпільовані для &TERMUX_APP_NAME;, мають жорстко запрограмований шлях $PREFIX і не можуть бути встановлені за будь-яким іншим шляхом, окрім:
 \n%1$s.</string>
     <string name="error_termux_service_unsupported_execution_command_runner">Не підтримуване виконання переходу команди в TermuxService: `%1$s`</string>
-    <string name="action_new_session">Нова сесія</string>
+    <string name="action_new_session">Новий сеанс</string>
     <string name="action_new_session_failsafe">Безаварійності</string>
     <string name="title_max_terminals_reached">Досягнуто максимум терміналів</string>
     <string name="title_rename_session">Встановити назву сеансу</string>

@@ -26,7 +26,7 @@
     <string name="error_failed_to_request_permissions">使用请求代码 %1$d 请求权限失败：%2$s</string>
     <string name="error_attempted_to_check_for_permissions_not_requested">已尝试检查应用清单中未请求的权限：%1$s</string>
     <string name="error_attempted_to_ask_for_permissions_not_requested">尝试请求未在应用清单中请求的权限：%1$s</string>
-    <string name="error_has_not_requested_legacy_external_storage">\"%1$s\" 包以 targetSdkVersion 为 %2$d，并在 Android SDK 版本 %3$d 上运行，但未在应用清单中将 requestLegacyExternalStorage 设置为 true</string>
+    <string name="error_has_not_requested_legacy_external_storage">\"%1$s\" 包目标API 级别(targetSdkVersion)为 %2$d，并在 Android SDK 版本 %3$d 上运行，但未在应用清单(manifest)中将 requestLegacyExternalStorage 设置为 true</string>
     <string name="msg_requires_dump_and_package_usage_stats_permissions">需要 `DUMP` 和 `PACKAGE_USAGE_STATS` 权限</string>
     <string name="error_display_over_other_apps_permission_not_granted">%1$s 需要“显示在其他应用的上层”权限来以从 Android &gt;= 10 后台启动活动和服务。你可以在 Android 设置 -&gt; 应用程序 -&gt; %1$s -&gt; 高级 -&gt; 显示在其他应用的上层 授予此权限。权限名称在不同设备上可能不同，比如在小米上，它叫做“后台弹出界面”。对于不同系统中的具体操作，请查看 https://dontkillmyapp.com 。</string>
     <!-- TermuxPluginUtils -->
@@ -51,7 +51,7 @@
     <string name="error_exception_received_while_executing_app_shell_command">执行 \"%1$s\" 应用 shell 命令时收到异常。
 \n异常: %2$s</string>
     <!-- TermuxUtils -->
-    <string name="msg_report_issue"> 如果您想报告此问题，请从选项菜单（右上角的 3 点）复制其文本，并在以下链接之一发布您的问题。
+    <string name="msg_report_issue">如果您想报告此问题，请从选项菜单（右上角的 3 点）复制其文本，并在以下链接之一发布您的问题。
 \n
 \n如果您要发布 &TERMUX_APP_NAME; 应用程序崩溃报告，请提供有关您正在执行的操作的详细信息（即是什么导致了崩溃）以及如何重现它，如果可能的话。
 \n

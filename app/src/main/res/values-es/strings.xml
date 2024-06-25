@@ -11,7 +11,7 @@
 ]>
 <!-- Spanish translation by CrazyBytesVE --><resources>
     <string name="application_name">&TERMUX_APP_NAME;</string>
-    <string name="shared_user_label">Usuario &TERMUX_APP_NAME;</string>
+    <string name="shared_user_label">&TERMUX_APP_NAME; Usuario</string>
     <!-- Termux RUN_COMMAND permission -->
     <string name="permission_run_command_label">Ejecutar comandos en entorno &TERMUX_APP_NAME;</string>
     <string name="permission_run_command_description">ejecutar comandos arbitrarios dentro del entorno &TERMUX_APP_NAME;

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="error_app_not_installed_or_disabled_warning">%1$s )%2$s( غير مثبت أو معطل</string>
+    <string name="error_get_package_context_failed_title">فشل في الحصول على معلومات الحزمة</string>
+    <string name="error_get_package_context_failed_help_url_message">تحقق من %1$s لمزيد من المعلومات.</string>
+    <string name="error_enable_component_failed">فشل في تفعيل العنصر %1$s/%2$s</string>
+    <string name="error_disable_component_failed">فشل في تعطيل العنصر %1$s/%2$s</string>
+    <string name="error_failed_to_request_permissions">فشل في طلب الأذونات مع رمز الطلب %1$d: %2$s</string>
+    <string name="message_sudo_please_grant_permissions">رجاءًا إسمح بالأذونات المطلوبة</string>
+    <string name="error_get_package_context_failed_message">فشل في الحصول على المعلومات لحزمة ”%1$s”. قد يكون بسبب أن التطبيق ليس مثبتًا أو ملف APK لديه توقيع مختلف عن التطبيق الحالي</string>
+    <string name="error_get_component_state_failed">فشل في الحصول على حالة العنصر %1$s/%2$s</string>
+    <string name="error_attempted_to_check_for_permissions_not_requested">تمت محاولة التحقق من الأذونات التي لم يتم طلبها في بيان التطبيق: %1$s</string>
+</resources>

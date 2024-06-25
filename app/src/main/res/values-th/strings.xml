@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources [
+<!ENTITY TERMUX_PACKAGE_NAME "com.termux">
+<!ENTITY TERMUX_APP_NAME "Termux">
+<!ENTITY TERMUX_API_APP_NAME "Termux:API">
+<!ENTITY TERMUX_BOOT_APP_NAME "Termux:Boot">
+<!ENTITY TERMUX_FLOAT_APP_NAME "Termux:Float">
+<!ENTITY TERMUX_STYLING_APP_NAME "Termux:Styling">
+<!ENTITY TERMUX_TASKER_APP_NAME "Termux:Tasker">
+<!ENTITY TERMUX_WIDGET_APP_NAME "Termux:Widget">
+]>
+<resources>
+    <string name="bootstrap_installer_body">กำลังติดตั้งแพ็คเกจบูตสแตรป…</string>
+    <string name="bootstrap_error_title">ไม่สามารถติดตั้งบูตสแตรปได้</string>
+    <string name="shared_user_label">ผู้ใช้งาน &TERMUX_APP_NAME;</string>
+    <string name="permission_run_command_label">รันคำสั่งในสภาพแวดล้อมของ &TERMUX_APP_NAME;</string>
+</resources>
