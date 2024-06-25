@@ -35,8 +35,6 @@
   <img src="/art/screenshot_light.png#gh-light-mode-only" height=50%>
 </p>
 
-**We are looking for Termux Android application maintainers.**
-
 ***
 <a href="https://hosted.weblate.org/engage/termux-monet/">
 <img src="https://hosted.weblate.org/widgets/termux-monet/-/multi-blue.svg" alt="Translation status" align="center"/>
@@ -53,7 +51,6 @@ Join us in https://hosted.weblate.org/engage/termux-monet/
 [Termux-Monet](https://github.com/HardcodedCat/termux-monet) is a unofficial, modified fork of [Termux](https://github.com/termux/termux-app), an Android terminal application and Linux environment, with Monet Theming Implementations.
 
 ***
-
 ## Contents
 - [Phantom Process Killer](#Phantom-Process-Killer)
 - [Nightly Releases](#Nightly-Builds)
@@ -150,9 +147,7 @@ su -c getprop persist.sys.fflag.override.settings_enable_monitor_phantom_procs
 
 The [test key](https://github.com/termux/termux-app/blob/master/app/testkey_untrusted.jks) shall not be used to impersonate @termux and can't be used for this anyway. This key is not trusted by us and it is quite easy to detect its use in user generated content.
 
-<details>
-<summary>Keystore information</summary>
-
+Keystore information:
 ```
 Alias name: alias
 Creation date: Oct 4, 2019
