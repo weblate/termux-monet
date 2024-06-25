@@ -11,6 +11,8 @@ import android.util.Pair;
 import android.view.WindowManager;
 import com.termux.R;
 import com.termux.shared.file.FileUtils;
+import com.termux.shared.shell.command.ExecutionCommand;
+import com.termux.shared.shell.command.runner.app.AppShell;
 import com.termux.shared.termux.crash.TermuxCrashUtils;
 import com.termux.shared.termux.file.TermuxFileUtils;
 import com.termux.shared.interact.MessageDialogUtils;
@@ -171,7 +173,9 @@ final class TermuxInstaller {
                                         int readBytes;
                                         while ((readBytes = zipInput.read(buffer)) != -1) outStream.write(buffer, 0, readBytes);
                                     }
-                                    if (zipEntryName.startsWith("bin/") || zipEntryName.startsWith("libexec") || zipEntryName.startsWith("lib/apt/apt-helper") || zipEntryName.startsWith("lib/apt/methods")) {
+                                    if (zipEntryName.startsWith("bin/") || zipEntryName.startsWith("libexec") ||
+                                        zipEntryName.startsWith("lib/apt/apt-helper") || zipEntryName.startsWith("lib/apt/methods") ||
+                                        zipEntryName.equals("etc/termux/bootstrap/termux-bootstrap-second-stage.sh")) {
                                         //noinspection OctalInteger
                                         Os.chmod(targetFile.getAbsolutePath(), 0700);
                                     }
@@ -188,6 +192,29 @@ final class TermuxInstaller {
                     if (!TERMUX_STAGING_PREFIX_DIR.renameTo(TERMUX_PREFIX_DIR)) {
                         throw new RuntimeException("Moving termux prefix staging to prefix directory failed");
                     }
+
+                    // Run Termux bootstrap second stage
+                    Logger.logInfo(LOG_TAG, "Running Termux bootstrap second stage.");
+                    String termuxBootstrapSecondStageFile = TERMUX_PREFIX_DIR_PATH + "/etc/termux/bootstrap/termux-bootstrap-second-stage.sh";
+                    if (FileUtils.fileExists(termuxBootstrapSecondStageFile, false)) {
+                        ExecutionCommand executionCommand = new ExecutionCommand(-1,
+                                termuxBootstrapSecondStageFile, null, null,
+                                null, ExecutionCommand.Runner.APP_SHELL.getName(), false);
+                        executionCommand.commandLabel = "Termux Bootstrap Second Stage Command";
+                        executionCommand.backgroundCustomLogLevel = Logger.LOG_LEVEL_NORMAL;
+                        AppShell appShell = AppShell.execute(activity, executionCommand, null, new TermuxShellEnvironment(), null, true);
+                        boolean stderrSet = !executionCommand.resultData.stderr.toString().isEmpty();
+                        if (appShell == null || !executionCommand.isSuccessful() || executionCommand.resultData.exitCode != 0 || stderrSet) {
+                            // Delete prefix directory as otherwise when app is restarted, the broken prefix directory would be used and logged into
+                            error = FileUtils.deleteFile("termux prefix directory", TERMUX_PREFIX_DIR_PATH, true);
+                            if (error != null)
+                                Logger.logErrorExtended(LOG_TAG, error.toString());
+
+                            showBootstrapErrorDialog(activity, whenDone, MarkdownUtils.getMarkdownCodeForString(executionCommand.toString(), true));
+                            return;
+                        }
+                    }
+
                     Logger.logInfo(LOG_TAG, "Bootstrap packages installed successfully.");
                     // Recreate env file since termux prefix was wiped earlier
                     TermuxShellEnvironment.writeEnvironmentToFile(activity);

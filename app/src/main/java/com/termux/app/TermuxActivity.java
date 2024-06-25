@@ -778,7 +778,8 @@ public final class TermuxActivity extends AppCompatActivity implements ServiceCo
                 // Do not ask for permission again
                 int requestCode = isPermissionCallback ? -1 : PermissionUtils.REQUEST_GRANT_STORAGE_PERMISSION;
                 // If permission is granted, then also setup storage symlinks.
-                if (PermissionUtils.checkAndRequestLegacyOrManageExternalStoragePermission(TermuxActivity.this, requestCode, !isPermissionCallback)) {
+                if(PermissionUtils.checkAndRequestLegacyOrManageExternalStoragePermission(
+                    TermuxActivity.this, requestCode, true, !isPermissionCallback)) {
                     if (isPermissionCallback)
                         Logger.logInfoAndShowToast(TermuxActivity.this, LOG_TAG, getString(com.termux.shared.R.string.msg_storage_permission_granted_on_request));
                     TermuxInstaller.setupStorageSymlinks(TermuxActivity.this);

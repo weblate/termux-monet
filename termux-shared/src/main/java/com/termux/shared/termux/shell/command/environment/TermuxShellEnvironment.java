@@ -69,9 +69,13 @@ public class TermuxShellEnvironment extends AndroidShellEnvironment {
         HashMap<String, String> termuxAppEnvironment = TermuxAppShellEnvironment.getEnvironment(currentPackageContext);
         if (termuxAppEnvironment != null)
             environment.putAll(termuxAppEnvironment);
+
+        /*
         HashMap<String, String> termuxApiAppEnvironment = TermuxAPIShellEnvironment.getEnvironment(currentPackageContext);
         if (termuxApiAppEnvironment != null)
             environment.putAll(termuxApiAppEnvironment);
+         */
+
         environment.put(ENV_HOME, TermuxConstants.TERMUX_HOME_DIR_PATH);
         environment.put(ENV_PREFIX, TermuxConstants.TERMUX_PREFIX_DIR_PATH);
         // If failsafe is not enabled, then we keep default PATH and TMPDIR so that system binaries can be used
