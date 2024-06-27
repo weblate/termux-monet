@@ -46,7 +46,7 @@
         <!-- Extra keys colors. -->
         <item name="extraKeysButtonTextColor">@color/main_accent</item>
         <item name="extraKeysButtonActiveTextColor">@color/opposite_accent</item>
-        <item name="extraKeysButtonBackgroundColor">@color/background_accent</item>
+        <item name="extraKeysButtonBackgroundColor">@android:color/transparent</item>
         <item name="extraKeysButtonActiveBackgroundColor">@color/highlight_accent</item>
 
     </style>
