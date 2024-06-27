@@ -184,6 +184,8 @@ public final class TermuxActivity extends AppCompatActivity implements ServiceCo
      * The {@link TermuxActivity} is in an invalid state and must not be run.
      */
     private boolean mIsInvalidState;
+    
+    public boolean isToolbarHidden = false;
 
     private int mNavBarHeight;
 
@@ -317,7 +319,7 @@ public final class TermuxActivity extends AppCompatActivity implements ServiceCo
             mTermuxTerminalViewClient.onStart();
         if (mPreferences.isTerminalMarginAdjustmentEnabled())
             addTermuxActivityRootViewGlobalLayoutListener();
-        if (mPreferences.isExtraKeysBlurEnabled()) {
+        if ((mPreferences.isExtraKeysBlurEnabled()) && (isToolbarHidden == false)) {
             View extraKeysBackgroundBlur = findViewById(R.id.extrakeys_backgroundblur);
             extraKeysBackgroundBlur.setVisibility(View.VISIBLE);
             View extraKeysBackground = findViewById(R.id.extrakeys_background);
@@ -546,6 +548,16 @@ public final class TermuxActivity extends AppCompatActivity implements ServiceCo
         final boolean showNow = mPreferences.toogleShowTerminalToolbar();
         Logger.showToast(this, (showNow ? getString(R.string.msg_enabling_terminal_toolbar) : getString(R.string.msg_disabling_terminal_toolbar)), true);
         terminalToolbarViewPager.setVisibility(showNow ? View.VISIBLE : View.GONE);
+        View extraKeysBackgroundBlur = findViewById(R.id.extrakeys_backgroundblur);
+        View extraKeysBackground = findViewById(R.id.extrakeys_background);
+        extraKeysBackgroundBlur.setVisibility(showNow ? View.VISIBLE : View.GONE);
+        extraKeysBackground.setVisibility(showNow ? View.VISIBLE : View.GONE);
+        if (isToolbarHidden == true) {
+            isToolbarHidden = false;
+        } else {
+            isToolbarHidden = true;
+        }
+        
         if (showNow && isTerminalToolbarTextInputViewSelected()) {
             // Focus the text input view if just revealed.
             findViewById(R.id.terminal_toolbar_text_input).requestFocus();
