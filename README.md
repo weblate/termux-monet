@@ -36,6 +36,11 @@
 </p>
 
 ***
+
+## [Termux-Monet](https://github.com/HardcodedCat/termux-monet) is a unofficial, modified fork of [Termux](https://github.com/termux/termux-app), an Android terminal application and Linux environment, with Monet Theming Implementations and Community-made changes.
+This project is developed on my spare time, for me to learn more about Android development. Dont expect consistency, professionality or stability. 
+
+***
 <a href="https://hosted.weblate.org/engage/termux-monet/">
 <img src="https://hosted.weblate.org/widgets/termux-monet/-/multi-blue.svg" alt="Translation status" align="center"/>
 </a>
@@ -54,9 +59,6 @@ Here's a quick tutorial on how to add it to the app.
 ![Uploadit](https://github.com/KitsunedFox/termux-monet/assets/103902727/bc2a236e-04ee-416c-a37c-d50c69e52b24)
 ***
 
-[Termux-Monet](https://github.com/HardcodedCat/termux-monet) is a unofficial, modified fork of [Termux](https://github.com/termux/termux-app), an Android terminal application and Linux environment, with Monet Theming Implementations.
-
-***
 ## Contents
 - [Phantom Process Killer](#Phantom-Process-Killer)
 - [Nightly Releases](#Nightly-Builds)
