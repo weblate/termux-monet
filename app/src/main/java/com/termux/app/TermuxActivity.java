@@ -317,6 +317,17 @@ public final class TermuxActivity extends AppCompatActivity implements ServiceCo
             mTermuxTerminalViewClient.onStart();
         if (mPreferences.isTerminalMarginAdjustmentEnabled())
             addTermuxActivityRootViewGlobalLayoutListener();
+        if (mPreferences.isExtraKeysBlurEnabled()) {
+            View extraKeysBackgroundBlur = findViewById(R.id.extrakeys_backgroundblur);
+            extraKeysBackgroundBlur.setVisibility(View.VISIBLE);
+            View extraKeysBackground = findViewById(R.id.extrakeys_background);
+            extraKeysBackground.setAlpha(0.80f);
+        } else {
+            View extraKeysBackgroundBlur = findViewById(R.id.extrakeys_backgroundblur);
+            extraKeysBackgroundBlur.setVisibility(View.GONE);
+            View extraKeysBackground = findViewById(R.id.extrakeys_background);
+            extraKeysBackground.setAlpha(1.0f);
+        }
         registerTermuxActivityBroadcastReceiver();
     }
 

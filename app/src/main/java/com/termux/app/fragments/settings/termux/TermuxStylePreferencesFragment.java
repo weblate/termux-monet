@@ -75,6 +75,8 @@ class TermuxStylePreferencesDataStore extends PreferenceDataStore {
         switch(key) {
             case "background_image_enabled":
                 mPreferences.setBackgroundImageEnabled(value);
+            case "extrakeys_blur_enabled":
+                mPreferences.setExtraKeysBlurEnabled(value);
             default:
                 break;
         }
@@ -87,6 +89,8 @@ class TermuxStylePreferencesDataStore extends PreferenceDataStore {
         switch(key) {
             case "background_image_enabled":
                 return mPreferences.isBackgroundImageEnabled();
+            case "extrakeys_blur_enabled":
+                return mPreferences.isExtraKeysBlurEnabled();
             default:
                 return false;
         }
