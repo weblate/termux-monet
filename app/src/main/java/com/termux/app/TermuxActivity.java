@@ -329,33 +329,28 @@ public final class TermuxActivity extends AppCompatActivity implements ServiceCo
             mTermuxTerminalViewClient.onStart();
         if (mPreferences.isTerminalMarginAdjustmentEnabled())
             addTermuxActivityRootViewGlobalLayoutListener();
+        View terminalMonetBackground = findViewById(R.id.terminal_monetbackground);
+        View sessionsBackgroundBlur = findViewById(R.id.sessions_backgroundblur);
+        View sessionsBackground = findViewById(R.id.sessions_background);
+        View extraKeysBackgroundBlur = findViewById(R.id.extrakeys_backgroundblur);
+        View extraKeysBackground = findViewById(R.id.extrakeys_background);
         if (mPreferences.isMonetBackgroundEnabled()) {
-            View terminalMonetBackground = findViewById(R.id.terminal_monetbackground);
             terminalMonetBackground.setVisibility(View.VISIBLE);
         } else {
-            View terminalMonetBackground = findViewById(R.id.terminal_monetbackground);
             terminalMonetBackground.setVisibility(View.GONE);
         }
         if (mPreferences.isSessionsBlurEnabled()) {
-            View sessionsBackgroundBlur = findViewById(R.id.sessions_backgroundblur);
             sessionsBackgroundBlur.setVisibility(View.VISIBLE);
-            View sessionsBackground = findViewById(R.id.sessions_background);
             sessionsBackground.setAlpha(0.5f);
         } else {
-            View sessionsBackgroundBlur = findViewById(R.id.sessions_backgroundblur);
             sessionsBackgroundBlur.setVisibility(View.GONE);
-            View sessionsBackground = findViewById(R.id.sessions_background);
             sessionsBackground.setAlpha(1.0f);
         }
         if ((mPreferences.isExtraKeysBlurEnabled()) && (isToolbarHidden == false)) {
-            View extraKeysBackgroundBlur = findViewById(R.id.extrakeys_backgroundblur);
             extraKeysBackgroundBlur.setVisibility(View.VISIBLE);
-            View extraKeysBackground = findViewById(R.id.extrakeys_background);
             extraKeysBackground.setAlpha(0.80f);
         } else {
-            View extraKeysBackgroundBlur = findViewById(R.id.extrakeys_backgroundblur);
             extraKeysBackgroundBlur.setVisibility(View.GONE);
-            View extraKeysBackground = findViewById(R.id.extrakeys_background);
             extraKeysBackground.setAlpha(1.0f);
         }
         registerTermuxActivityBroadcastReceiver();
