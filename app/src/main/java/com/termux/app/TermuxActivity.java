@@ -329,6 +329,13 @@ public final class TermuxActivity extends AppCompatActivity implements ServiceCo
             mTermuxTerminalViewClient.onStart();
         if (mPreferences.isTerminalMarginAdjustmentEnabled())
             addTermuxActivityRootViewGlobalLayoutListener();
+        if (mPreferences.isMonetBackgroundEnabled()) {
+            View terminalMonetBackground = findViewById(R.id.terminal_monetbackground);
+            terminalMonetBackground.setEnabled(true);
+        } else {
+            View terminalMonetBackground = findViewById(R.id.terminal_monetbackground);
+            terminalMonetBackground.setEnabled(false);
+        }
         if (mPreferences.isSessionsBlurEnabled()) {
             View sessionsBackgroundBlur = findViewById(R.id.sessions_backgroundblur);
             sessionsBackgroundBlur.setEnabled(true);
