@@ -77,6 +77,10 @@ task sourceJar(type: Jar) {
     archiveClassifier.set("sources")
 }
 
+tasks.withType(JavaCompile) {
+    options.compilerArgs << "-Xlint:deprecation"
+}
+
 afterEvaluate {
     publishing {
         publications {
