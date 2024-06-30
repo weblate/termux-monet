@@ -14,8 +14,6 @@ updates:
         # Prefix all commit messages with "Changed: "
         prefix: "Changed"
     rebase-strategy: "disabled"
-    ignore:
-      - dependency-name: "androidx.window:window"
 
   - package-ecosystem: "github-actions"
     directory: "/" # Location of package manifests
