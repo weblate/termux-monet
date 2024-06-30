@@ -546,6 +546,8 @@ public final class TermuxActivity extends AppCompatActivity implements ServiceCo
 
     public void setTerminalToolbarHeight() {
         final ViewPager terminalToolbarViewPager = getTerminalToolbarViewPager();
+        View extraKeysBackgroundBlur = findViewById(R.id.extrakeys_backgroundblur);
+        View extraKeysBackground = findViewById(R.id.extrakeys_background);
         if (terminalToolbarViewPager == null)
             return;
         ViewGroup.LayoutParams layoutParams = terminalToolbarViewPager.getLayoutParams();
@@ -562,6 +564,8 @@ public final class TermuxActivity extends AppCompatActivity implements ServiceCo
 
         layoutParams.height = Math.round(mTerminalToolbarDefaultHeight * matrix * mProperties.getTerminalToolbarHeightScaleFactor());
         terminalToolbarViewPager.setLayoutParams(layoutParams);
+        extraKeysBackground.setLayoutParams(layoutParams);
+        extraKeysBackgroundBlur.setLayoutParams(layoutParams);
     }
 
     public void toggleTerminalToolbar() {
