@@ -35,6 +35,7 @@ android {
             TERMUX_PACKAGE_NAME    : "com.termux",
             TERMUX_APP_NAME        : "Termux",
             TERMUX_API_APP_NAME    : "Termux:API",
+            TERMUX_GUI_APP_NAME    : "Termux:GUI",
             TERMUX_BOOT_APP_NAME   : "Termux:Boot",
             TERMUX_FLOAT_APP_NAME  : "Termux:Float",
             TERMUX_STYLING_APP_NAME: "Termux:Styling",

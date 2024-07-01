@@ -4,6 +4,7 @@
     <!ENTITY TERMUX_PACKAGE_NAME "com.termux">
     <!ENTITY TERMUX_APP_NAME "Termux">
     <!ENTITY TERMUX_API_APP_NAME "Termux:API">
+    <!ENTITY TERMUX_GUI_APP_NAME "Termux:GUI">
     <!ENTITY TERMUX_BOOT_APP_NAME "Termux:Boot">
     <!ENTITY TERMUX_FLOAT_APP_NAME "Termux:Float">
     <!ENTITY TERMUX_STYLING_APP_NAME "Termux:Styling">
@@ -277,6 +278,12 @@
     <!-- Termux:Tasker App Preferences -->
     <string name="termux_tasker_preferences_title">&TERMUX_TASKER_APP_NAME;</string>
     <string name="termux_tasker_preferences_summary">Preferences for &TERMUX_TASKER_APP_NAME; app</string>
+
+
+
+    <!-- Termux:GUI App Preferences -->
+    <string name="termux_gui_preferences_title">&TERMUX_GUI_APP_NAME;</string>
+    <string name="termux_gui_preferences_summary">Preferences for &TERMUX_GUI_APP_NAME; app</string>
 
 
 

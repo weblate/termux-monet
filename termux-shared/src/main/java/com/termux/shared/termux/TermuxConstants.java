@@ -534,10 +534,22 @@ public final class TermuxConstants {
     public static final String TERMUX_TASKER_APP_NAME = "Termux:Tasker";
 
     /**
+     * Termux:GUI app name
+     */
+    // Default: "Termux:GUI"
+    public static final String TERMUX_GUI_APP_NAME = "Termux:GUI";
+
+    /**
      * Termux:Tasker app package name
      */
     // Default: "com.termux.tasker"
     public static final String TERMUX_TASKER_PACKAGE_NAME = TERMUX_PACKAGE_NAME + ".tasker";
+
+    /**
+     * Termux:GUI app package name
+     */
+    // Default: "com.termux.gui"
+    public static final String TERMUX_GUI_PACKAGE_NAME = TERMUX_PACKAGE_NAME + ".gui";
 
     /**
      * Termux:Tasker GitHub repo name
@@ -546,10 +558,22 @@ public final class TermuxConstants {
     public static final String TERMUX_TASKER_GITHUB_REPO_NAME = "termux-tasker";
 
     /**
+     * Termux:GUI GitHub repo name
+     */
+    // Default: "termux-gui"
+    public static final String TERMUX_GUI_GITHUB_REPO_NAME = "termux-gui";
+
+    /**
      * Termux:Tasker GitHub repo url
      */
     // Default: "https://github.com/termux/termux-tasker"
     public static final String TERMUX_TASKER_GITHUB_REPO_URL = TERMUX_GITHUB_ORGANIZATION_URL + "/" + TERMUX_TASKER_GITHUB_REPO_NAME;
+
+    /**
+     * Termux:GUI GitHub repo url
+     */
+    // Default: "https://github.com/termux/termux-gui"
+    public static final String TERMUX_GUI_GITHUB_REPO_URL = TERMUX_GITHUB_ORGANIZATION_URL + "/" + TERMUX_GUI_GITHUB_REPO_NAME;
 
     /**
      * Termux:Tasker GitHub issues repo url
@@ -558,10 +582,22 @@ public final class TermuxConstants {
     public static final String TERMUX_TASKER_GITHUB_ISSUES_REPO_URL = TERMUX_TASKER_GITHUB_REPO_URL + "/issues";
 
     /**
+     * Termux:GUI GitHub issues repo url
+     */
+    // Default: "https://github.com/termux/termux-gui/issues"
+    public static final String TERMUX_GUI_GITHUB_ISSUES_REPO_URL = TERMUX_GUI_GITHUB_REPO_URL + "/issues";
+
+    /**
      * Termux:Tasker F-Droid package url
      */
     // Default: "https://f-droid.org/en/packages/com.termux.tasker"
     public static final String TERMUX_TASKER_FDROID_PACKAGE_URL = FDROID_PACKAGES_BASE_URL + "/" + TERMUX_TASKER_PACKAGE_NAME;
+
+    /**
+     * Termux:GUI F-Droid package url
+     */
+    // Default: "https://f-droid.org/en/packages/com.termux.gui"
+    public static final String TERMUX_GUI_FDROID_PACKAGE_URL = FDROID_PACKAGES_BASE_URL + "/" + TERMUX_GUI_PACKAGE_NAME;
 
     /**
      * Termux:Widget app name
@@ -602,9 +638,9 @@ public final class TermuxConstants {
     /*
      * Termux plugin apps lists.
      */
-    public static final List<String> TERMUX_PLUGIN_APP_NAMES_LIST = Arrays.asList(TERMUX_API_APP_NAME, TERMUX_BOOT_APP_NAME, TERMUX_FLOAT_APP_NAME, TERMUX_STYLING_APP_NAME, TERMUX_TASKER_APP_NAME, TERMUX_WIDGET_APP_NAME);
+    public static final List<String> TERMUX_PLUGIN_APP_NAMES_LIST = Arrays.asList(TERMUX_API_APP_NAME, TERMUX_BOOT_APP_NAME, TERMUX_FLOAT_APP_NAME, TERMUX_STYLING_APP_NAME, TERMUX_TASKER_APP_NAME, TERMUX_WIDGET_APP_NAME, TERMUX_GUI_APP_NAME);
 
-    public static final List<String> TERMUX_PLUGIN_APP_PACKAGE_NAMES_LIST = Arrays.asList(TERMUX_API_PACKAGE_NAME, TERMUX_BOOT_PACKAGE_NAME, TERMUX_FLOAT_PACKAGE_NAME, TERMUX_STYLING_PACKAGE_NAME, TERMUX_TASKER_PACKAGE_NAME, TERMUX_WIDGET_PACKAGE_NAME);
+    public static final List<String> TERMUX_PLUGIN_APP_PACKAGE_NAMES_LIST = Arrays.asList(TERMUX_API_PACKAGE_NAME, TERMUX_BOOT_PACKAGE_NAME, TERMUX_FLOAT_PACKAGE_NAME, TERMUX_STYLING_PACKAGE_NAME, TERMUX_TASKER_PACKAGE_NAME, TERMUX_WIDGET_PACKAGE_NAME, TERMUX_GUI_PACKAGE_NAME);
 
     /*
      * Termux APK releases.
@@ -1066,6 +1102,12 @@ public final class TermuxConstants {
      */
     // Default: "com.termux.widget_preferences"
     public static final String TERMUX_WIDGET_DEFAULT_PREFERENCES_FILE_BASENAME_WITHOUT_EXTENSION = TERMUX_WIDGET_PACKAGE_NAME + "_preferences";
+
+    /**
+     * Termux:GUI app default SharedPreferences file basename without extension
+     */
+    // Default: "com.termux.gui_preferences"
+    public static final String TERMUX_GUI_DEFAULT_PREFERENCES_FILE_BASENAME_WITHOUT_EXTENSION = TERMUX_GUI_PACKAGE_NAME + "_preferences";
 
     /**
      * Termux app properties primary file path
@@ -1922,6 +1964,18 @@ public final class TermuxConstants {
          */
         // Default: "com.termux.tasker.activities.TermuxAPIActivity"
         public static final String TERMUX_API_ACTIVITY_NAME = TERMUX_API_PACKAGE_NAME + ".activities.TermuxAPIActivity";
+    }
+
+    /**
+     * Termux:GUI app constants.
+     */
+    public static final class TERMUX_GUI {
+
+        /**
+         * Termux:GUI app core activity name.
+         */
+        // Default: "com.termux.gui.activities.TermuxGUIActivity"
+        public static final String TERMUX_GUI_ACTIVITY_NAME = TERMUX_GUI_PACKAGE_NAME + ".activities.TermuxGUIActivity";
     }
 
     /**

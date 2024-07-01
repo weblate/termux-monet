@@ -327,6 +327,17 @@ public final class TermuxPreferenceConstants {
     }
 
     /**
+     * Termux:GUI app constants.
+     */
+    public static final class TERMUX_GUI_APP {
+
+        /**
+         * Defines the key for current log level.
+         */
+        public static final String KEY_LOG_LEVEL = "log_level";
+    }
+
+    /**
      * Termux:Widget app constants.
      */
     public static final class TERMUX_WIDGET_APP {
