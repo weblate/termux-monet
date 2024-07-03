@@ -1,2 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="action_new_session">Uus sessioon</string>
+    <string name="title_max_terminals_reached">Maksimaalne arv terminale</string>
+    <string name="title_rename_session">Määra sessiooni nimi</string>
+    <string name="action_create_named_session_confirm">Loo</string>
+    <string name="action_toggle_soft_keyboard">Klaviatuur</string>
+    <string name="title_select_url_dialog">Vajuta URL, et kopeerida või hoia, et teha lahti</string>
+    <string name="action_autofill_password">Parooli auto-sisestus</string>
+    <string name="title_confirm_kill_process">Soovite tõesti sessiooni peatada?</string>
+    <string name="action_style_terminal">Stiil</string>
+    <string name="action_font_and_color">Kirjatüüp ja Värv</string>
+    <string name="action_set_background_image">Vali taustapilt</string>
+    <string name="action_report_issue">Teata probleemist</string>
+    <string name="error_background_image_loading_failed">Ei õnnestunud taustapilti laadida. Määran tausta värvi.</string>
+    <string name="error_background_image_loading_from_gallery_failed">Ei õnnestunud pilti laadida. Proovige teist pilti.</string>
+    <string name="termux_terminal_view_view_header">Vaata</string>
+    <string name="bootstrap_error_abort">Katkesta</string>
+    <string name="bootstrap_error_try_again">Proovi veel</string>
+    <string name="action_rename_session_confirm">Määra</string>
+    <string name="msg_terminal_reset">Terminali lähtestamine</string>
+    <string name="extra_keys_command_hint">Sisesta käsk…</string>
+    <string name="action_select_url">Vali URL</string>
+    <string name="msg_max_terminals_reached">Sulgege mõned, enne uue avamist</string>
+    <string name="title_select_url_none_found">Terminalis ei leitud URL\'i.</string>
+    <string name="msg_select_url_copied_to_clipboard">URL kopeeritud</string>
+    <string name="action_share_selected_text">Jaga valitud tekst</string>
+    <string name="title_share_selected_text">Terminali Tekst</string>
+    <string name="title_share_selected_text_with">Saada valitud text:</string>
+    <string name="action_reset_terminal">Lähtesta</string>
+    <string name="action_kill_process">Peata protsess (%d)</string>
+    <string name="action_toggle_keep_screen_on">Hoia ekraan sisse lülituna</string>
+    <string name="action_remove_background_image">Eemalda taustapilt</string>
+    <string name="action_open_help">Abi</string>
+    <string name="action_open_settings">Sätted</string>
+    <string name="action_styling_install">Paigalda</string>
+    <string name="action_file_received_edit">Muuda</string>
+    <string name="title_restore_background_image">Taustapilt tuvastatud. Kas soovite selle taastada?</string>
+    <string name="notification_action_exit">Välju</string>
+    <string name="donate_preference_title">Anneta</string>
+    <string name="termux_soft_keyboard_enabled_off">Pehme klaviatuur lülitatakse välja.</string>
+    <string name="termux_terminal_io_preferences_summary">Terminali I/O sätted</string>
+    <string name="termux_terminal_io_preferences_title">Terminali I/O</string>
+    <string name="termux_keyboard_header">Klaviatuur</string>
+    <string name="termux_soft_keyboard_enabled_title">Pehme klaviatuur sees</string>
+    <string name="termux_terminal_view_preferences_title">Terminali vaade</string>
+    <string name="termux_terminal_view_preferences_summary">Terminali vaate sätted</string>
+</resources>
