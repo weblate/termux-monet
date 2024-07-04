@@ -1,32 +1,25 @@
-plugins {
-    id "com.jfrog.bintray" version "1.7.3"
-    id "com.github.dcendents.android-maven" version "2.0"
-}
-
 apply plugin: 'com.android.library'
-
-ext {
-    bintrayName = 'native-entrypoint'
-    publishedGroupId = 'com.termux'
-    libraryName = 'NativeEntryPoint'
-    artifact = 'native-entrypoint'
-    libraryDescription = 'The terminal view used in Termux'
-    siteUrl = 'https://github.com/termux/termux'
-    gitUrl = 'https://github.com/termux/termux.git'
-    libraryVersion = '0.50'
-}
+apply plugin: 'maven-publish'
 
 android {
-    compileSdkVersion project.properties.compileSdkVersion.toInteger()
-    ndkVersion project.properties.ndkVersion
+    namespace "com.termux.nativeentrypoint"
 
-    dependencies {
-        implementation "androidx.annotation:annotation:1.1.0"
-    }
+    compileSdkVersion project.properties.compileSdkVersion.toInteger()
+    ndkVersion = System.getenv("JITPACK_NDK_VERSION") ?: project.properties.ndkVersion
 
     defaultConfig {
         minSdkVersion project.properties.minSdkVersion.toInteger()
         targetSdkVersion project.properties.targetSdkVersion.toInteger()
+
+        externalNativeBuild {
+            ndkBuild {
+                cFlags "-Wall", "-Wextra", "-Werror", "-Os", "-fno-stack-protector", "-Wl,--gc-sections"
+            }
+        }
+
+        ndk {
+            abiFilters 'x86', 'x86_64', 'armeabi-v7a', 'arm64-v8a'
+        }
     }
 
     buildTypes {
@@ -43,9 +36,35 @@ android {
     }
 
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
     }
 }
 
-apply from: '../scripts/bintray-publish.gradle'
+tasks.withType(JavaCompile) {
+    options.compilerArgs << "-Xlint:deprecation"
+}
+
+dependencies {
+    implementation "androidx.annotation:annotation:1.8.0"
+}
+
+task sourceJar(type: Jar) {
+    from android.sourceSets.main.java.srcDirs
+    archiveClassifier = "sources"
+}
+
+afterEvaluate {
+    publishing {
+        publications {
+            // Creates a Maven publication called "release".
+            release(MavenPublication) {
+                from components.findByName('release')
+                groupId = 'com.termux'
+                artifactId = 'native-entrypoint'
+                version = '1.0'
+                artifact(sourceJar)
+            }
+        }
+    }
+}
