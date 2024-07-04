@@ -23,8 +23,8 @@ android {
     defaultConfig {
         minSdkVersion project.properties.minSdkVersion.toInteger()
         targetSdkVersion project.properties.targetSdkVersion.toInteger()
-        versionCode 1020
-        versionName "0.119.0-beta.1"
+        versionCode 1020 // Always keep the same versionCode as Termux Upstream to allow users to swap between termux installations.
+        versionName "0.119.0-b1+monet36"
 
         if (appVersionName) versionName = appVersionName
         validateVersionName(versionName)
