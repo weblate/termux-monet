@@ -516,7 +516,10 @@ public class TermuxUtils {
         if (context == null)
             return "null";
         StringBuilder markdownString = new StringBuilder();
-        markdownString.append("## Important Links");
+        markdownString.append("## Termux:Monet");
+        markdownString.append("\n\n").append(MarkdownUtils.getLinkMarkdownString("Termux-Monet", "https://github.com/KitsunedFox/termux-monet")).append(" - by KitsunedFox  ");
+        markdownString.append("\n\n").append(context.getString(R.string.msg_about_termux_monet));
+        markdownString.append("\n\n## Important Links");
         markdownString.append("\n\n### GitHub\n");
         markdownString.append("\n").append(MarkdownUtils.getLinkMarkdownString(TermuxConstants.TERMUX_APP_NAME, TermuxConstants.TERMUX_GITHUB_REPO_URL)).append("  ");
         markdownString.append("\n").append(MarkdownUtils.getLinkMarkdownString(TermuxConstants.TERMUX_API_APP_NAME, TermuxConstants.TERMUX_API_GITHUB_REPO_URL)).append("  ");
