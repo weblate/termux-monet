@@ -272,6 +272,7 @@ Users must post complete report (optionally without sensitive info) when reporti
 ***
 
 ## Disclaimer
+> There's no termux monet official groups other than github.com/termux-monet. If you see any Telegram or Threads group, that's not made by me! Any group that's not mentioned in this README.md is not official.
 
 > Do not report issues occurred in Termux Monet on termux-app repo, unless you're completely certain that this problem is also present in the regular Termux App.
 >
