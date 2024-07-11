@@ -42,7 +42,7 @@
     <string name="msg_enabling_terminal_toolbar">Habilitando a barra de ferramentas</string>
     <string name="msg_disabling_terminal_toolbar">Desabilitando a barra de ferramentas</string>
     <!-- Terminal Extra Keys -->
-    <string name="extra_keys_command_hint">Inserir comando…</string>
+    <string name="extra_keys_command_hint">Inserir comando...</string>
     <!-- Terminal Popup -->
     <string name="action_select_url">Selecionar URL</string>
     <string name="title_select_url_dialog">Clique na URL para copiar ou clique longo para abrir </string>
@@ -177,7 +177,7 @@
     <string name="about_preference_title">Sobre</string>
     <!-- Donate Preference -->
     <string name="donate_preference_title">Doar</string>
-    <string name="title_restore_background_image">Um plano de fundo foi encontrado. Gostaria de restaurá-lo\?</string>
-    <string name="error_background_image_loading_from_gallery_failed">Não foi possível carregar esta imagem. Tente novamente.</string>
-    <string name="error_background_image_loading_failed">Não foi possível carregar o plano de fundo. Utilizando cor sólida.</string>
+    <string name="title_restore_background_image">Plano de fundo encontrado. você gostaria de restaurá-lo\?</string>
+    <string name="error_background_image_loading_failed">Não foi possível carregar o plano de fundo. Utilizando plano de fundo de cor sólida.</string>
+    <string name="error_background_image_loading_from_gallery_failed">Não foi possível carregar esta imagem. Tente utilizar outra imagem.</string>
 </resources>
