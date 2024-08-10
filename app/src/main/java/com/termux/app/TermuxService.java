@@ -1,6 +1,8 @@
 package com.termux.app;
 
 import android.annotation.SuppressLint;
+import android.app.ActivityManager;
+import android.app.ActivityManager.RunningAppProcessInfo;
 import android.app.Notification;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
@@ -11,10 +13,13 @@ import android.content.res.Resources;
 import android.net.wifi.WifiManager;
 import android.os.Binder;
 import android.os.Build;
+import android.os.FileUtils;
 import android.os.Handler;
 import android.os.IBinder;
 import android.os.Looper;
 import android.os.PowerManager;
+import android.system.Os;
+import android.system.OsConstants;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.core.app.NotificationCompat;
@@ -48,6 +53,10 @@ import com.termux.shared.shell.command.ExecutionCommand.ShellCreateMode;
 import com.termux.terminal.TerminalEmulator;
 import com.termux.terminal.TerminalSession;
 import com.termux.terminal.TerminalSessionClient;
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -295,8 +304,48 @@ public final class TermuxService extends Service implements AppShell.AppShellCli
                 }
             }
         }
-    }
-
+        
+ try{
+        logd("close remaining orphans in /proc");
+			final File proc = new File("/proc");
+   	final String[] files = proc.list();
+   	int i = 0;
+     for(String f : files) {
+         if (!new File(proc, f).isDirectory()) continue;
+         try {
+         // numbers are pids
+				int pid =  Integer.parseInt(f);
+				logd(self(pid) + " pid " + pid);
+				//skip termux 
+				if (!self(pid)) Os.kill(pid, OsConstants.SIGTERM);
+				i++;
+     	 } catch (NumberFormatException e) {}
+      }
+			  
+			} catch (Exception e) { loge(e); }
+ }
+    
+boolean self(int pid){
+	  try {			
+		File f = new File(String.format("/proc/%d/cmdline",pid));
+		  FileInputStream		is = new FileInputStream(f);
+   BufferedReader  reader = new BufferedReader( new InputStreamReader(is));
+     String comm = reader.readLine();
+	//	  logd(comm + comm.trim().length() + "com.termux".length());
+		 return comm.trim().equals("com.termux");
+		}catch(Exception e) {
+			loge(e);
+		}
+		return false;
+	}
+	
+void logd(String l){
+	Logger.logDebug(LOG_TAG,l);
+	}
+	void loge(Exception e){
+		logd(e.toString() + e.getMessage());
+	}
+	
     /**
      * Process action to acquire Power and Wi-Fi WakeLocks.
      */
