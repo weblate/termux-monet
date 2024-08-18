@@ -22,6 +22,7 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewConfiguration;
 import android.view.ViewGroup;
+import android.view.accessibility.AccessibilityManager;
 import android.view.accessibility.AccessibilityNodeInfo;
 import android.widget.GridLayout;
 import android.widget.PopupWindow;
@@ -258,6 +259,8 @@ public final class ExtraKeysView extends GridLayout {
 
     protected int mLongPressCount;
 
+    protected boolean mAccessibilityEnabled;
+
     public ExtraKeysView(Context context, AttributeSet attrs) {
         super(context, attrs);
         setRepetitiveKeys(ExtraKeysConstants.PRIMARY_REPETITIVE_KEYS);
@@ -265,6 +268,9 @@ public final class ExtraKeysView extends GridLayout {
         setButtonColors(ThemeUtils.getSystemAttrColor(context, ATTR_BUTTON_TEXT_COLOR, DEFAULT_BUTTON_TEXT_COLOR), ThemeUtils.getSystemAttrColor(context, ATTR_BUTTON_ACTIVE_TEXT_COLOR, DEFAULT_BUTTON_ACTIVE_TEXT_COLOR), ThemeUtils.getSystemAttrColor(context, ATTR_BUTTON_BACKGROUND_COLOR, DEFAULT_BUTTON_BACKGROUND_COLOR), ThemeUtils.getSystemAttrColor(context, ATTR_BUTTON_ACTIVE_BACKGROUND_COLOR, DEFAULT_BUTTON_ACTIVE_BACKGROUND_COLOR));
         setLongPressTimeout(ViewConfiguration.getLongPressTimeout());
         setLongPressRepeatDelay(DEFAULT_LONG_PRESS_REPEAT_DELAY);
+
+        AccessibilityManager am = (AccessibilityManager) context.getSystemService(Context.ACCESSIBILITY_SERVICE);
+        mAccessibilityEnabled = am.isEnabled();
     }
 
     /**
@@ -597,10 +603,32 @@ public final class ExtraKeysView extends GridLayout {
             state.setIsActive(!state.isActive);
             if (!state.isActive)
                 state.setIsLocked(false);
+
+            announceSpecialKeyStateChangeForAccessibility(buttonInfo.getKey(), state);
         } else {
             onExtraKeyButtonClick(view, buttonInfo, button);
         }
     }
+
+    private void announceSpecialKeyStateChangeForAccessibility(CharSequence buttonName, SpecialButtonState state) {
+        if(mAccessibilityEnabled) {
+            CharSequence stateText;
+            if(!state.isActive) {
+                stateText = getResources().getText(R.string.a11y_special_key_off);
+            } else if(state.isLocked) {
+                stateText = getResources().getText(R.string.a11y_special_key_latched_on);
+            } else {
+                stateText = getResources().getText(R.string.a11y_special_key_on);
+
+            }
+            String announcementText = buttonName
+                + " "
+                + stateText
+                ;
+            announceForAccessibility(announcementText);
+        }
+    }
+
 
     public void startScheduledExecutors(View view, ExtraKeyButton buttonInfo, MaterialButton button) {
         stopScheduledExecutors();
@@ -623,7 +651,7 @@ public final class ExtraKeysView extends GridLayout {
                 return;
             if (mHandler == null)
                 mHandler = new Handler(Looper.getMainLooper());
-            mSpecialButtonsLongHoldRunnable = new SpecialButtonsLongHoldRunnable(state);
+            mSpecialButtonsLongHoldRunnable = new SpecialButtonsLongHoldRunnable(state, buttonInfo);
             mHandler.postDelayed(mSpecialButtonsLongHoldRunnable, mLongPressTimeout);
         }
     }
@@ -642,9 +670,11 @@ public final class ExtraKeysView extends GridLayout {
     public class SpecialButtonsLongHoldRunnable implements Runnable {
 
         public final SpecialButtonState mState;
+        public final ExtraKeyButton mButtonInfo;
 
-        public SpecialButtonsLongHoldRunnable(SpecialButtonState state) {
+        public SpecialButtonsLongHoldRunnable(SpecialButtonState state, ExtraKeyButton buttonInfo) {
             mState = state;
+            mButtonInfo = buttonInfo;
         }
 
         public void run() {
@@ -652,6 +682,8 @@ public final class ExtraKeysView extends GridLayout {
             mState.setIsLocked(!mState.isActive);
             mState.setIsActive(!mState.isActive);
             mLongPressCount++;
+
+            announceSpecialKeyStateChangeForAccessibility(mButtonInfo.getKey(), mState);
         }
     }
 
@@ -717,8 +749,11 @@ public final class ExtraKeysView extends GridLayout {
         if (!state.isCreated || !state.isActive)
             return false;
         // Disable active state only if not locked
-        if (autoSetInActive && !state.isLocked)
+        if (autoSetInActive && !state.isLocked) {
             state.setIsActive(false);
+            announceSpecialKeyStateChangeForAccessibility(specialButton.getKey(), state);
+        }
+
         return true;
     }
 
