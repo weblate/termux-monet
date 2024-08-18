@@ -22,6 +22,7 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewConfiguration;
 import android.view.ViewGroup;
+import android.view.accessibility.AccessibilityNodeInfo;
 import android.widget.GridLayout;
 import android.widget.PopupWindow;
 import androidx.annotation.NonNull;
@@ -479,6 +480,20 @@ public final class ExtraKeysView extends GridLayout {
                 } else {
                     button = new MaterialButton(getContext(), null, android.R.attr.buttonBarButtonStyle);
                 }
+                button.setAccessibilityDelegate(new AccessibilityDelegate() {
+                    @Override
+                    public void onInitializeAccessibilityNodeInfo(View host, AccessibilityNodeInfo info) {
+                        super.onInitializeAccessibilityNodeInfo(host, info);
+                        // these should funtion like soft keyboard keys;
+                        // with this flag set, they honor the TalkBack setting
+                        // of hold/release to activate, 2x tap to activate or hybrid;
+                        // assuming your Android and TalkBack are recent enough
+                        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
+                            info.setTextEntryKey(true);
+                        }
+                    }
+                });
+
                 button.setText(buttonInfo.getDisplay());
                 button.setTextColor(mButtonTextColor);
                 button.setAllCaps(mButtonTextAllCaps);
