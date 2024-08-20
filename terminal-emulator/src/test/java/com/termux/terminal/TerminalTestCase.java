@@ -295,16 +295,16 @@ public abstract class TerminalTestCase extends TestCase {
         return "'" + ((styleBits & TextStyle.CHARACTER_ATTRIBUTE_BLINK) != 0 ? ":BLINK:" : "") + ((styleBits & TextStyle.CHARACTER_ATTRIBUTE_BOLD) != 0 ? ":BOLD:" : "") + ((styleBits & TextStyle.CHARACTER_ATTRIBUTE_INVERSE) != 0 ? ":INVERSE:" : "") + ((styleBits & TextStyle.CHARACTER_ATTRIBUTE_INVISIBLE) != 0 ? ":INVISIBLE:" : "") + ((styleBits & TextStyle.CHARACTER_ATTRIBUTE_ITALIC) != 0 ? ":ITALIC:" : "") + ((styleBits & TextStyle.CHARACTER_ATTRIBUTE_PROTECTED) != 0 ? ":PROTECTED:" : "") + ((styleBits & TextStyle.CHARACTER_ATTRIBUTE_STRIKETHROUGH) != 0 ? ":STRIKETHROUGH:" : "") + ((styleBits & TextStyle.CHARACTER_ATTRIBUTE_UNDERLINE) != 0 ? ":UNDERLINE:" : "") + "'";
     }
 
-    public void assertForegroundColorAt(int externalRow, int column, int color) {
-        long style = mTerminal.getScreen().mLines[mTerminal.getScreen().externalToInternalRow(externalRow)].getStyle(column);
-        assertEquals(color, TextStyle.decodeForeColor(style));
-    }
+	public void assertBackgroundColorAt(int externalRow, int column, int color) {
+		long style = mTerminal.getScreen().mLines[mTerminal.getScreen().externalToInternalRow(externalRow)].getStyle(column);
+		assertEquals(color, TextStyle.decodeBackColor(style));
+	}
 
-    public TerminalTestCase assertColor(int colorIndex, int expected) {
-        int actual = mTerminal.mColors.mCurrentColors[colorIndex];
-        if (expected != actual) {
-            fail("Color index=" + colorIndex + ", expected=" + Integer.toHexString(expected) + ", was=" + Integer.toHexString(actual));
-        }
-        return this;
-    }
+	public TerminalTestCase assertColor(int colorIndex, int expected) {
+		int actual = mTerminal.mColors.mCurrentColors[colorIndex];
+		if (expected != actual) {
+			fail("Color index=" + colorIndex + ", expected=" + Integer.toHexString(expected) + ", was=" + Integer.toHexString(actual));
+		}
+		return this;
+	}
 }
