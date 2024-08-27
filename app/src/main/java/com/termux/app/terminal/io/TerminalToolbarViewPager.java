@@ -61,7 +61,7 @@ public class TerminalToolbarViewPager {
                 final Button button = layout.findViewById(R.id.terminal_toolbar_text_input_button);
                 button.setOnClickListener(v -> {
                     ViewPager pager = mActivity.getTerminalToolbarViewPager();
-                    pager.setCurrentItem(1, true);
+                    pager.setCurrentItem(0, true);
                 });
 
                 final EditText editText = layout.findViewById(R.id.terminal_toolbar_text_input);
