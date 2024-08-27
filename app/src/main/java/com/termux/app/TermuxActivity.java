@@ -12,6 +12,7 @@ import android.content.ServiceConnection;
 import android.content.pm.PackageManager;
 import android.content.res.Configuration;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Environment;
 import android.os.IBinder;
@@ -199,7 +200,7 @@ public final class TermuxActivity extends AppCompatActivity implements ServiceCo
     private static final int CONTEXT_MENU_SHARE_TRANSCRIPT_ID = 1;
 
     private static final int CONTEXT_MENU_SHARE_SELECTED_TEXT = 10;
-    private static final int CONTEXT_MENU_AUTOFILL_USERNAME = 11;
+    private static final int CONTEXT_MENU_AUTOFILL_USERNAME = 14;
     private static final int CONTEXT_MENU_AUTOFILL_PASSWORD = 2;
     private static final int CONTEXT_MENU_RESET_TERMINAL_ID = 3;
 
