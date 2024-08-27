@@ -323,39 +323,23 @@ public final class TermuxActivity extends AppCompatActivity implements ServiceCo
     public void onStart() {
         super.onStart();
         Logger.logDebug(LOG_TAG, "onStart");
-        if (mIsInvalidState)
-            return;
+    
+        if (mIsInvalidState) return;
+    
         mIsVisible = true;
+    
         if (mTermuxTerminalSessionActivityClient != null)
             mTermuxTerminalSessionActivityClient.onStart();
         if (mTermuxTerminalViewClient != null)
             mTermuxTerminalViewClient.onStart();
+    
         if (mPreferences.isTerminalMarginAdjustmentEnabled())
             addTermuxActivityRootViewGlobalLayoutListener();
-        View terminalMonetBackground = findViewById(R.id.terminal_monetbackground);
-        View sessionsBackgroundBlur = findViewById(R.id.sessions_backgroundblur);
-        View sessionsBackground = findViewById(R.id.sessions_background);
-        View extraKeysBackgroundBlur = findViewById(R.id.extrakeys_backgroundblur);
-        View extraKeysBackground = findViewById(R.id.extrakeys_background);
-        if (mPreferences.isMonetBackgroundEnabled()) {
-            terminalMonetBackground.setVisibility(View.VISIBLE);
-        } else {
-            terminalMonetBackground.setVisibility(View.GONE);
-        }
-        if (mPreferences.isSessionsBlurEnabled()) {
-            sessionsBackgroundBlur.setVisibility(View.VISIBLE);
-            sessionsBackground.setAlpha(0.5f);
-        } else {
-            sessionsBackgroundBlur.setVisibility(View.GONE);
-            sessionsBackground.setAlpha(1.0f);
-        }
-        if ((mPreferences.isExtraKeysBlurEnabled()) && (isToolbarHidden == false)) {
-            extraKeysBackgroundBlur.setVisibility(View.VISIBLE);
-            extraKeysBackground.setAlpha(0.80f);
-        } else {
-            extraKeysBackgroundBlur.setVisibility(View.GONE);
-            extraKeysBackground.setAlpha(1.0f);
-        }
+    
+        configureViewVisibility(R.id.terminal_monetbackground, mPreferences.isMonetBackgroundEnabled());
+        configureBackgroundBlur(R.id.sessions_backgroundblur, R.id.sessions_background, mPreferences.isSessionsBlurEnabled(), 0.5f);
+        configureExtraKeysBackground();
+    
         registerTermuxActivityBroadcastReceiver();
     }
 
@@ -369,10 +353,47 @@ public final class TermuxActivity extends AppCompatActivity implements ServiceCo
             mTermuxTerminalSessionActivityClient.onResume();
         if (mTermuxTerminalViewClient != null)
             mTermuxTerminalViewClient.onResume();
+
+        configureViewVisibility(R.id.terminal_monetbackground, mPreferences.isMonetBackgroundEnabled());
+        configureBackgroundBlur(R.id.sessions_backgroundblur, R.id.sessions_background, mPreferences.isSessionsBlurEnabled(), 0.5f);
+        configureExtraKeysBackground();
+        
         // Check if a crash happened on last run of the app or if a plugin crashed and show a
         // notification with the crash details if it did
         TermuxCrashUtils.notifyAppCrashFromCrashLogFile(this, LOG_TAG);
         mIsOnResumeAfterOnCreate = false;
+    }
+
+    private void configureViewVisibility(int viewId, boolean isVisible) {
+        View view = findViewById(viewId);
+        view.setVisibility(isVisible ? View.VISIBLE : View.GONE);
+    }
+    
+    private void configureBackgroundBlur(int blurViewId, int backgroundViewId, boolean isBlurEnabled, float alphaIfBlurred) {
+        View blurView = findViewById(blurViewId);
+        View backgroundView = findViewById(backgroundViewId);
+        blurView.setVisibility(isBlurEnabled ? View.VISIBLE : View.GONE);
+        backgroundView.setAlpha(isBlurEnabled ? alphaIfBlurred : 1.0f);
+    }
+    
+    private void configureExtraKeysBackground() {
+        View extraKeysBackground = findViewById(R.id.extrakeys_background);
+        View extraKeysBackgroundBlur = findViewById(R.id.extrakeys_backgroundblur);
+        boolean isToolbarToggled = mPreferences.toogleShowTerminalToolbar();
+
+        if (!isToolbarToggled) {
+            extraKeysBackgroundBlur.setVisibility(View.GONE);
+            extraKeysBackground.setVisibility(View.GONE);
+        } else {
+            if (mPreferences.isExtraKeysBlurEnabled()) {
+                extraKeysBackgroundBlur.setVisibility(View.VISIBLE);
+                extraKeysBackground.setAlpha(0.80f);
+            } else {
+                extraKeysBackgroundBlur.setVisibility(View.GONE);
+                extraKeysBackground.setAlpha(1.0f);
+            }
+            extraKeysBackground.setVisibility(View.VISIBLE);
+        }
     }
 
     @Override
@@ -572,27 +593,36 @@ public final class TermuxActivity extends AppCompatActivity implements ServiceCo
     }
 
     public void toggleTerminalToolbar() {
-        final ViewPager terminalToolbarViewPager = getTerminalToolbarViewPager();
-        if (terminalToolbarViewPager == null)
-            return;
-        final boolean showNow = mPreferences.toogleShowTerminalToolbar();
-        Logger.showToast(this, (showNow ? getString(R.string.msg_enabling_terminal_toolbar) : getString(R.string.msg_disabling_terminal_toolbar)), true);
-        terminalToolbarViewPager.setVisibility(showNow ? View.VISIBLE : View.GONE);
-        View extraKeysBackgroundBlur = findViewById(R.id.extrakeys_backgroundblur);
-        View extraKeysBackground = findViewById(R.id.extrakeys_background);
-        extraKeysBackgroundBlur.setVisibility(showNow ? View.VISIBLE : View.GONE);
-        extraKeysBackground.setVisibility(showNow ? View.VISIBLE : View.GONE);
-        if (isToolbarHidden == true) {
-            isToolbarHidden = false;
-        } else {
-            isToolbarHidden = true;
-        }
-        
+        ViewPager terminalToolbarViewPager = getTerminalToolbarViewPager();
+        if (terminalToolbarViewPager == null) return;
+    
+        boolean showNow = mPreferences.toogleShowTerminalToolbar();
+        Logger.showToast(this, showNow ? getString(R.string.msg_enabling_terminal_toolbar) : getString(R.string.msg_disabling_terminal_toolbar), true);
+    
+        updateViewVisibility(terminalToolbarViewPager, showNow);
+        updateViewVisibility(R.id.extrakeys_backgroundblur, showNow);
+        updateViewVisibility(R.id.extrakeys_background, showNow);
+    
+        isToolbarHidden = !showNow;
+    
         if (showNow && isTerminalToolbarTextInputViewSelected()) {
-            // Focus the text input view if just revealed.
             findViewById(R.id.terminal_toolbar_text_input).requestFocus();
         }
     }
+    
+    private void updateViewVisibility(int viewId, boolean isVisible) {
+        View view = findViewById(viewId);
+        if (view != null) {
+            view.setVisibility(isVisible ? View.VISIBLE : View.GONE);
+        }
+    }
+    
+    private void updateViewVisibility(View view, boolean isVisible) {
+        if (view != null) {
+            view.setVisibility(isVisible ? View.VISIBLE : View.GONE);
+        }
+    }
+    
 
     private void saveTerminalToolbarTextInput(Bundle savedInstanceState) {
         if (savedInstanceState == null)
