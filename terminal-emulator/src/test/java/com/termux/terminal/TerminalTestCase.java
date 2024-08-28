@@ -300,6 +300,11 @@ public abstract class TerminalTestCase extends TestCase {
 		assertEquals(color, TextStyle.decodeBackColor(style));
 	}
 
+	public void assertForegroundColorAt(int externalRow, int column, int color) {
+		long style = mTerminal.getScreen().mLines[mTerminal.getScreen().externalToInternalRow(externalRow)].getStyle(column);
+		assertEquals(color, TextStyle.decodeForeColor(style));
+	}
+
 	public TerminalTestCase assertColor(int colorIndex, int expected) {
 		int actual = mTerminal.mColors.mCurrentColors[colorIndex];
 		if (expected != actual) {
