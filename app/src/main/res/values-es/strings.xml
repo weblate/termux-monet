@@ -190,4 +190,5 @@
     <string name="termux_sessions_header">Menú de Sesiones</string>
     <string name="termux_sessions_blur_enabled_title">Fondo desenfocado del Menú de sesiones</string>
     <string name="termux_sessions_blur_enabled_on">El fondo desenfocado del menú de sesiones será habilitado.</string>
+    <string name="action_autofill_username">Autocompletar el nombre de usuario</string>
 </resources>
