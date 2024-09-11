@@ -3,6 +3,7 @@
 <!ENTITY TERMUX_PACKAGE_NAME "com.termux">
 <!ENTITY TERMUX_APP_NAME "Termux:Monet">
 <!ENTITY TERMUX_API_APP_NAME "Termux:API">
+<!ENTITY TERMUX_GUI_APP_NAME "Termux:GUI">
 <!ENTITY TERMUX_BOOT_APP_NAME "Termux:Boot">
 <!ENTITY TERMUX_FLOAT_APP_NAME "Termux:Float">
 <!ENTITY TERMUX_STYLING_APP_NAME "Termux:Styling">
@@ -128,4 +129,18 @@
     <string name="termux_terminal_view_activity_remove_on">&TERMUX_APP_NAME; sẽ đóng và xóa chính nó khỏi các ứng dụng gần đây nếu không có phiên cuối nào đang hoạt động. (Mặc định)</string>
     <string name="termux_api_preferences_summary">Tùy chọn cho &TERMUX_API_APP_NAME; ứng dụng</string>
     <string name="termux_crash_report_notifications_enabled_title">Thông báo về báo cáo sự cố</string>
+    <string name="termux_monet_background_enabled_on">Nền Monet sẽ được bật.</string>
+    <string name="termux_sessions_blur_enabled_title">Phiên bản nền mờ</string>
+    <string name="termux_sessions_header">Menu</string>
+    <string name="termux_monet_background_enabled_title">Bối cảnh của Monet (Không ổn định)</string>
+    <string name="termux_monet_background_enabled_off">Nền Terminal Monet sẽ bị vô hiệu hóa. Biến nền terminal thành monet (Mặc định)</string>
+    <string name="termux_extrakeys_blur_enabled_title">Phím bổ sung để làm mờ nền</string>
+    <string name="termux_extrakeys_header">Các phím bổ sung</string>
+    <string name="termux_sessions_blur_enabled_off">Nền mờ của Phiên sẽ bị vô hiệu hóa. Thêm Nền mờ và trong suốt vào Menu Phiên. (Có thể ảnh hưởng đến hiệu suất) (Mặc định)</string>
+    <string name="termux_extrakeys_blur_enabled_off">Nền mờ của Extra Keys sẽ bị vô hiệu hóa. Thêm Nền mờ và trong suốt vào Extra Keys. (Có thể ảnh hưởng đến hiệu suất) (Mặc định)</string>
+    <string name="termux_gui_preferences_title">&TERMUX_GUI_APP_NAME;</string>
+    <string name="action_autofill_username">Tự động điền tên người dùng</string>
+    <string name="termux_extrakeys_blur_enabled_on">Tính năng ExtraKeys Blurred Background sẽ được bật.</string>
+    <string name="termux_sessions_blur_enabled_on">Tính năng Nền mờ của phiên sẽ được bật.</string>
+    <string name="termux_gui_preferences_summary">Tùy chọn cho ứng dụng &TERMUX_GUI_APP_NAME;</string>
 </resources>
