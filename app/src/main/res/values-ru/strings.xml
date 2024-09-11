@@ -3,6 +3,7 @@
 <!ENTITY TERMUX_PACKAGE_NAME "com.termux">
 <!ENTITY TERMUX_APP_NAME "Termux:Monet">
 <!ENTITY TERMUX_API_APP_NAME "Termux:API">
+<!ENTITY TERMUX_GUI_APP_NAME "Termux:GUI">
 <!ENTITY TERMUX_BOOT_APP_NAME "Termux:Boot">
 <!ENTITY TERMUX_FLOAT_APP_NAME "Termux:Float">
 <!ENTITY TERMUX_STYLING_APP_NAME "Termux:Styling">
@@ -11,7 +12,7 @@
 ]>
 <resources>
     <string name="permission_run_command_label">Выполнять команды в &TERMUX_APP_NAME; среда</string>
-    <string name="permission_run_command_description">выполнять произвольные команды в &TERMUX_APP_NAME; окружение и доступ к файлам</string>
+    <string name="permission_run_command_description">выполнять произвольные команды в среде &amp;TERMUX_APP_НАЗВАНИЕ; и получать доступ к файлам</string>
     <string name="bootstrap_installer_body">Установка загрузочных пакетов…</string>
     <string name="bootstrap_error_title">Невозможно установить бутстрап</string>
     <string name="shared_user_label">&TERMUX_APP_NAME; пользователь</string>
@@ -86,7 +87,7 @@
     <string name="notification_action_exit">Выход</string>
     <string name="notification_action_wake_lock">Получить пробуждение</string>
     <string name="notification_action_wake_unlock">Освободить пробуждение</string>
-    <string name="error_display_over_other_apps_permission_not_granted_to_start_terminal">&TERMUX_APP_NAME; требуется разрешение «Отображать поверх других приложений» для запуска терминальных сеансов в фоновом режиме на Android &gt;= 10. Предоставляется в меню «Настройки» -&gt; Приложения –&gt; &TERMUX_APP_NAME; -&gt; Передовой</string>
+    <string name="error_display_over_other_apps_permission_not_granted_to_start_terminal">&TERMUX_APP_NAME; требует разрешения \"Отображать поверх других приложений\" для запуска терминальных сессий в фоновом режиме на Android &gt;= 10. \u0020Получите его в разделе Настройки -&gt; Приложения -&gt; &TERMUX_APP_NAME; -&gt; Дополнительно</string>
     <string name="error_termux_service_invalid_execution_command_runner">Неверный исполнитель команды выполнения для TermuxService: `%1$s`</string>
     <string name="error_termux_service_unsupported_execution_command_runner">Неподдерживаемый запуск команды выполнения для TermuxService: `%1$s`</string>
     <string name="error_run_command_service_invalid_execution_command_runner">Неверный исполнитель команды выполнения для RunCommandService: `%1$s`</string>
@@ -128,5 +129,18 @@
     <string name="bootstrap_error_installed_on_portable_sd">&TERMUX_APP_NAME; нельзя установить на переносную/внешнюю/съемную SD-карту на вашем устройстве.
 \nДвоичные файлы Bootstrap, скомпилированные для &TERMUX_APP_NAME; имеют жестко заданный путь $PREFIX и не могут быть установлены ни по какому другому пути, кроме:
 \n%1$s.</string>
-    <string name="termux_extrakeys_header">Дополнительные клавиши</string>
+    <string name="termux_extrakeys_header">Дополнительные ключи</string>
+    <string name="termux_extrakeys_blur_enabled_off">Экстра клавиши с размытым фоном будут отключены. Добавляет прозрачный и размытый фон к дополнительным клавишам. (Может повлиять на производительность) (По умолчанию)</string>
+    <string name="action_autofill_username">Автозаполнение имени пользователя</string>
+    <string name="termux_monet_background_enabled_off">Терминальный фон Monet будет отключен. Превращает фон терминала в моне (По умолчанию)</string>
+    <string name="termux_monet_background_enabled_title">Фон Моне (нестабильный)</string>
+    <string name="termux_monet_background_enabled_on">Будет включен фон Monet Background.</string>
+    <string name="termux_extrakeys_blur_enabled_title">Дополнительные клавиши Размытый фон</string>
+    <string name="termux_extrakeys_blur_enabled_on">ExtraKeys Размытый фон будет включен.</string>
+    <string name="termux_sessions_blur_enabled_title">Сессии Размытый фон</string>
+    <string name="termux_sessions_blur_enabled_off">Размытый фон сеансов будет отключен. Добавляет прозрачный и размытый фон в меню сеансов. (Может повлиять на производительность) (По умолчанию)</string>
+    <string name="termux_gui_preferences_title">&amp;TERMUX_GUI_ПРИЛОЖЕНИЕ_НАЗВАНИЕ;</string>
+    <string name="termux_gui_preferences_summary">Предпочтения для &TERMUX_GUI_APP_NAME; приложение</string>
+    <string name="termux_sessions_header">Меню сеансов</string>
+    <string name="termux_sessions_blur_enabled_on">Сессии Размытый фон будут включены.</string>
 </resources>
